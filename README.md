@@ -1,4 +1,4 @@
-# Hello, World! I'm Eoin Fitzsimons
+#I'm Eoin Fitzsimons
 
 Welcome to my GitHub repository. This README.md file serves as an introduction and will be used to showcase my work.
 
