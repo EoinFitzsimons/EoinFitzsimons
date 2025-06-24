@@ -1,5 +1,4 @@
 <div align="center">
-  <img src="./Images/Eoin.png" alt="Eoin Fitzsimons" width="200" height="200" style="border-radius: 50%;"/>
   
   # 👋 Hey there! I'm Eoin Fitzsimons
   
