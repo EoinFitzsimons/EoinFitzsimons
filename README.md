@@ -66,7 +66,7 @@ After focusing on IT support, I'm gradually returning to coding and planning to:
 I'm always interested in connecting with fellow developers, especially those who appreciate the value of real-world IT experience!
 
 <div align="center">
-  <a href="https://www.linkedin.com/in/eoin-fitzsimons/">
+  <a href="https://www.linkedin.com/in/eoinfitzsimons-/">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
   <a href="mailto:eoin.fitzsimons@email.com">
