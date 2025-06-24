@@ -51,8 +51,6 @@ After focusing on IT support, I'm gradually returning to coding and planning to:
 
 ## 🏆 What Makes Me Different
 
-<img src="./Images/Prize.png" alt="Achievement" width="50" align="left"/>
-
 **Real-world IT Experience**: My internship in IT support gives me a unique perspective on how technology actually works in business environments, not just in development theory.
 
 ## 🎯 2025 Goals
