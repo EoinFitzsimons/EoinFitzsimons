@@ -1,4 +1,5 @@
 <div align="center">
+  <img src="./Images/Eoin.png" alt="Eoin Fitzsimons" width="200" height="200" style="border-radius: 50%;"/>
   
   # 👋 Hey there! I'm Eoin Fitzsimons
   
@@ -51,6 +52,8 @@ After focusing on IT support, I'm gradually returning to coding and planning to:
 
 ## 🏆 What Makes Me Different
 
+<img src="./Images/Prize.png" alt="Achievement" width="50" align="left"/>
+
 **Real-world IT Experience**: My internship in IT support gives me a unique perspective on how technology actually works in business environments, not just in development theory.
 
 ## 🎯 2025 Goals
@@ -66,7 +69,7 @@ After focusing on IT support, I'm gradually returning to coding and planning to:
 I'm always interested in connecting with fellow developers, especially those who appreciate the value of real-world IT experience!
 
 <div align="center">
-  <a href="https://www.linkedin.com/in/eoinfitzsimons-/">
+  <a href="https://www.linkedin.com/in/eoin-fitzsimons/">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
   <a href="mailto:eoin.fitzsimons@email.com">
@@ -77,7 +80,7 @@ I'm always interested in connecting with fellow developers, especially those who
 ---
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=EoinFitzsimons&theme=tokyonight" alt="GitHub Streak"/>
+  <img src="https://streak-stats.demolab.com/?user=EoinFitzsimons&theme=tokyonight" alt="GitHub Streak"/>
 </div>
 
 <div align="center">
