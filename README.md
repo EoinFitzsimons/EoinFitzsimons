@@ -1,5 +1,4 @@
 <div align="center">
-  <img src="./Images/Eoin.png" alt="Eoin Fitzsimons" width="200" height="200" style="border-radius: 50%;"/>
   
   # 👋 Hey there! I'm Eoin Fitzsimons
   
@@ -12,6 +11,7 @@
     <img src="https://img.shields.io/badge/Institution-NCI-green?style=for-the-badge" alt="NCI"/>
     <img src="https://img.shields.io/badge/Status-IT%20Support%20Intern-orange?style=for-the-badge" alt="Current Role"/>
   </p>
+
   <img src="https://github-readme-stats.vercel.app/api?username=EoinFitzsimons&show_icons=true&theme=tokyonight&count_private=true" alt="GitHub Stats"/>
 </div>
 
@@ -52,8 +52,6 @@ After focusing on IT support, I'm gradually returning to coding and planning to:
 
 ## 🏆 What Makes Me Different
 
-<img src="./Images/Prize.png" alt="Achievement" width="50" align="left"/>
-
 **Real-world IT Experience**: My internship in IT support gives me a unique perspective on how technology actually works in business environments, not just in development theory.
 
 ## 🎯 2025 Goals
@@ -80,7 +78,7 @@ I'm always interested in connecting with fellow developers, especially those who
 ---
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com/?user=EoinFitzsimons&theme=tokyonight" alt="GitHub Streak"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=EoinFitzsimons&layout=compact&theme=tokyonight" alt="Top Languages"/>
 </div>
 
 <div align="center">
