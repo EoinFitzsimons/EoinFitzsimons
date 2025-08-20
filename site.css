@@ -251,6 +251,17 @@ header {
   border-radius: var(--radius);
   padding: clamp(1rem, 2vw, 1.5rem);
   box-shadow: var(--shadow-lg);
+/* Card styling improvements */
+.card {
+  max-width: 400px;
+  min-width: 300px;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1.2rem 1.5rem;
+  border-radius: 14px;
+  background: #181818;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  box-sizing: border-box;
 }
 .hero .intro h1 {
   font-size: clamp(1.8rem, 4vw, 3rem);
@@ -653,7 +664,31 @@ section {
   border: 1px solid var(--border-1);
   padding: 0.5rem 0.6rem;
   border-radius: 12px;
-}
+  
+  .inline-field {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .inline-field input {
+    flex: 1 1 auto;
+    min-width: 0;
+    padding: 0.3em 0.6em;
+    border: 1px solid #333;
+    border-radius: 6px;
+    background: #222;
+    color: #fff;
+    font-size: 1rem;
+    margin-right: 0.3rem;
+  }
+
+  .inline-field svg {
+    flex: 0 0 auto;
+    margin-right: 0.2rem;
+    color: #aaa;
+  }
 .inline-field input {
   background: transparent;
   border: none;
