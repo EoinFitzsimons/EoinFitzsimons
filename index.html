@@ -21,7 +21,7 @@
       property="og:url"
       content="https://eoinfitzsimons.github.io/EoinFitzsimons/"
     />
-  <meta property="og:image" content="assets/og-image.png" />
+    <meta property="og:image" content="assets/og-image.png" />
     <!-- Optional: add a generated preview image -->
     <meta name="twitter:card" content="summary_large_image" />
 
@@ -42,7 +42,7 @@
         "homeLocation": "Dublin 12, Ireland",
         "url": "https://example.com",
         "email": "mailto:Eoin00Fitzsimons@gmail.com",
-  "image": "assets/og-image.png",
+        "image": "assets/og-image.png",
         "sameAs": [
           "https://www.linkedin.com/in/eoinfitzsimons-/",
           "https://github.com/EoinFitzsimons"
@@ -60,9 +60,9 @@
         <nav class="nav-links" id="navLinks" aria-label="Primary">
           <a href="#about">About</a>
           <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
           <a href="#games">Games</a>
-          <a href="#skills">Skills</a>
           <a href="#education">Education</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -134,8 +134,19 @@
             <div class="pill">
               <small>Links</small>
               <strong>
-                <a href="https://www.linkedin.com/in/eoinfitzsimons-/" target="_blank" rel="noopener noreferrer">View my LinkedIn profile</a> ·
-                <a href="https://github.com/EoinFitzsimons" target="_blank" rel="noopener noreferrer">View my GitHub profile</a>
+                <a
+                  href="https://www.linkedin.com/in/eoinfitzsimons-/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View my LinkedIn profile</a
+                >
+                ·
+                <a
+                  href="https://github.com/EoinFitzsimons"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View my GitHub profile</a
+                >
               </strong>
             </div>
           </div>
@@ -148,7 +159,11 @@
         </div>
 
         <div class="avatar-wrap card" aria-hidden="true">
-          <img class="avatar-photo" src="assets/avatar.jpg" alt="Eoin Fitzsimons" />
+          <img
+            class="avatar-photo"
+            src="assets/avatar.jpg"
+            alt="Eoin Fitzsimons"
+          />
         </div>
       </section>
 
@@ -290,7 +305,16 @@
                     d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.56.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.56 1 1 0 01-.24 1.01l-2.2 2.22z"
                   />
                 </svg>
-                <input value="+353 89 460 1090" readonly title="Phone number" placeholder="Phone number" />
+                <input
+                  id="contact-phone"
+                  name="phone"
+                  type="tel"
+                  autocomplete="tel"
+                  value="+353 89 460 1090"
+                  readonly
+                  title="Phone number"
+                  placeholder="Phone number"
+                />
                 <button class="btn" id="copyPhone">Copy</button>
               </div>
               <div class="inline-field">
@@ -304,11 +328,19 @@
                   <path d="M4 4h16v16H4z" fill="none" />
                   <path d="M20 8l-8 5-8-5V6l8 5 8-5z" />
                 </svg>
-                <input value="Eoin00Fitzsimons@gmail.com" readonly title="Email address" placeholder="Email address" />
+                <input
+                  id="contact-email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  value="Eoin00Fitzsimons@gmail.com"
+                  readonly
+                  title="Email address"
+                  placeholder="Email address"
+                />
                 <button class="btn" id="copyEmail">Copy</button>
               </div>
-              <div class="contact-actions"
-              >
+              <div class="contact-actions">
                 <a
                   class="btn btn-ghost"
                   href="mailto:Eoin00Fitzsimons@gmail.com"
@@ -386,7 +418,12 @@
                 sessions, and saved accounts.
               </p>
               <div class="links">
-                <a href="https://github.com/EoinFitzsimons/Team-Project-WhatsOn" target="_blank" rel="noopener noreferrer">View WhatsOn Project on GitHub</a>
+                <a
+                  href="https://github.com/EoinFitzsimons/Team-Project-WhatsOn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View WhatsOn Project on GitHub</a
+                >
                 <span class="chip">Full‑Stack</span>
                 <span class="chip">Auth</span>
                 <span class="chip">UX</span>
@@ -494,14 +531,23 @@
             <p class="muted">
               Prefer email? Use the buttons below or copy directly.
             </p>
-            <div class="project-actions"
-            >
+            <div class="project-actions">
               <a class="btn btn-accent" href="mailto:Eoin00Fitzsimons@gmail.com"
                 >Email Me</a
               >
               <button class="btn" id="copyEmail2">Copy Email</button>
-              <a href="https://www.linkedin.com/in/eoinfitzsimons-/" target="_blank" rel="noopener noreferrer">View my LinkedIn profile</a>
-              <a href="https://github.com/EoinFitzsimons" target="_blank" rel="noopener noreferrer">View my GitHub profile</a>
+              <a
+                href="https://www.linkedin.com/in/eoinfitzsimons-/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View my LinkedIn profile</a
+              >
+              <a
+                href="https://github.com/EoinFitzsimons"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View my GitHub profile</a
+              >
             </div>
           </div>
           <div class="contact-card">
@@ -547,7 +593,6 @@
             id="gameFrame"
             title="Game preview"
             loading="lazy"
-            sandbox="allow-scripts allow-same-origin"
             referrerpolicy="no-referrer"
           ></iframe>
         </div>

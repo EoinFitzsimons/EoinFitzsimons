@@ -153,11 +153,20 @@ function trapFocus(container) {
   if ("IntersectionObserver" in window) {
     const io = new IntersectionObserver(
       (entries) => {
+        let mostVisible = null;
+        let maxRatio = 0;
         entries.forEach((e) => {
-          if (e.isIntersecting) mark(e.target.id);
+          if (e.intersectionRatio > maxRatio) {
+            maxRatio = e.intersectionRatio;
+            mostVisible = e;
+          }
         });
+        if (mostVisible?.isIntersecting) mark(mostVisible.target.id);
       },
-      { rootMargin: "-40% 0px -55% 0px", threshold: 0 }
+      {
+        rootMargin: "-30% 0px -60% 0px",
+        threshold: Array.from({ length: 21 }, (_, i) => i / 20),
+      }
     );
     sectionIds.forEach((id) => {
       const el = document.getElementById(id);
@@ -241,26 +250,37 @@ function trapFocus(container) {
     return span;
   }
 
-  games.forEach(g => {
-    const card = document.createElement('article');
-    card.className = 'game';
+  games.forEach((g) => {
+    const card = document.createElement("article");
+    card.className = "game";
     card.innerHTML = `
       <div class="stage" role="img" aria-label="Game preview background">
-        <img class="game-thumb" src="${pagesUrl(g.repo)}thumbnail.png" alt="${g.title} thumbnail" onerror="this.style.display='none'">
-        <span>${g.title}</span>
+        <img class="game-thumb" src="${pagesUrl(g.repo)}thumbnail.png" alt="${
+      g.title
+    } thumbnail" onerror="this.style.display='none'">
       </div>
       <div class="content">
         <h3 style="margin:0">${g.title}</h3>
         <p class="muted" style="margin:.2rem 0 .4rem">${g.blurb}</p>
         <div class="links">
-          <button class="btn btn-accent play-btn" data-title="${g.title}" data-url="${pagesUrl(g.repo)}" data-fallback="${previewUrl(g.repo)}">Play Demo</button>
-          <a class="btn" href="${pagesUrl(g.repo)}" target="_blank" rel="noopener noreferrer">Open Demo</a>
-          <a class="btn btn-ghost" href="${repoUrl(g.repo)}" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <button class="btn btn-accent play-btn" data-title="${
+            g.title
+          }" data-url="${pagesUrl(g.repo)}" data-fallback="${previewUrl(
+      g.repo
+    )}">Play Demo</button>
+          <a class="btn" href="${pagesUrl(
+            g.repo
+          )}" target="_blank" rel="noopener noreferrer">Open Demo</a>
+          <a class="btn btn-ghost" href="${repoUrl(
+            g.repo
+          )}" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
       </div>`;
-    const techRow = document.createElement('div'); techRow.className='meta'; techRow.style.marginTop='.4rem';
-    g.tech.forEach(t => techRow.appendChild(chip(t)));
-    card.querySelector('.content').appendChild(techRow);
+    const techRow = document.createElement("div");
+    techRow.className = "meta";
+    techRow.style.marginTop = ".4rem";
+    g.tech.forEach((t) => techRow.appendChild(chip(t)));
+    card.querySelector(".content").appendChild(techRow);
     gamesGrid.appendChild(card);
   });
 
@@ -297,7 +317,7 @@ function trapFocus(container) {
     lastFocus = document.activeElement;
     modalTitle.textContent = title;
     frame.setAttribute("loading", "lazy");
-    frame.setAttribute("sandbox", "allow-scripts allow-same-origin");
+    frame.removeAttribute("sandbox");
     frame.setAttribute("referrerpolicy", "no-referrer");
     frame.src = url;
     openNewTab.href = url;
@@ -352,10 +372,19 @@ function trapFocus(container) {
   document.addEventListener("keydown", (e) => {
     // Prevent arrow keys from scrolling the main window when the modal is open
     if (modal.classList.contains("open")) {
-      if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", " ", "Spacebar"].includes(e.key)) {
+      if (
+        [
+          "ArrowUp",
+          "ArrowDown",
+          "ArrowLeft",
+          "ArrowRight",
+          " ",
+          "Spacebar",
+        ].includes(e.key)
+      ) {
         e.preventDefault();
       }
-  if (e.key === "Escape") hideModal();
+      if (e.key === "Escape") hideModal();
     }
     // ...existing code for other keydown events if needed...
   });
