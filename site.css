@@ -407,7 +407,7 @@ section {
   background: #222;
   position: relative;
   display: flex;
-  align-items: flex-end;
+  align-items: stretch;
   justify-content: center;
   margin-bottom: 0.5rem;
 }
@@ -421,6 +421,7 @@ section {
   position: absolute;
   top: 0;
   left: 0;
+  margin: 0;
 }
 
 .stage span {
