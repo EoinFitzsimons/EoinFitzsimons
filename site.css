@@ -1,16 +1,38 @@
-
+.side {
+  grid-column: span 4;
+}
 /* Unified card and grid styles for all cards and games */
+/* Center and constrain the about/side group */
+.grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--grid-gap, 2rem);
+}
+
+/* Stretch sidebar cards to 200% width of their grid column */
+@media (max-width: 1100px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
 .card {
-  background: linear-gradient(180deg, var(--surface-2), rgba(255,255,255,0.02));
+  background: linear-gradient(
+    180deg,
+    var(--surface-2),
+    rgba(255, 255, 255, 0.02)
+  );
   border: 1px solid var(--border-1);
   border-radius: 14px;
   padding: 1.2rem 1.5rem;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
-  margin: 1rem auto;
-  min-width: 260px;
-  max-width: 420px;
+  min-width: 0;
+  max-width: none;
+  margin: 0 0 1rem 0;
 }
 
 .games {
@@ -32,11 +54,15 @@
   display: flex;
   flex-direction: column;
   min-width: 0;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
   margin: 0;
 }
 .game .stage {
-  background: linear-gradient(135deg, rgba(110, 86, 207, 0.18), rgba(14, 165, 233, 0.12));
+  background: linear-gradient(
+    135deg,
+    rgba(110, 86, 207, 0.18),
+    rgba(14, 165, 233, 0.12)
+  );
   position: relative;
   display: flex;
   align-items: center;
@@ -46,14 +72,7 @@
   font-weight: 800;
   overflow: hidden;
 }
-.game-thumb {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  display: block;
-  border-radius: 0;
-  background: #222;
-}
+
 .game .content {
   padding: 1.2rem 1.2rem 1.1rem 1.2rem;
   display: flex;
@@ -117,11 +136,29 @@
   margin: 0 0 0.3rem 1rem;
 }
 /* Skill bar fill widths */
-.fill-js { width: 85%; }
-.fill-html { width: 90%; }
-.fill-python { width: 75%; }
-.fill-sql { width: 72%; }
-.fill-ux { width: 68%; }
+/* Skill bar fill widths and colors */
+/* Skill bar fill widths and colors */
+.fill-js {
+  width: 85%;
+  background: linear-gradient(90deg, #f7e018, #ffd700);
+}
+.fill-html {
+  width: 90%;
+  background: linear-gradient(90deg, #e44d26, #f16529);
+}
+.fill-python {
+  width: 75%;
+  background: linear-gradient(90deg, #3572a5, #4b8bbe);
+}
+.fill-sql {
+  width: 72%;
+  background: linear-gradient(90deg, #336791, #00758f);
+}
+.fill-ux {
+  width: 68%;
+  background: linear-gradient(90deg, #8e44ad, #6c3483);
+}
+/* Skill bar fill colors */
 /* Project section title and description spacing */
 .project-title {
   margin: 0;
@@ -153,12 +190,7 @@
 .timeline {
   grid-column: span 8;
 }
-.side {
-  grid-column: span 4;
-  display: grid;
-  gap: 1rem;
-  height: max-content;
-}
+
 @media (max-width: 1100px) {
   .timeline {
     grid-column: span 12;
@@ -188,15 +220,7 @@
   margin: 0 auto;
 }
 /* Game thumbnails */
-.game-thumb {
-  display: block;
-  width: 540px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 4px 24px -8px rgba(0,0,0,0.25);
-  background: #222;
-}
+
 /* ===== Design Tokens ===== */
 :root {
   --bg: #0b1020;
@@ -533,11 +557,6 @@ section {
   font-size: 1.2rem;
 }
 
-.timeline {
-  grid-column: span 8;
-  display: grid;
-  gap: 1rem;
-}
 .timeline-item {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -589,19 +608,11 @@ section {
   margin-bottom: 0.5rem;
 }
 
-.game-thumb {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: cover;
-  display: block;
-  border-radius: 12px 12px 0 0;
-}
-
 .stage span {
   position: relative;
   z-index: 1;
   color: #fff;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   width: 100%;
   text-align: center;
   padding: 0.3em 0;
@@ -609,12 +620,6 @@ section {
   border-radius: 0 0 12px 12px;
 }
 
-.side {
-  grid-column: span 4;
-  display: grid;
-  gap: 1rem;
-  height: max-content;
-}
 .side .card {
   padding: 1rem;
 }
@@ -644,62 +649,76 @@ section {
 .projects {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: var(--grid-gap);
-}
-.project {
-  grid-column: span 6;
-  background: var(--surface-1);
-  border: 1px solid var(--border-1);
-  border-radius: 14px;
-  overflow: hidden;
-  display: grid;
-  grid-template-rows: 180px 1fr;
-  position: relative;
-}
-@media (max-width: 800px) {
-  .project {
-    grid-column: span 12;
+  /* Unified grid for projects and games */
+  .projects,
+  .games {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
   }
-}
-.project .thumb {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 12px 12px 0 0;
-  margin: 0;
-  z-index: 0;
-}
-.project .thumb::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: radial-gradient(
-    200px 40px at 40% 20%,
-    rgba(255, 255, 255, 0.35),
-    transparent 60%
-  );
-  mix-blend-mode: overlay;
-  pointer-events: none;
-  z-index: 1;
-  border-radius: 12px 12px 0 0;
-}
-.project .content {
-  padding: 1rem;
-  display: grid;
-  gap: 0.5rem;
-}
-.project .links {
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-}
-.chip {
-  background: var(--chip-bg);
-  border: 1px solid var(--chip-border);
+  @media (max-width: 900px) {
+    .projects,
+    .games {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* Unified card style for project/game */
+  .project,
+  .game {
+    background: var(--surface-1);
+    border: 1px solid var(--border-1);
+    border-radius: 14px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-width: 260px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+    margin: 0 auto;
+    width: 100%;
+    max-width: 420px;
+  }
+  .project .thumb,
+  .game .game-thumb {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px 12px 0 0;
+    margin: 0;
+  }
+  .game .stage {
+    background: linear-gradient(
+      135deg,
+      rgba(110, 86, 207, 0.18),
+      rgba(14, 165, 233, 0.12)
+    );
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 180px;
+    color: #0b0b12;
+    font-weight: 800;
+    overflow: hidden;
+    border-radius: 12px 12px 0 0;
+    padding: 0;
+  }
+  .project .content,
+  .game .content {
+    padding: 1.2rem 1.2rem 1.1rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1 1 auto;
+  }
+  .project .links,
+  .game .links {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
   padding: 0.25rem 0.55rem;
   border-radius: 999px;
   font-size: 0.8rem;
@@ -707,49 +726,21 @@ section {
 }
 
 /* Games grid */
-.games {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: var(--grid-gap);
-}
-.game {
-  grid-column: span 6;
-  background: var(--surface-1);
-  border: 1px solid var(--border-1);
-  border-radius: 14px;
-  overflow: hidden;
-  display: grid;
-  grid-template-rows: 180px 1fr;
-}
+
 @media (max-width: 800px) {
   .game {
     grid-column: span 12;
     grid-template-rows: 180px 1fr;
   }
 }
-.game .stage {
-  background: linear-gradient(
-    135deg,
-    rgba(110, 86, 207, 0.35),
-    rgba(14, 165, 233, 0.25)
-  );
-  position: relative;
-  display: grid;
-  place-items: center;
-  color: #0b0b12;
-  font-weight: 800;
-}
+
 .game .stage span {
   background: rgba(255, 255, 255, 0.75);
   padding: 0.25rem 0.5rem;
   border-radius: 8px;
   font-size: 0.85rem;
 }
-.game .content {
-  padding: 1rem;
-  display: grid;
-  gap: 0.5rem;
-}
+
 .game .links {
   display: flex;
   gap: 0.5rem;
@@ -921,9 +912,6 @@ footer {
   .skill .bar {
     background: #e5e7eb !important;
   }
-  .skill .fill {
-    background: #111 !important;
-  }
   .btn {
     display: none !important;
   }
@@ -945,20 +933,31 @@ footer {
 
 /* Sidebar (left) */
 .side-nav {
-  position: fixed;
-  top: 1rem;
-  left: 1rem;
-  width: 220px;
-  background: var(--surface-1);
-  border: 1px solid var(--border-1);
-  border-radius: 14px;
-  padding: 0.8rem;
-  box-shadow: var(--shadow-lg);
-  z-index: 60;
+  display: flex;
   opacity: 0;
-  transform: translateX(-12px);
-  pointer-events: none;
-  transition: opacity 0.18s ease, transform 0.18s ease;
+  transform: translateX(-100%);
+  transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 210px;
+  height: 100vh;
+  background: var(--surface-1);
+  border-right: 2px solid var(--border-1);
+  border-radius: 0;
+  padding: 1.2rem 0.6rem 1.2rem 1.2rem;
+  box-shadow: none;
+  margin: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-width: 180px;
+  z-index: 100;
+}
+body.side-visible .side-nav {
+  opacity: 1;
+  transform: none;
 }
 .side-brand {
   display: block;
@@ -982,11 +981,6 @@ footer {
 .side-nav .links a[aria-current="page"] {
   background: var(--surface-2);
   color: var(--text);
-}
-body.side-visible .side-nav {
-  opacity: 1;
-  transform: translateX(0);
-  pointer-events: auto;
 }
 body.side-visible header {
   transform: translateY(-110%);
