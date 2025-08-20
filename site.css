@@ -400,8 +400,8 @@ section {
 }
 /* Card thumbnail area styling */
 .stage {
-  width: 220px;           /* or your preferred size */
-  height: 124px;          /* 16:9 ratio, adjust as needed */
+  width: 540px;           /* matches actual thumbnail size */
+  height: 180px;          /* matches actual thumbnail size */
   overflow: hidden;
   border-radius: 12px;
   background: #222;
