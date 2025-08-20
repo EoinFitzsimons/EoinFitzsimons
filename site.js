@@ -359,6 +359,13 @@ function trapFocus(container) {
     }
   });
   document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && modal.classList.contains("open")) hideModal();
+    // Prevent arrow keys from scrolling the main window when the modal is open
+    if (modal.classList.contains("open")) {
+      if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", " ", "Spacebar"].includes(e.key)) {
+        e.preventDefault();
+      }
+  if (e.key === "Escape") hideModal();
+    }
+    // ...existing code for other keydown events if needed...
   });
 })();
