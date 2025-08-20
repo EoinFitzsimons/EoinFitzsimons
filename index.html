@@ -160,10 +160,10 @@
             <article class="timeline-item">
               <div class="dotline">
                 <div class="dot"></div>
-                <div class="line" style="height: 100%"></div>
+                <div class="line"></div>
               </div>
               <div>
-                <p class="muted" style="margin: 0.2rem 0 0">
+                <p class="muted profile-intro">
                   • Creative individual with excellent attention to detail,
                   personable skills, and mentoring ability.<br />
                   • Committed to leading and guiding those with a looser grasp
@@ -179,7 +179,7 @@
             <article class="timeline-item" id="experience">
               <div class="dotline">
                 <div class="dot"></div>
-                <div class="line" style="height: 100%"></div>
+                <div class="line full-height"></div>
               </div>
               <div>
                 <div class="meta">
@@ -188,7 +188,7 @@
                   <span class="tag">Feb – Aug 2025</span> ·
                   <span class="tag">Dublin</span>
                 </div>
-                <ul style="margin: 0.4rem 0 0 1rem">
+                <ul class="timeline-list">
                   <li>
                     Reimaged 20+ laptops; software troubleshooting and Group
                     Policy experience.
@@ -208,7 +208,7 @@
             <article class="timeline-item">
               <div class="dotline">
                 <div class="dot"></div>
-                <div class="line" style="height: 100%"></div>
+                <div class="line full-height"></div>
               </div>
               <div>
                 <div class="meta">
@@ -216,7 +216,7 @@
                   <span class="muted">National College of Ireland</span> ·
                   <span class="tag">2024</span>
                 </div>
-                <ul style="margin: 0.4rem 0 0 1rem">
+                <ul class="timeline-list-indent">
                   <li>
                     Led orientation for first‑years and advanced entry students;
                     praised for clarity and presentation.
@@ -228,7 +228,7 @@
             <article class="timeline-item">
               <div class="dotline">
                 <div class="dot"></div>
-                <div class="line" style="height: 100%"></div>
+                <div class="line full-height"></div>
               </div>
               <div>
                 <div class="meta">
@@ -236,7 +236,7 @@
                   <span class="muted">NCI – International Recruitment</span> ·
                   <span class="tag">2024</span>
                 </div>
-                <ul style="margin: 0.4rem 0 0 1rem">
+                <ul class="exp-list">
                   <li>
                     Guided 300+ students on campus tours; introduced services,
                     transport (Leap), and civic resources.
@@ -252,7 +252,7 @@
             <article class="timeline-item">
               <div class="dotline">
                 <div class="dot"></div>
-                <div class="line" style="height: 100%"></div>
+                <div class="line"></div>
               </div>
               <div>
                 <div class="meta">
@@ -260,7 +260,7 @@
                   <span class="muted">WhizzKids Discover IT Summer Camp</span> ·
                   <span class="tag">2017 & 2019</span>
                 </div>
-                <ul style="margin: 0.4rem 0 0 1rem">
+                <ul class="exp-list">
                   <li>
                     Selected after multiple Best Performer awards; taught 3
                     Python projects to ~180 children (6 classes × 30).
@@ -277,8 +277,8 @@
           <!-- Right column -->
           <aside class="side" aria-label="Profile, Contact, and Skills">
             <div class="card">
-              <h3 style="margin: 0 0 0.4rem">Contact</h3>
-              <div class="inline-field" style="margin-bottom: 0.5rem">
+              <h3 class="contact-title">Contact</h3>
+              <div class="inline-field mb-half">
                 <svg
                   width="18"
                   height="18"
@@ -290,7 +290,7 @@
                     d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.56.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.56 1 1 0 01-.24 1.01l-2.2 2.22z"
                   />
                 </svg>
-                <input value="+353 89 460 1090" readonly />
+                <input value="+353 89 460 1090" readonly title="Phone number" placeholder="Phone number" />
                 <button class="btn" id="copyPhone">Copy</button>
               </div>
               <div class="inline-field">
@@ -304,16 +304,10 @@
                   <path d="M4 4h16v16H4z" fill="none" />
                   <path d="M20 8l-8 5-8-5V6l8 5 8-5z" />
                 </svg>
-                <input value="Eoin00Fitzsimons@gmail.com" readonly />
+                <input value="Eoin00Fitzsimons@gmail.com" readonly title="Email address" placeholder="Email address" />
                 <button class="btn" id="copyEmail">Copy</button>
               </div>
-              <div
-                style="
-                  display: flex;
-                  gap: 0.5rem;
-                  flex-wrap: wrap;
-                  margin-top: 0.6rem;
-                "
+              <div class="contact-actions"
               >
                 <a
                   class="btn btn-ghost"
@@ -330,8 +324,8 @@
             </div>
 
             <div class="card">
-              <h3 style="margin: 0 0 0.4rem">Highlights</h3>
-              <ul class="muted" style="margin: 0 0 0.3rem 1rem">
+              <h3 class="highlights-title">Highlights</h3>
+              <ul class="muted highlights-list">
                 <li>Full‑stack development (map‑based event discovery app)</li>
                 <li>API key encoding; sessions & secure login</li>
                 <li>Teamwork, mentoring, and hardware operating</li>
@@ -339,35 +333,35 @@
             </div>
 
             <div class="card" id="skills">
-              <h3 style="margin: 0 0 0.4rem">Skills</h3>
+              <h3 class="skills-title">Skills</h3>
               <div class="skill">
                 <strong>JavaScript / TypeScript</strong>
                 <div class="bar">
-                  <div class="fill" style="width: 85%"></div>
+                  <div class="fill fill-js"></div>
                 </div>
               </div>
               <div class="skill">
                 <strong>HTML / CSS (Responsive, A11y)</strong>
                 <div class="bar">
-                  <div class="fill" style="width: 90%"></div>
+                  <div class="fill fill-html"></div>
                 </div>
               </div>
               <div class="skill">
                 <strong>Python</strong>
                 <div class="bar">
-                  <div class="fill" style="width: 75%"></div>
+                  <div class="fill fill-python"></div>
                 </div>
               </div>
               <div class="skill">
                 <strong>Git / CI</strong>
                 <div class="bar">
-                  <div class="fill" style="width: 72%"></div>
+                  <div class="fill fill-sql"></div>
                 </div>
               </div>
               <div class="skill">
                 <strong>SQL</strong>
                 <div class="bar">
-                  <div class="fill" style="width: 68%"></div>
+                  <div class="fill fill-ux"></div>
                 </div>
               </div>
             </div>
@@ -386,8 +380,8 @@
               alt="Project cover background"
             />
             <div class="content">
-              <h3 style="margin: 0">Map‑Based Event Discovery</h3>
-              <p class="muted" style="margin: 0.2rem 0 0.4rem">
+              <h3 class="project-title">Map‑Based Event Discovery</h3>
+              <p class="muted project-desc">
                 Full‑stack web app with intuitive UI, API key encoding, secure
                 sessions, and saved accounts.
               </p>
@@ -420,7 +414,7 @@
             <article class="timeline-item">
               <div class="dotline">
                 <div class="dot"></div>
-                <div class="line" style="height: 100%"></div>
+                <div class="line"></div>
               </div>
               <div>
                 <div class="meta">
@@ -428,7 +422,7 @@
                   <span class="muted">National College of Ireland</span> ·
                   <span class="tag">2023 – Present</span>
                 </div>
-                <p class="muted" style="margin: 0.4rem 0 0">
+                <p class="muted exp-desc">
                   Modules: Advanced Databases, Data Structures & Algorithms,
                   OOP, Operating Systems, Software Quality & Testing, Team
                   Project, Web Application Development, Advanced Networks,
@@ -441,7 +435,7 @@
             <article class="timeline-item">
               <div class="dotline">
                 <div class="dot"></div>
-                <div class="line" style="height: 100%"></div>
+                <div class="line"></div>
               </div>
               <div>
                 <div class="meta">
@@ -460,8 +454,8 @@
             aria-label="Education, Certificates, Achievements, and Hobbies"
           >
             <div class="card">
-              <h3 style="margin: 0 0 0.4rem">Certificates</h3>
-              <ul class="muted" style="margin: 0 0 0.3rem 1rem">
+              <h3 class="cert-title">Certificates</h3>
+              <ul class="muted cert-list">
                 <li>Technology & Transformation Induction</li>
                 <li>HSE Cyber Security Awareness</li>
                 <li>Dignity at Work (Revised 2022)</li>
@@ -471,8 +465,8 @@
             </div>
 
             <div class="card">
-              <h3 style="margin: 0 0 0.4rem">Achievements</h3>
-              <ul class="muted" style="margin: 0 0 0.3rem 1rem">
+              <h3 class="ach-title">Achievements</h3>
+              <ul class="muted ach-list">
                 <li>Society Person of the Year — NCI Students’ Union (2024)</li>
                 <li>Best Speaker at Debating (2023)</li>
                 <li>2nd place — Dublin U‑19 Badminton (2018, Captain)</li>
@@ -481,8 +475,8 @@
             </div>
 
             <div class="card">
-              <h3 style="margin: 0 0 0.4rem">Hobbies & Interests</h3>
-              <ul class="muted" style="margin: 0 0 0.3rem 1rem">
+              <h3 class="hobbies-title">Hobbies & Interests</h3>
+              <ul class="muted hobbies-list">
                 <li>Badminton — singles & doubles</li>
                 <li>Drawing — cars & people (fun team sketches!)</li>
                 <li>Formula One — fan since 2013 (attended Belgium 2016)</li>
@@ -500,13 +494,7 @@
             <p class="muted">
               Prefer email? Use the buttons below or copy directly.
             </p>
-            <div
-              style="
-                display: flex;
-                gap: 0.5rem;
-                flex-wrap: wrap;
-                margin-top: 0.5rem;
-              "
+            <div class="project-actions"
             >
               <a class="btn btn-accent" href="mailto:Eoin00Fitzsimons@gmail.com"
                 >Email Me</a
@@ -518,7 +506,7 @@
           </div>
           <div class="contact-card">
             <p class="muted">Phone</p>
-            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap">
+            <div class="phone-actions">
               <a class="btn" href="tel:+353894601090">Call</a>
               <a class="btn" href="sms:+353894601090">Text</a>
             </div>
@@ -542,7 +530,7 @@
       <div class="modal-card">
         <div class="modal-head">
           <div class="title" id="modalTitle">Loading…</div>
-          <div style="display: flex; gap: 0.4rem; align-items: center">
+          <div class="modal-actions">
             <a
               id="openNewTab"
               class="btn btn-ghost"

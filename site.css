@@ -1,11 +1,199 @@
+
+/* Unified card and grid styles for all cards and games */
+.card {
+  background: linear-gradient(180deg, var(--surface-2), rgba(255,255,255,0.02));
+  border: 1px solid var(--border-1);
+  border-radius: 14px;
+  padding: 1.2rem 1.5rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  box-sizing: border-box;
+  width: 100%;
+  margin: 1rem auto;
+  min-width: 260px;
+  max-width: 420px;
+}
+
+.games {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin: 2rem 0;
+}
+@media (max-width: 900px) {
+  .games {
+    grid-template-columns: 1fr;
+  }
+}
+.game {
+  background: var(--surface-1);
+  border: 1px solid var(--border-1);
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  margin: 0;
+}
+.game .stage {
+  background: linear-gradient(135deg, rgba(110, 86, 207, 0.18), rgba(14, 165, 233, 0.12));
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+  color: #0b0b12;
+  font-weight: 800;
+  overflow: hidden;
+}
+.game-thumb {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+  background: #222;
+}
+.game .content {
+  padding: 1.2rem 1.2rem 1.1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1 1 auto;
+}
+/* Skills section title */
+.skills-title {
+  margin: 0 0 0.4rem;
+}
+/* Experience description paragraph */
+.exp-desc {
+  margin: 0.4rem 0 0;
+}
+/* Certificates section title */
+.cert-title {
+  margin: 0 0 0.4rem;
+}
+.cert-list {
+  margin: 0 0 0.3rem 1rem;
+}
+/* Achievements section title */
+.ach-title {
+  margin: 0 0 0.4rem;
+}
+.ach-list {
+  margin: 0 0 0.3rem 1rem;
+}
+/* Hobbies section title */
+.hobbies-title {
+  margin: 0 0 0.4rem;
+}
+.hobbies-list {
+  margin: 0 0 0.3rem 1rem;
+}
+/* Experience/education list spacing */
+.exp-list {
+  margin: 0.4rem 0 0 1rem;
+}
+/* Contact section title */
+.contact-title {
+  margin: 0 0 0.4rem;
+}
+.highlights-title {
+  margin: 0 0 0.4rem;
+}
+/* Margin bottom for inline field */
+.mb-half {
+  margin-bottom: 0.5rem;
+}
+/* Contact actions (email/call buttons) */
+.contact-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.6rem;
+}
+/* Highlights list spacing */
+.highlights-list {
+  margin: 0 0 0.3rem 1rem;
+}
+/* Skill bar fill widths */
+.fill-js { width: 85%; }
+.fill-html { width: 90%; }
+.fill-python { width: 75%; }
+.fill-sql { width: 72%; }
+.fill-ux { width: 68%; }
+/* Project section title and description spacing */
+.project-title {
+  margin: 0;
+}
+.project-desc {
+  margin: 0.2rem 0 0.4rem;
+}
+/* Project actions (project card buttons) */
+.project-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+/* Phone actions (call/text) */
+.phone-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+/* Modal actions (modal header) */
+.modal-actions {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+/* Only keep one .side definition to avoid duplicate/conflicting rules */
+/* Responsive grid for timeline and side */
+.timeline {
+  grid-column: span 8;
+}
+.side {
+  grid-column: span 4;
+  display: grid;
+  gap: 1rem;
+  height: max-content;
+}
+@media (max-width: 1100px) {
+  .timeline {
+    grid-column: span 12;
+  }
+  .side {
+    grid-column: span 12;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .side {
+    grid-template-columns: 1fr;
+  }
+}
+/* Ensure intro and avatar cards are the same height */
+.intro.card,
+.avatar-wrap.card {
+  min-height: 375px;
+}
+/* Avatar photo circle style */
+.avatar-photo {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
 /* Game thumbnails */
 .game-thumb {
   display: block;
-  width: 400px;
-  height: 225px;
+  width: 540px;
+  height: 180px;
   object-fit: cover;
   border-radius: 10px;
-  margin: 1.5rem auto 0.5rem auto;
   box-shadow: 0 4px 24px -8px rgba(0,0,0,0.25);
   background: #222;
 }
@@ -125,6 +313,7 @@ img {
 header {
   position: sticky;
   top: 0;
+  -webkit-backdrop-filter: saturate(140%) blur(10px);
   backdrop-filter: saturate(140%) blur(10px);
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0));
   z-index: 50;
@@ -167,7 +356,6 @@ header {
   gap: 0.5rem;
   align-items: center;
 }
-
 .btn {
   appearance: none;
   border: 1px solid var(--border-1);
@@ -241,28 +429,7 @@ header {
     grid-template-columns: 1fr;
   }
 }
-.card {
-  background: linear-gradient(
-    180deg,
-    var(--surface-2),
-    rgba(255, 255, 255, 0.02)
-  );
-  border: 1px solid var(--border-1);
-  border-radius: var(--radius);
-  padding: clamp(1rem, 2vw, 1.5rem);
-  box-shadow: var(--shadow-lg);
-/* Card styling improvements */
-.card {
-  max-width: 400px;
-  min-width: 300px;
-  width: 100%;
-  margin: 1rem auto;
-  padding: 1.2rem 1.5rem;
-  border-radius: 14px;
-  background: #181818;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
-  box-sizing: border-box;
-}
+/* Card styling unified below */
 .hero .intro h1 {
   font-size: clamp(1.8rem, 4vw, 3rem);
   line-height: 1.1;
@@ -411,28 +578,23 @@ section {
 }
 /* Card thumbnail area styling */
 .stage {
-  width: 540px;           /* matches actual thumbnail size */
-  height: 180px;          /* matches actual thumbnail size */
+  width: 540px;
+  height: 180px;
   overflow: hidden;
   border-radius: 12px;
   background: #222;
   position: relative;
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
+  display: grid;
+  place-items: center;
   margin-bottom: 0.5rem;
 }
 
 .game-thumb {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: cover;
   display: block;
   border-radius: 12px 12px 0 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0;
 }
 
 .stage span {
@@ -445,7 +607,6 @@ section {
   padding: 0.3em 0;
   font-weight: bold;
   border-radius: 0 0 12px 12px;
-}
 }
 
 .side {
@@ -492,7 +653,8 @@ section {
   border-radius: 14px;
   overflow: hidden;
   display: grid;
-  grid-template-rows: 160px 1fr;
+  grid-template-rows: 180px 1fr;
+  position: relative;
 }
 @media (max-width: 800px) {
   .project {
@@ -500,13 +662,16 @@ section {
   }
 }
 .project .thumb {
-  background: linear-gradient(
-    135deg,
-    rgba(139, 125, 255, 0.35),
-    rgba(97, 218, 251, 0.25)
-  );
-  position: relative;
-  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 12px 12px 0 0;
+  margin: 0;
+  z-index: 0;
 }
 .project .thumb::after {
   content: "";
@@ -518,6 +683,9 @@ section {
     transparent 60%
   );
   mix-blend-mode: overlay;
+  pointer-events: none;
+  z-index: 1;
+  border-radius: 12px 12px 0 0;
 }
 .project .content {
   padding: 1rem;
@@ -556,7 +724,7 @@ section {
 @media (max-width: 800px) {
   .game {
     grid-column: span 12;
-    grid-template-rows: 160px 1fr;
+    grid-template-rows: 180px 1fr;
   }
 }
 .game .stage {
@@ -664,38 +832,24 @@ section {
   border: 1px solid var(--border-1);
   padding: 0.5rem 0.6rem;
   border-radius: 12px;
-  
-  .inline-field {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .inline-field input {
-    flex: 1 1 auto;
-    min-width: 0;
-    padding: 0.3em 0.6em;
-    border: 1px solid #333;
-    border-radius: 6px;
-    background: #222;
-    color: #fff;
-    font-size: 1rem;
-    margin-right: 0.3rem;
-  }
-
-  .inline-field svg {
-    flex: 0 0 auto;
-    margin-right: 0.2rem;
-    color: #aaa;
-  }
+  margin-bottom: 0.5rem;
+}
 .inline-field input {
-  background: transparent;
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 0.3em 0.6em;
   border: none;
+  border-radius: 6px;
+  background: transparent;
   color: var(--text);
   width: 100%;
   outline: none;
   font-size: 0.95rem;
+}
+.inline-field svg {
+  flex: 0 0 auto;
+  margin-right: 0.2rem;
+  color: #aaa;
 }
 .muted {
   color: var(--muted);
