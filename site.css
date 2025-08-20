@@ -398,13 +398,42 @@ section {
   flex-wrap: wrap;
   color: var(--muted);
 }
-.tag {
-  padding: 0.15rem 0.5rem;
-  border-radius: 999px;
-  border: 1px solid var(--tag-border);
-  background: var(--tag-bg);
-  font-size: 0.8rem;
-  color: var(--tag-text);
+/* Card thumbnail area styling */
+.stage {
+  width: 220px;           /* or your preferred size */
+  height: 124px;          /* 16:9 ratio, adjust as needed */
+  overflow: hidden;
+  border-radius: 12px;
+  background: #222;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.game-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px 12px 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.stage span {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  background: rgba(0,0,0,0.5);
+  width: 100%;
+  text-align: center;
+  padding: 0.3em 0;
+  font-weight: bold;
+  border-radius: 0 0 12px 12px;
+}
 }
 
 .side {
