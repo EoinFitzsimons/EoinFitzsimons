@@ -62,12 +62,6 @@ function trapFocus(container){
     lockScroll(false);
     burger.focus();
   }
-  function openMenu(){
-    links.classList.add('open');
-    burger.setAttribute('aria-expanded', 'true');
-    lockScroll(true);
-    const f = links.querySelector('a'); f && f.focus();
-  }
 
   burger.addEventListener('click', ()=> {
     const open = links.classList.toggle('open');
@@ -114,12 +108,17 @@ function trapFocus(container){
   const sectionIds = $$('#main section[id]').map(s=>s.id);
   const allNavs = [mainLinks, sideLinks].filter(Boolean);
   const mapList = allNavs.map(nav => {
-    const m = {}; if (!nav) return m; $$('a[href^="#"]', nav).forEach(a => { m[a.getAttribute('href').slice(1)] = a; }); return m;
+    const m = {};
+    if (!nav) return m;
+    $$('a[href^="#"]', nav).forEach(a => { m[a.getAttribute('href').slice(1)] = a; });
+    return m;
   });
   function mark(id){
     mapList.forEach(m => {
-      if (!m) return; Object.values(m).forEach(a=>a && a.removeAttribute('aria-current'));
-      const a = m[id]; if (a) a.setAttribute('aria-current','page');
+      if (!m) return;
+      Object.values(m).forEach(a => a?.removeAttribute('aria-current'));
+      const a = m[id];
+      if (a) a.setAttribute('aria-current','page');
     });
   }
   if ('IntersectionObserver' in window){
@@ -146,7 +145,9 @@ function trapFocus(container){
     { title: "Eoin's Building Game", repo: "Eoin-s-Building-Game", tech: ["JavaScript"], blurb: "A browser-based building game made with JavaScript." },
     { title: "Eoin's Football Game", repo: "Eoin-s-Football-Game", tech: ["HTML"], blurb: "Pick-up & play football mini‑game in the browser." },
     { title: "Eoin's Text Game", repo: "Eoin-s-Text-Game", tech: ["JavaScript"], blurb: "Interactive text adventure built with JS." },
-    { title: "Eoin's Racing Game", repo: "Eoin-s-Racing-Game", tech: ["HTML"], blurb: "Arcade‑style racing game, runs entirely in the browser." }
+    { title: "Eoin's Racing Game", repo: "Eoin-s-Racing-Game", tech: ["HTML"], blurb: "Arcade‑style racing game, runs entirely in the browser." },
+    { title: "Skyworks-Concourse", repo: "Skyworks-Concourse", tech: ["HTML"], blurb: "A browser‑playable, single‑file isometric game set in a retro‑futuristic cargo concourse suspended above the clouds. Explore modular buildings and corridors, complete multi‑type quests, dodge and discover." },
+    { title: "Rith-Dearg", repo: "Rith-Dearg", tech: ["HTML"], blurb: "A platforming game of a red squirrel in Ireland." }
   ];
 
   const gamesGrid = $('#gamesGrid');
@@ -190,7 +191,14 @@ function trapFocus(container){
     [main, header, footer].forEach(el => {
       if (!el) return;
       if (on){ el.setAttribute('aria-hidden','true'); el.inert = true; }
-      else { el.removeAttribute('aria-hidden'); try{ el.inert = false; }catch(e){} }
+      else { 
+        el.removeAttribute('aria-hidden'); 
+        try { 
+          el.inert = false; 
+        } catch(e) { 
+          console.error('Failed to set inert property:', e); 
+        } 
+      }
     });
   }
 
@@ -211,7 +219,9 @@ function trapFocus(container){
     setTimeout(()=>{
       try{
         if (!frame.contentWindow) { frame.src = fallback; openNewTab.href = fallback; }
-      }catch(e){ /* ignore cross-origin */ }
+      }catch(e){ 
+        console.warn('Could not access frame.contentWindow, possibly due to cross-origin restrictions:', e); 
+      }
     }, 3500);
   }
 

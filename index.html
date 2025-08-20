@@ -174,7 +174,7 @@
         </div>
 
         <!-- Right column -->
-        <aside class="side">
+        <aside class="side" aria-label="Profile, Contact, and Skills">
           <div class="card">
             <h3 style="margin:0 0 .4rem">Contact</h3>
             <div class="inline-field" style="margin-bottom:.5rem">
@@ -191,7 +191,7 @@
               <a class="btn btn-ghost" href="mailto:Eoin00Fitzsimons@gmail.com">Email</a>
               <a class="btn btn-ghost" href="tel:+353894601090">Call</a>
             </div>
-            <div id="liveRegion" class="sr-only" role="status" aria-live="polite"></div>
+            <output id="liveRegion" class="sr-only" aria-live="polite"></output>
           </div>
 
           <div class="card">
@@ -235,7 +235,7 @@
       <h2>Selected Project</h2>
       <div class="projects">
         <article class="project">
-          <div class="thumb" role="img" aria-label="Project cover background"></div>
+          <img class="thumb" src="project-cover.png" alt="Project cover background" />
           <div class="content">
             <h3 style="margin:0">Map‑Based Event Discovery</h3>
             <p class="muted" style="margin:.2rem 0 .4rem">
@@ -287,7 +287,7 @@
           </article>
         </div>
 
-        <aside class="side">
+        <aside class="side" aria-label="Education, Certificates, Achievements, and Hobbies">
           <div class="card">
             <h3 style="margin:0 0 .4rem">Certificates</h3>
             <ul class="muted" style="margin:0 0 .3rem 1rem">
@@ -350,8 +350,8 @@
   </footer>
 
   <!-- Game modal -->
-  <div class="modal" id="playModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
-    <div class="modal-card" role="document">
+  <dialog class="modal" id="playModal" aria-labelledby="modalTitle" aria-modal="true" aria-hidden="true">
+    <div class="modal-card">
       <div class="modal-head">
         <div class="title" id="modalTitle">Loading…</div>
         <div style="display:flex; gap:.4rem; align-items:center">
@@ -363,7 +363,7 @@
         <iframe id="gameFrame" title="Game preview" loading="lazy" sandbox="allow-scripts allow-same-origin" referrerpolicy="no-referrer"></iframe>
       </div>
     </div>
-  </div>
+  </dialog>
 
   <!-- Sidebar nav (left) -->
   <aside class="side-nav" id="sideNav" aria-label="Section navigation">
@@ -373,20 +373,5 @@
 
   <script src="site.js" defer></script>
 
-  <!--
-  CHANGELOG (Aug 2025)
-  - Externalised CSS/JS, added tokens for badge/chip/tag/pill/surfaces/borders.
-  - Light theme contrast improvements; subtle inner ring on badge (light).
-  - Sidebar hysteresis; mobile nav a11y; modal focus trap & security attrs.
-  - SEO/OG meta; color-scheme; canonical placeholder.
-  - Added ARIA live region for copy to clipboard; improved :focus-visible.
-
-  QA CHECKLIST
-  - Keyboard only: Tab through; skip link visible; modal traps focus; Esc closes modal/menu.
-  - Reduced motion: no slides; only fades. Mobile: sidebar hidden.
-  - Links: external links have rel="noopener noreferrer".
-  - Performance: no layout shift on header/sidebar; iframes lazy.
-  - SEO: update canonical & og:image to real paths.
-  -->
 </body>
 </html>
