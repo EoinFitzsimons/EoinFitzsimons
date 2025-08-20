@@ -241,35 +241,31 @@ function trapFocus(container) {
     return span;
   }
 
-  games.forEach((g) => {
-    const card = document.createElement("article");
-    card.className = "game";
+  games.forEach(g => {
+    // Preempt each game card with a thumbnail image
+    const thumbImg = document.createElement('img');
+    thumbImg.className = 'game-thumb';
+    thumbImg.src = `${pagesUrl(g.repo)}thumbnail.png`;
+    thumbImg.alt = `${g.title} thumbnail`;
+    thumbImg.onerror = function() { this.style.display = 'none'; };
+    gamesGrid.appendChild(thumbImg);
+
+    const card = document.createElement('article');
+    card.className = 'game';
     card.innerHTML = `
-      <div class="stage" role="img" aria-label="Game preview background"><span>${
-        g.title
-      }</span></div>
+      <div class="stage" role="img" aria-label="Game preview background"><span>${g.title}</span></div>
       <div class="content">
         <h3 style="margin:0">${g.title}</h3>
         <p class="muted" style="margin:.2rem 0 .4rem">${g.blurb}</p>
         <div class="links">
-          <button class="btn btn-accent play-btn" data-title="${
-            g.title
-          }" data-url="${pagesUrl(g.repo)}" data-fallback="${previewUrl(
-      g.repo
-    )}">Play Demo</button>
-          <a class="btn" href="${pagesUrl(
-            g.repo
-          )}" target="_blank" rel="noopener noreferrer">Open Demo</a>
-          <a class="btn btn-ghost" href="${repoUrl(
-            g.repo
-          )}" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <button class="btn btn-accent play-btn" data-title="${g.title}" data-url="${pagesUrl(g.repo)}" data-fallback="${previewUrl(g.repo)}">Play Demo</button>
+          <a class="btn" href="${pagesUrl(g.repo)}" target="_blank" rel="noopener noreferrer">Open Demo</a>
+          <a class="btn btn-ghost" href="${repoUrl(g.repo)}" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
       </div>`;
-    const techRow = document.createElement("div");
-    techRow.className = "meta";
-    techRow.style.marginTop = ".4rem";
-    g.tech.forEach((t) => techRow.appendChild(chip(t)));
-    card.querySelector(".content").appendChild(techRow);
+    const techRow = document.createElement('div'); techRow.className='meta'; techRow.style.marginTop='.4rem';
+    g.tech.forEach(t => techRow.appendChild(chip(t)));
+    card.querySelector('.content').appendChild(techRow);
     gamesGrid.appendChild(card);
   });
 

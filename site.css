@@ -551,8 +551,8 @@ section {
   display: flex;
 }
 .modal-card {
-  width: min(1100px, 96vw);
-  height: min(80vh, 760px);
+  width: min(1400px, 98vw);
+  height: min(94vh, 900px);
   background: var(--bg);
   border: 1px solid var(--border-1);
   border-radius: 16px;
@@ -580,6 +580,7 @@ section {
   height: 100%;
   border: 0;
   background: #111;
+  display: block;
 }
 .body-lock {
   overflow: hidden;
