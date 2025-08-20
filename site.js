@@ -242,18 +242,13 @@ function trapFocus(container) {
   }
 
   games.forEach(g => {
-    // Preempt each game card with a thumbnail image
-    const thumbImg = document.createElement('img');
-    thumbImg.className = 'game-thumb';
-    thumbImg.src = `${pagesUrl(g.repo)}thumbnail.png`;
-    thumbImg.alt = `${g.title} thumbnail`;
-    thumbImg.onerror = function() { this.style.display = 'none'; };
-    gamesGrid.appendChild(thumbImg);
-
     const card = document.createElement('article');
     card.className = 'game';
     card.innerHTML = `
-      <div class="stage" role="img" aria-label="Game preview background"><span>${g.title}</span></div>
+      <div class="stage" role="img" aria-label="Game preview background">
+        <img class="game-thumb" src="${pagesUrl(g.repo)}thumbnail.png" alt="${g.title} thumbnail" onerror="this.style.display='none'">
+        <span>${g.title}</span>
+      </div>
       <div class="content">
         <h3 style="margin:0">${g.title}</h3>
         <p class="muted" style="margin:.2rem 0 .4rem">${g.blurb}</p>
