@@ -44,29 +44,48 @@
 
 ## 📂 Recent & Highlighted Projects
 
-Here are some repositories I've worked on recently:
 
-| Repository | Language | Last Updated |
-|------------|----------|--------------|
-| [nfm-lit](https://github.com/EoinFitzsimons/nfm-lit) (fork) | Java | 3 days ago |
-| Eoin-s-Game | Python | 3 days ago |
-| NFM-Clean | Java | 4 days ago |
-| NFM | Java | last week |
-| A_New_Madness |  | last week |
-| Madness_Enhanced | Java | last week |
-| EPL-Players-24-25 | Jupyter Notebook | 2 weeks ago |
-| Premier-League-Data | Jupyter Notebook | 3 weeks ago |
-| Python | Python | 3 weeks ago |
-| Discord-Bot | Python | 3 weeks ago |
-| Eoin-s-Building-Game | JavaScript | 3 weeks ago |
-| Eoin-s-Football-Game | HTML | last month |
-| Juiced-Analysis |  | last month |
-| Eoin-s-Text-Game | JavaScript | last month |
-| Juiced-Modding | Python | last month |
-| JuicedEditor (fork) | Python | Jul 14 |
-| Eoin-s-Racing-Game | HTML | Jul 9 |
 
-<sub>Some repositories are private or forks. See my GitHub for the full list.</sub>
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=EoinFitzsimons&show_icons=true&count_private=true&hide=prs&theme=tokyonight" alt="EoinFitzsimons's GitHub stats" width="420" />
+</div>
+
+### 🚀 Recent & Highlighted Projects
+
+| ⭐ Project | 📝 Description | 🛠️ Language | ⏰ Updated |
+|-----------|---------------|-------------|------------|
+| [Eoin-s-Football-Game](https://github.com/EoinFitzsimons/Eoin-s-Football-Game) <br> ![JS](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black) | ⚽ Playable football game in the browser | JavaScript | Aug 25, 2025 |
+| [Rith-Dearg](https://github.com/EoinFitzsimons/Rith-Dearg) <br> ![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white) | 🐿️ Platformer: a red squirrel in Ireland | HTML | Aug 21, 2025 |
+| [EoinFitzsimons](https://github.com/EoinFitzsimons/EoinFitzsimons) <br> ![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white) | 🌐 My personal portfolio & landing page | HTML | Aug 20, 2025 |
+| [Eoin-s-Building-Game](https://github.com/EoinFitzsimons/Eoin-s-Building-Game) <br> ![JS](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black) | 🏗️ Build and manage structures | JavaScript | Aug 20, 2025 |
+| [Eoin-s-Racing-Game](https://github.com/EoinFitzsimons/Eoin-s-Racing-Game) <br> ![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white) | 🏎️ Fast-paced browser racing | HTML | Aug 20, 2025 |
+| [Skyworks-Concourse](https://github.com/EoinFitzsimons/Skyworks-Concourse) <br> ![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white) | ☁️ Isometric retro-futuristic game | HTML | Aug 20, 2025 |
+| [Eoin-s-Text-Game](https://github.com/EoinFitzsimons/Eoin-s-Text-Game) <br> ![JS](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black) | 📜 Text adventure in JS | JavaScript | Aug 20, 2025 |
+| [nfm-lit](https://github.com/EoinFitzsimons/nfm-lit) (fork) <br> ![Java](https://img.shields.io/badge/Java-007396?logo=java&logoColor=white) | 🚗 Fork of a Java racing engine | Java | Aug 11, 2025 |
+| [Eoin-s-Game](https://github.com/EoinFitzsimons/Eoin-s-Game) <br> ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) | 🕹️ Python arcade game | Python | Aug 11, 2025 |
+| NFM-Clean | ![Java](https://img.shields.io/badge/Java-007396?logo=java&logoColor=white) | 🧹 Cleaned-up Java racing codebase | Java | Aug 10, 2025 |
+| NFM | ![Java](https://img.shields.io/badge/Java-007396?logo=java&logoColor=white) | 🏁 Java racing project | Java | Aug 7, 2025 |
+| A_New_Madness | | 🌀 Experimental game mods |  | Aug 4, 2025 |
+| Madness_Enhanced | ![Java](https://img.shields.io/badge/Java-007396?logo=java&logoColor=white) | ⚡ Enhanced Java racing mods | Java | Aug 4, 2025 |
+| Need-For-Madness | | 🚙 Racing game experiments |  | Jul 31, 2025 |
+| EPL-Players-24-25 | ![Jupyter](https://img.shields.io/badge/Jupyter-FA0F00?logo=jupyter&logoColor=white) | 📊 EPL player stats notebook | Jupyter Notebook | Jul 30, 2025 |
+| Premier-League-Data | ![Jupyter](https://img.shields.io/badge/Jupyter-FA0F00?logo=jupyter&logoColor=white) | 📈 Premier League data analysis | Jupyter Notebook | Jul 24, 2025 |
+| Python | ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) | 🐍 Python scripts & experiments | Python | Jul 23, 2025 |
+| Discord-Bot | ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) | 🤖 Discord automation bot | Python | Jul 23, 2025 |
+| Juiced | ![Batchfile](https://img.shields.io/badge/Batchfile-4B4B4B?logo=windows&logoColor=white) | 🧃 Data analysis tools | Batchfile | Jul 20, 2025 |
+| Juiced-Analysis | | 📊 Data analysis for Juiced |  | Jul 19, 2025 |
+| Juiced-Modding | ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) | 🛠️ Python modding tools | Python | Jul 16, 2025 |
+| Eoin-NCI | ![Jupyter](https://img.shields.io/badge/Jupyter-FA0F00?logo=jupyter&logoColor=white) | 🎓 All my NCI work | Jupyter Notebook | Dec 5, 2024 |
+| Group-E-Security-Fundementals-Project | ![JS](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black) | 🔐 Security fundamentals project | JavaScript | Oct 20, 2024 |
+| Team-Project-WhatsOn | ![EJS](https://img.shields.io/badge/EJS-8CBBF1?logo=ejs&logoColor=black) | 📅 NCI Team Project App | EJS | May 16, 2024 |
+| Team-Project-Testing | ![EJS](https://img.shields.io/badge/EJS-8CBBF1?logo=ejs&logoColor=black) | 🧪 Team project testing | EJS | Mar 28, 2024 |
+| MusicManager2 | ![Java](https://img.shields.io/badge/Java-007396?logo=java&logoColor=white) | 🎵 Music manager for NCI DSA | Java | Mar 15, 2024 |
+| GithubTestUpload | ![Java](https://img.shields.io/badge/Java-007396?logo=java&logoColor=white) | 📦 Test upload repo | Java | Feb 29, 2024 |
+| LabStack-Wagons | ![Java](https://img.shields.io/badge/Java-007396?logo=java&logoColor=white) | 🚂 Data Structures & Algorithms | Java | Feb 1, 2024 |
+| Wagon-Lab-Stack | | 🚋 Stack lab for DSA |  | Feb 1, 2024 |
+
+<sub>Some repositories are private or forks. See my <a href="https://github.com/EoinFitzsimons?tab=repositories">GitHub</a> for the full list.</sub>
 
 ---
 
