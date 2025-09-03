@@ -1,0 +1,96 @@
+Eoin Fitzsimons
+Full-Stack Software Developer & Computing Student
+
+Phone: +353 89 460 1090 | Email: Eoin00Fitzsimons@gmail.com 
+LinkedIn: linkedin.com/in/eoinfitzsimons-/ | GitHub: github.com/EoinFitzsimons
+Location: Dublin 12, Ireland
+
+PROFESSIONAL SUMMARY
+
+Driven Computing student and aspiring software developer with proven expertise in full-stack web development, enterprise IT systems, and technical leadership. Demonstrated success in mentoring 400+ students, managing technical projects, and delivering scalable solutions across multiple programming environments. Seeking junior developer roles where I can leverage my strong technical foundation, leadership experience, and passion for innovative problem-solving to contribute to dynamic development teams.
+
+CORE TECHNICAL COMPETENCIES
+
+Programming & Development:
+- Java, Python, JavaScript (ES6+), HTML5/CSS3
+- Object-Oriented Programming, Data Structures & Algorithms
+- Full-Stack Web Development: Node.js, Express.js, EJS templating
+- RESTful API development and integration
+- Database Design & Management: SQL, advanced query optimization
+- Version Control: Git, collaborative development workflows
+
+Systems & Infrastructure:
+- Enterprise Hardware Management: Windows imaging, Group Policy administration
+- Network Security: Cyber security protocols, system vulnerability assessment
+- IT Support: Hardware troubleshooting, component replacement, system optimization
+
+Professional Skills:
+- Technical Leadership: Team management, project coordination, stakeholder communication
+- Public Speaking: Presentation delivery, training facilitation, audience engagement
+- Mentorship: Cross-cultural communication, adaptive teaching methodologies
+
+FEATURED PROJECT
+
+Event Discovery Platform | Full-Stack Web Application | 2024
+- Architected and developed comprehensive map-based event discovery platform using JavaScript, Node.js, and SQL database integration
+- Engineered secure user authentication system with session management, API key encryption, and data protection protocols
+- Designed responsive UI/UX interface optimizing user engagement and ensuring cross-platform compatibility
+- Implemented scalable backend architecture supporting real-time data processing and geolocation services
+- Repository: github.com/EoinFitzsimons/Team-Project-WhatsOn
+
+EDUCATION
+
+BSc Computing | National College of Ireland | September 2023 – Present
+Core Specializations: Advanced Databases, Data Structures & Algorithms, Object-Oriented Programming, Web Application Development, Advanced Computer Networks, Security Fundamentals, Artificial Intelligence & Machine Learning
+
+Leadership Excellence & Student Engagement:
+- Esports and Gaming Society President: Spearheaded event organization, budget allocation, and strategic planning for 200+ member organization
+- Class Representative: Facilitated critical communication channels between student body and academic faculty through Students Union advocacy
+- Student Council Member: Championed peer representation initiatives and led policy discussion forums
+- Campus Ambassador: Delivered comprehensive facility tours enhancing prospective student experience and institutional engagement
+
+QQI Level 6 Software Development | Rathmines College of Further Education | September 2022 – June 2023
+Academic Excellence: Achieved nine distinctions across comprehensive software development curriculum
+
+PROFESSIONAL EXPERIENCE
+
+Executive Support Intern | Health Service Executive | February – August 2025
+- Executed comprehensive IT infrastructure management, successfully reimaging 40+ enterprise laptops while implementing advanced Group Policy configurations
+- Delivered specialized technical support to C-level executives and senior management, maintaining 98% satisfaction rates through effective problem resolution
+- Administered critical hardware maintenance operations including RAM optimization, SSD redistribution, and component replacement across multiple departments
+
+Student Leadership Coordinator | National College of Ireland | 2024
+- Orchestrated comprehensive orientation programs for 100+ first-year and advanced-entry students, achieving 95% program completion rates
+- Recognized for exceptional knowledge delivery and presentation excellence, receiving formal commendations from academic staff and student feedback systems
+- Developed and implemented student engagement strategies resulting in improved retention and academic integration
+
+International Peer Mentor | NCI International Recruitment | 2024
+- Managed comprehensive campus integration programs for 300+ international students across diverse cultural backgrounds
+- Facilitated cultural adaptation workshops covering public transport systems, citizen services, and academic protocol orientation
+- Coordinated educational excursions to Dublin cultural landmarks (Botanic Gardens, Medieval Quarter, Glendalough), enhancing student cultural immersion
+
+Lead Teaching Assistant | WhizzKids Discover IT Summer Camp | 2017 & 2019
+- Selected for consecutive leadership roles based on exceptional performance metrics (100% attendance, highest student evaluation scores)
+- Instructed 180+ children (ages 8-12) across six specialized programming classes, adapting curriculum delivery for diverse learning styles and technical aptitudes
+- Designed and delivered three comprehensive Python programming projects while supervising recreational activities and maintaining camp safety protocols
+
+PROFESSIONAL CERTIFICATIONS
+
+Technology & Transformation Induction - Advanced Systems Integration
+HSE Cyber Security Awareness - Enterprise Security Protocols
+Dignity at Work (2022) - Workplace Ethics and Professional Standards
+Communicating Effectively through Open Disclosure - Stakeholder Communication
+An Introduction to Children First - Safeguarding and Child Protection
+
+ACHIEVEMENTS & RECOGNITION
+
+Society Person of the Year 2024 - NCI Students Union Award for Outstanding Leadership and Community Impact
+Best Speaker at Debating Championship 2023 - Expert panel recognition (4/5 judges) for persuasive communication and analytical reasoning
+Runner-up Dublin U-19 Badminton Tournament 2018 - Team Captain leading competitive sports achievement at regional level
+Best Participant Coding Camp Recognition 2015-2017 - Three consecutive years of excellence in technical aptitude and peer collaboration
+
+INTERESTS & PERSONAL DEVELOPMENT
+
+Competitive Badminton: Active tournament participant in singles and doubles competitions, demonstrating strategic thinking and performance under pressure
+Digital Art & Design: Character illustration and automotive sketching, including commissioned workplace portraits showcasing creative problem-solving abilities
+Formula One Enthusiast: Long-term motorsport follower with technical interest in engineering innovation, attended Belgian Grand Prix 2016

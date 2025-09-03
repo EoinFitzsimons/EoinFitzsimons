@@ -1,0 +1,59 @@
+Eoin Fitzsimons
+Full-Stack Software Developer & Computing Student
+
+Phone: +353 89 460 1090 | Email: Eoin00Fitzsimons@gmail.com 
+LinkedIn: linkedin.com/in/eoinfitzsimons-/ | GitHub: github.com/EoinFitzsimons
+Portfolio: github.com/EoinFitzsimons | Location: Dublin 12, Ireland
+
+PROFESSIONAL SUMMARY
+
+Full-stack developer and Computing student with 25+ projects across JavaScript, Python, and Java. Strong foundation in algorithms, data structures, and web technologies. Seeking software development roles to apply diverse project portfolio and technical problem-solving skills.
+
+TECHNICAL SKILLS
+
+Programming: JavaScript (ES6+), Python, Java, HTML5/CSS3
+Web Development: Node.js, Express.js, EJS, RESTful APIs, authentication systems
+Game Development: Browser games, platformers, physics engines
+Data & Databases: SQL optimization, Jupyter Notebooks, data visualization
+Tools & Systems: Git, VS Code, Windows imaging, Group Policy
+
+KEY PROJECTS
+
+Event Discovery Platform | Full-Stack Web Application | 2024
+- Built map-based event discovery platform using Node.js, Express, and SQL
+- Implemented secure user authentication and geolocation services
+- Repository: github.com/EoinFitzsimons/Team-Project-WhatsOn
+
+Game Development Portfolio | JavaScript & Python | 2024-2025
+- Developed 15+ browser games including "Rith Dearg" platformer with custom physics
+- Created racing simulators, football games, and text adventures
+- Showcases: Eoin-s-Football-Game, Skyworks-Concourse, Eoin-s-Racing-Game
+
+EDUCATION
+
+BSc Computing | National College of Ireland | 2023 – Present (Final Year 2025-2026)
+Key Modules: Advanced Databases, Data Structures & Algorithms, Web Development, AI & Machine Learning
+
+QQI Level 6 Software Development | Rathmines College | 2022 – 2023
+Achievement: Nine distinctions across programming curriculum
+
+PROFESSIONAL EXPERIENCE
+
+Executive Support Intern | Health Service Executive | February – August 2025
+- Managed IT infrastructure for 40+ laptop deployments with Group Policy configurations
+- Provided technical support to senior management with 98% resolution rate
+- Administered hardware optimization including RAM and SSD management
+
+Student Leadership Coordinator | National College of Ireland | 2024
+- Led orientation programs for 100+ students achieving 95% completion rates
+- Recognized for exceptional presentation and technical communication skills
+
+ACHIEVEMENTS
+
+Society Person of the Year 2024 - NCI Students Union Award for technical leadership
+25+ Open Source Projects - Comprehensive GitHub portfolio
+Consecutive Coding Excellence 2015-2017 - Programming aptitude recognition
+
+INTERESTS
+
+Game Development, Data Analytics, Open Source Contributing

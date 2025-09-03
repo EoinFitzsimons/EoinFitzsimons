@@ -1,0 +1,112 @@
+Eoin Fitzsimons
+Full-Stack Developer & Technical Leader
+
+Phone: +353 89 460 1090 | Email: Eoin00Fitzsimons@gmail.com 
+LinkedIn: linkedin.com/in/eoinfitzsimons-/ | GitHub: github.com/EoinFitzsimons
+Location: Dublin 12, Ireland
+
+PROFESSIONAL SUMMARY
+
+Versatile Computing student and software developer combining strong technical expertise with proven leadership and mentoring capabilities. Successfully managed 400+ student interactions while building 25+ programming projects across multiple languages. Demonstrated ability to bridge technical solutions with stakeholder needs through IT support, teaching, and project management roles. Seeking positions that leverage both technical development skills and collaborative leadership experience.
+
+TECHNICAL & LEADERSHIP COMPETENCIES
+
+Programming & Development:
+- JavaScript (ES6+), Python, Java, HTML5/CSS3
+- Full-Stack Development: Node.js, Express.js, RESTful APIs, database integration
+- Project Portfolio: 25+ repositories including games, web applications, and data analysis
+- Version Control: Git workflows and collaborative development
+
+Systems & Infrastructure:
+- Enterprise IT Support: Windows imaging, Group Policy, hardware management
+- Database Design: SQL optimization and advanced query development
+- Security Protocols: Cyber security awareness and system administration
+
+Leadership & Communication:
+- Team Management: Led organizations of 200+ members with budget responsibility
+- Cross-Cultural Mentoring: Guided 300+ international students through cultural integration
+- Public Speaking: Delivered presentations to diverse audiences with consistent positive feedback
+- Educational Leadership: Instructed 180+ students across technical and recreational programs
+
+FEATURED PROJECTS & ACHIEVEMENTS
+
+Technical Innovation Projects
+Event Discovery Platform | Full-Stack Web Application | 2024
+- Architected secure authentication system with geolocation services and API integration
+- Led collaborative development using modern web technologies and database optimization
+- Repository: github.com/EoinFitzsimons/Team-Project-WhatsOn
+
+Game Development Portfolio | JavaScript & Python | 2024-2025
+- Created 15+ interactive applications including "Rith Dearg" platformer and racing simulators
+- Demonstrated creative problem-solving and user experience design across diverse projects
+- Showcased adaptability across multiple programming paradigms and technical challenges
+
+Leadership Excellence
+Society President & Student Leadership | National College of Ireland | 2024
+- Spearheaded Esports and Gaming Society operations managing 200+ member organization
+- Orchestrated orientation programs achieving 95% completion rates for new student integration
+- Recognized as "Society Person of the Year 2024" for outstanding community impact
+
+International Mentorship Program | NCI International Recruitment | 2024
+- Facilitated cultural integration for 300+ international students from diverse backgrounds
+- Designed comprehensive orientation covering academic, social, and practical life skills
+- Coordinated educational tours enhancing student engagement and institutional connection
+
+EDUCATION & PROFESSIONAL DEVELOPMENT
+
+BSc Computing | National College of Ireland | September 2023 – Present
+Technical Specializations: Advanced Databases, Web Development, AI & Machine Learning, Security Fundamentals
+Leadership Roles: Esports Society President, Class Representative, Student Council Member, Campus Ambassador
+
+QQI Level 6 Software Development | Rathmines College | September 2022 – June 2023
+Academic Excellence: Nine distinctions demonstrating consistent high-performance standards
+
+PROFESSIONAL EXPERIENCE
+
+Executive Support Intern | Health Service Executive | February – August 2025
+- Delivered enterprise-level IT support to senior management achieving 98% satisfaction rates
+- Managed technical infrastructure projects including system deployment and optimization
+- Developed stakeholder communication skills through direct engagement with C-level executives
+- Administered hardware and software solutions across multiple organizational departments
+
+Student Leadership Coordinator | National College of Ireland | 2024
+- Orchestrated comprehensive programs serving 100+ students with measurable engagement outcomes
+- Received formal recognition from academic staff for exceptional presentation and facilitation skills
+- Implemented student feedback systems improving program effectiveness and participant satisfaction
+
+International Peer Mentor | NCI International Recruitment | 2024
+- Managed complex cultural integration challenges for students from 15+ different countries
+- Facilitated workshops on practical life skills including transportation, services, and academic protocols
+- Created lasting support networks enhancing long-term student success and retention rates
+
+Lead Teaching Assistant | WhizzKids Discover IT Summer Camp | 2017 & 2019
+- Selected for consecutive leadership positions based on exceptional performance metrics
+- Balanced technical instruction with recreational supervision for 180+ children across age groups
+- Adapted teaching methodologies for diverse learning styles and technical aptitude levels
+
+CERTIFICATIONS & PROFESSIONAL DEVELOPMENT
+
+Technical Certifications:
+- HSE Cyber Security Awareness - Enterprise Security Protocols
+- Technology & Transformation Induction - Systems Integration
+
+Leadership & Communication:
+- Communicating Effectively through Open Disclosure - Stakeholder Engagement
+- Dignity at Work (2022) - Professional Standards and Ethics
+
+ACHIEVEMENTS & RECOGNITION
+
+Leadership Excellence:
+- Society Person of the Year 2024 - NCI Students Union Award for Community Impact
+- Best Speaker at Debating Championship 2023 - Expert panel recognition for communication skills
+- Consecutive Programming Excellence 2015-2017 - Three-year recognition for technical and collaborative aptitude
+
+Athletic Leadership:
+- Runner-up Dublin U-19 Badminton Tournament 2018 - Team Captain demonstrating competitive leadership
+
+INTERESTS & PERSONAL DEVELOPMENT
+
+Competitive Sports: Badminton tournament participation developing strategic thinking and team leadership
+Creative Arts: Digital illustration and design showcasing creative problem-solving abilities
+Technology Enthusiasm: Formula One following, combining technical interest with analytical thinking
+Community Engagement: Active in gaming communities and open-source development collaboration
