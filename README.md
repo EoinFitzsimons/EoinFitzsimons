@@ -2,7 +2,62 @@
 
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=40&duration=2000&pause=500&color=F7971E&center=true&vCenter=true&width=1000&lines=%F0%9F%91%8B+Hey+there!+I'm+Eoin+Fitzsimons;he%2Fhim+%7C+Level+8+Computing+Student;IT+Support+Intern+%7C+Aspiring+Dev;Welcome+to+my+animated+GitHub+profile!" alt="Typing SVG"/>
+  <img src="https://readme-typing-### 🌟 Pinned Projects - My Best Work
+
+<table>
+<tr>
+<td width="50%">
+
+#### 🎮 Event Discovery Platform
+**Full-Stack Web Application**
+- Map-based event discovery with geolocation
+- Secure user authentication & session management
+- Node.js, Express, SQL integration
+- RESTful API architecture
+
+[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=EoinFitzsimons&repo=Team-Project-WhatsOn&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/EoinFitzsimons/Team-Project-WhatsOn)
+
+</td>
+<td width="50%">
+
+#### 🐿️ Rith Dearg Game
+**Browser Platformer Game**
+- Irish red squirrel adventure game
+- Custom physics engine implementation
+- HTML5 Canvas & JavaScript
+- Interactive gameplay mechanics
+
+[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=EoinFitzsimons&repo=Rith-Dearg&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/EoinFitzsimons/Rith-Dearg)
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### 📊 EPL Data Analytics
+**Sports Data Science Project**
+- Premier League player statistics analysis
+- Pandas, NumPy, Matplotlib
+- Statistical modeling & visualization
+- Jupyter Notebook documentation
+
+[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=EoinFitzsimons&repo=EPL-Players-24-25&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/EoinFitzsimons/EPL-Players-24-25)
+
+</td>
+<td width="50%">
+
+#### ⚽ Football Game Collection
+**Interactive Browser Games**
+- Multiple game variations (Football, Racing, Building)
+- JavaScript game engine development
+- DOM manipulation & event handling
+- Progressive web app principles
+
+[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=EoinFitzsimons&repo=Eoin-s-Football-Game&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/EoinFitzsimons/Eoin-s-Football-Game)
+
+</td>
+</tr>
+</table>.com?font=Fira+Code&size=40&duration=2000&pause=500&color=F7971E&center=true&vCenter=true&width=1000&lines=%F0%9F%91%8B+Hey+there!+I'm+Eoin+Fitzsimons;he%2Fhim+%7C+Level+8+Computing+Student;IT+Support+Intern+%7C+Aspiring+Dev;Welcome+to+my+animated+GitHub+profile!" alt="Typing SVG"/>
 </p>
 
 <p align="center">
@@ -16,42 +71,57 @@
   <img src="https://img.shields.io/badge/Status-IT%20Support%20Intern-orange?style=for-the-badge&logo=windows&logoColor=white" alt="Current Role"/>
 </p>
 
+## 📊 GitHub Analytics Dashboard
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Followers-9-blue?style=for-the-badge&logo=github" alt="Followers"/>
-  <img src="https://img.shields.io/badge/Following-24-blue?style=for-the-badge&logo=github" alt="Following"/>
-  <img src="https://img.shields.io/badge/GitHub%20Pro-Yes-purple?style=for-the-badge&logo=github" alt="GitHub Pro"/>
-</p>
+<div align="center">
+  
+  <!-- Main Stats Row -->
+  <img src="https://github-readme-stats.vercel.app/api?username=EoinFitzsimons&show_icons=true&theme=tokyonight&count_private=true&hide_border=true&bg_color=0D1117&title_color=F7971E&icon_color=79FF97&text_color=FFF&border_radius=10" alt="GitHub Stats" height="200"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=EoinFitzsimons&theme=tokyonight&hide_border=true&background=0D1117&stroke=F7971E&ring=F7971E&fire=79FF97&currStreakLabel=FFF&sideNums=FFF&currStreakNum=F7971E&dates=8B949E&sideLabels=8B949E" alt="GitHub Streak" height="200"/>
+  
+</div>
 
+<div align="center">
+  
+  <!-- Languages & Activity Row -->
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=EoinFitzsimons&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=F7971E&text_color=FFF&border_radius=10" alt="Top Languages" height="180"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=EoinFitzsimons&theme=tokyo-night&bg_color=0D1117&color=F7971E&line=79FF97&point=F7971E&area=true&hide_border=true&border_radius=10" alt="Activity Graph" height="180"/>
+  
+</div>
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=EoinFitzsimons&show_icons=true&theme=tokyonight&count_private=true" alt="GitHub Stats"/>
-  <img src="https://streak-stats.demolab.com?user=EoinFitzsimons&theme=tokyonight&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" alt="GitHub Streak"/>
-  <img src="https://github-profile-trophy.vercel.app/?username=EoinFitzsimons&theme=tokyonight&margin-w=10&no-frame=true&column=7" alt="Trophies"/>
-</p>
+<div align="center">
+  
+  <!-- Achievements & Trophies -->
+  <img src="https://github-profile-trophy.vercel.app/?username=EoinFitzsimons&theme=dark_lover&no-frame=true&column=4&margin-w=15&margin-h=15&title=Commits,Repositories,Stars,Followers" alt="GitHub Trophies"/>
+  
+</div>
 
-## 🏅 GitHub Achievements
+## 🏅 Special Achievements
 
-
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Achievement-Pull%20Shark-blueviolet?style=for-the-badge&logo=github" alt="Pull Shark"/>
-  <img src="https://img.shields.io/badge/Achievement-YOLO-yellow?style=for-the-badge&logo=github" alt="YOLO"/>
-  <img src="https://img.shields.io/badge/Achievement-Quickdraw-orange?style=for-the-badge&logo=github" alt="Quickdraw"/>
-</p>
+<div align="center">
+  <img src="https://img.shields.io/badge/🦈%20Pull%20Shark-GitHub%20Achievement-blueviolet?style=for-the-badge&logo=github" alt="Pull Shark"/>
+  <img src="https://img.shields.io/badge/⚡%20Quickdraw-GitHub%20Achievement-orange?style=for-the-badge&logo=github" alt="Quickdraw"/>
+  <img src="https://img.shields.io/badge/🎯%20YOLO-GitHub%20Achievement-yellow?style=for-the-badge&logo=github" alt="YOLO"/>
+  <img src="https://img.shields.io/badge/👑%20GitHub%20Pro-Premium%20Member-purple?style=for-the-badge&logo=github" alt="GitHub Pro"/>
+</div>
 
 ---
 
-## 📂 Recent & Highlighted Projects
+## 📂 Featured Projects & Portfolio
 
-
-
+### 🌟 Pinned Projects - My Best Work
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=EoinFitzsimons&show_icons=true&count_private=true&hide=prs&theme=tokyonight" alt="EoinFitzsimons's GitHub stats" width="420" />
+
+| 🎮 **Event Discovery Platform** | �️ **Rith Dearg Game** | 📊 **Data Analytics** |
+|:---:|:---:|:---:|
+| ![WhatsOn](https://img.shields.io/badge/Full--Stack-Web%20App-blue?style=for-the-badge) | ![Game](https://img.shields.io/badge/Browser-Game-green?style=for-the-badge) | ![Analytics](https://img.shields.io/badge/Data-Science-orange?style=for-the-badge) |
+| Map-based event discovery with authentication | Irish red squirrel platformer game | Premier League player statistics |
+| [🔗 View Code](https://github.com/EoinFitzsimons/Team-Project-WhatsOn) \| [🚀 Live Demo](#) | [🔗 View Code](https://github.com/EoinFitzsimons/Rith-Dearg) \| [🎮 Play Now](#) | [🔗 View Code](https://github.com/EoinFitzsimons/EPL-Players-24-25) \| [📈 View Analysis](#) |
+
 </div>
 
-### 🚀 Recent & Highlighted Projects
+### 🚀 Complete Project Portfolio
 
 | ⭐ Project | 📝 Description | 🛠️ Language | ⏰ Updated |
 |-----------|---------------|-------------|------------|
@@ -89,6 +159,44 @@
 
 ---
 
+## 📄 Professional Resources
+
+<div align="center">
+  <a href="/CV_Professional_Template.txt">
+    <img src="https://img.shields.io/badge/📋%20Download%20CV-Professional%20Template-blue?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Download CV"/>
+  </a>
+  <a href="https://eoinFitzsimons.github.io">
+    <img src="https://img.shields.io/badge/🌐%20Portfolio%20Website-Live%20Demo-green?style=for-the-badge&logo=internetexplorer&logoColor=white" alt="Portfolio Website"/>
+  </a>
+  <a href="mailto:Eoin00Fitzsimons@gmail.com">
+    <img src="https://img.shields.io/badge/📧%20Contact%20Me-Professional%20Inquiries-red?style=for-the-badge&logo=gmail&logoColor=white" alt="Contact"/>
+  </a>
+</div>
+
+---
+
+## 📊 Profile Analytics
+
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=EoinFitzsimons&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views" />
+  <img src="https://img.shields.io/github/followers/EoinFitzsimons?label=Followers&style=social" alt="GitHub Followers" />
+  <img src="https://img.shields.io/github/stars/EoinFitzsimons?label=Total%20Stars&style=social" alt="GitHub Stars" />
+</div>
+
+### 🔥 GitHub Contribution Activity
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=EoinFitzsimons&theme=tokyo-night&bg_color=1a1b27&color=70a5fd&line=bf91f3&point=38bdae&area=true&hide_border=true" alt="Contribution Graph"/>
+</div>
+
+### 🐍 Contribution Snake
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/EoinFitzsimons/EoinFitzsimons/output/github-contribution-grid-snake.svg" alt="Snake animation" />
+</div>
+
+---
+
 ## 🎯 Current Journey
 
 I'm currently taking a practical break from coding while working as an **IT Support Intern**, gaining valuable real-world experience in:
@@ -119,15 +227,24 @@ After focusing on IT support, I'm gradually returning to coding and planning to:
 - 📈 Build a portfolio that showcases both technical and practical skills
 - 🤝 Connect with the developer community again
 
-## 🛠️ Tech Stack (Refreshing & Expanding)
+## 🛠️ Tech Stack & Tools
 
+<div align="center">
+  
+  <!-- Frontend Technologies -->
+  <img src="https://skillicons.dev/icons?i=html,css,js,react,nodejs" alt="Frontend"/>
+  
+  <!-- Backend & Databases -->
+  <img src="https://skillicons.dev/icons?i=python,java,express,mysql,mongodb" alt="Backend"/>
+  
+  <!-- Tools & Platforms -->
+  <img src="https://skillicons.dev/icons?i=git,github,vscode,windows,linux" alt="Tools"/>
+  
+</div>
 
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,python,java,git,vscode,windows,linux" alt="Tech Stack"/>
-</p>
-
-*Currently refreshing these skills while gaining new perspectives from IT support work*
+<div align="center">
+  <img src="https://github-readme-tech-stack.vercel.app/api/cards?title=Currently%20Learning&fontSize=20&titleAlign=center&lineCount=2&theme=github_dark&line1=AI%2FML%2CPython%2CData%20Science%2C&line2=Advanced%20Algorithms%2CSystem%20Design%2C" alt="Learning"/>
+</div>
 
 ## 🏆 What Makes Me Different
 
@@ -141,29 +258,71 @@ After focusing on IT support, I'm gradually returning to coding and planning to:
 - [ ] Transition from IT support to software development role
 - [ ] Share knowledge gained from both coding and support perspectives
 
-## 🤝 Let's Connect!
 
-I'm always interested in connecting with fellow developers, especially those who appreciate the value of real-world IT experience!
+## 🌐 Portfolio Website
 
-
-
-<p align="center">
-  <a href="https://www.linkedin.com/in/eoin-fitzsimons/">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+<div align="center">
+  <a href="https://eoinfitzsimons.github.io/EoinFitzsimons/">
+    <img src="https://img.shields.io/badge/Visit%20My%20Portfolio-Click%20Here-blueviolet?style=for-the-badge&logo=githubpages&logoColor=white" alt="Portfolio Website"/>
   </a>
-  <a href="mailto:eoin.fitzsimons@email.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
-  </a>
-</p>
+</div>
 
 ---
 
+## 📈 Live Activity & Recent Updates
 
+### 🔄 Recent GitHub Activity
+<!--START_SECTION:activity-->
+<!--END_SECTION:activity-->
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=EoinFitzsimons&layout=compact&theme=tokyonight" alt="Top Languages"/>
-</p>
+### 📝 Latest Blog Posts & Tutorials
+<!-- BLOG-POST-LIST:START -->
+<!-- BLOG-POST-LIST:END -->
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=1A1B27&center=true&vCenter=true&width=1000&lines=Combining+hands-on+IT+experience+with+computer+science+education+to+build+practical%2C+user-focused+solutions.;Always+building+something+new!;Let%27s+make+tech+fun+and+impactful!" alt="Typing SVG"/>
-</p>
+### 🏆 GitHub Metrics Dashboard
+
+<div align="center">
+  <img src="https://metrics.lecoq.io/EoinFitzsimons?template=classic&config.timezone=Europe%2FDublin" alt="GitHub Metrics"/>
+</div>
+
+---
+
+## 🎮 Fun Facts & Easter Eggs
+
+<div align="center">
+
+### 🎯 Quick Stats About Me
+
+```text
+📍 Location:      Dublin 12, Ireland
+🎓 Study Status:  BSc Computing (Final Year 2025-2026)
+💼 Current Role:  IT Support Intern
+🎮 Projects:      25+ repositories and counting
+☕ Fuel:         Coffee and curiosity
+🏸 Sport:        Badminton (Tournament Runner-up 2018)
+🏎️ Passion:      Formula One (Belgium GP 2016 attendee)
+```
+
+### 🌟 GitHub Achievement Showcase
+
+<img src="https://github-profile-trophy.vercel.app/?username=EoinFitzsimons&theme=tokyonight&no-frame=true&column=4&margin-w=15" alt="GitHub Trophies"/>
+
+### 💭 Random Dev Quote
+
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Random Dev Quote"/>
+
+</div>
+
+---
+
+<div align="center">
+
+### 🚀 Ready to Build Something Amazing Together?
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=F7971E&center=true&vCenter=true&width=800&lines=Thanks+for+visiting+my+profile!;Let's+connect+and+build+something+amazing!;Always+learning%2C+always+coding%2C+always+growing!;Dublin+%E2%9E%A4+Computing+%E2%9E%A4+Code+%E2%9E%A4+Community" alt="Closing Message"/>
+
+**⭐ If you like my work, consider giving a star to my repositories!**
+
+<img src="https://komarev.com/ghpvc/?username=EoinFitzsimons&label=Thanks%20for%20visiting&color=blueviolet&style=for-the-badge" alt="Profile Views" />
+
+</div>
