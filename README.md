@@ -297,7 +297,6 @@ After focusing on IT support, I'm gradually returning to coding and planning to:
 🎓 Study Status:  BSc Computing (Final Year 2025-2026)
 💼 Current Role:  IT Support Intern
 🎮 Projects:      25+ repositories and counting
-☕ Fuel:         Coffee and curiosity
 🏸 Sport:        Badminton (Tournament Runner-up 2018)
 🏎️ Passion:      Formula One (Belgium GP 2016 attendee)
 ```
@@ -305,10 +304,6 @@ After focusing on IT support, I'm gradually returning to coding and planning to:
 ### 🌟 GitHub Achievement Showcase
 
 <img src="https://github-profile-trophy.vercel.app/?username=EoinFitzsimons&theme=tokyonight&no-frame=true&column=4&margin-w=15" alt="GitHub Trophies"/>
-
-### 💭 Random Dev Quote
-
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Random Dev Quote"/>
 
 </div>
 
