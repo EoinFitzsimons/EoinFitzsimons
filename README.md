@@ -104,57 +104,9 @@
 
 </td>
 </tr>
-</table>.com?font=Fira+Code&size=40&duration=2000&pause=500&color=F7971E&center=true&vCenter=true&width=1000&lines=%F0%9F%91%8B+Hey+there!+I'm+Eoin+Fitzsimons;he%2Fhim+%7C+Level+8+Computing+Student;IT+Support+Intern+%7C+Aspiring+Dev;Welcome+to+my+animated+GitHub+profile!" alt="Typing SVG"/>
-</p>
-
-<p align="center">
-  <img src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="200" alt="Fancy Animated GIF"/>
-</p>
-
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Year-Preparing%20for%204th%20Year-blue?style=for-the-badge&logo=calendar&logoColor=white" alt="Academic Year"/>
-  <img src="https://img.shields.io/badge/Institution-NCI-green?style=for-the-badge&logo=google-scholar&logoColor=white" alt="NCI"/>
-  <img src="https://img.shields.io/badge/Status-IT%20Support%20Intern-orange?style=for-the-badge&logo=windows&logoColor=white" alt="Current Role"/>
-</p>
-
-## 📊 GitHub Analytics Dashboard
-
-<div align="center">
-  
-  <!-- Main Stats Row -->
-  <img src="https://github-readme-stats.vercel.app/api?username=EoinFitzsimons&show_icons=true&theme=tokyonight&count_private=true&hide_border=true&bg_color=0D1117&title_color=F7971E&icon_color=79FF97&text_color=FFF&border_radius=10" alt="GitHub Stats" height="200"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=EoinFitzsimons&theme=tokyonight&hide_border=true&background=0D1117&stroke=F7971E&ring=F7971E&fire=79FF97&currStreakLabel=FFF&sideNums=FFF&currStreakNum=F7971E&dates=8B949E&sideLabels=8B949E" alt="GitHub Streak" height="200"/>
-  
-</div>
-
-<div align="center">
-  
-  <!-- Languages & Activity Row -->
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=EoinFitzsimons&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=F7971E&text_color=FFF&border_radius=10" alt="Top Languages" height="180"/>
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=EoinFitzsimons&theme=tokyo-night&bg_color=0D1117&color=F7971E&line=79FF97&point=F7971E&area=true&hide_border=true&border_radius=10" alt="Activity Graph" height="180"/>
-  
-</div>
-
-<div align="center">
-  
-  <!-- Achievements & Trophies -->
-  <img src="https://github-profile-trophy.vercel.app/?username=EoinFitzsimons&theme=dark_lover&no-frame=true&column=4&margin-w=15&margin-h=15&title=Commits,Repositories,Stars,Followers" alt="GitHub Trophies"/>
-  
-</div>
-
-## 🏅 Special Achievements
-
-<div align="center">
-  <img src="https://img.shields.io/badge/🦈%20Pull%20Shark-GitHub%20Achievement-blueviolet?style=for-the-badge&logo=github" alt="Pull Shark"/>
-  <img src="https://img.shields.io/badge/⚡%20Quickdraw-GitHub%20Achievement-orange?style=for-the-badge&logo=github" alt="Quickdraw"/>
-  <img src="https://img.shields.io/badge/🎯%20YOLO-GitHub%20Achievement-yellow?style=for-the-badge&logo=github" alt="YOLO"/>
-  <img src="https://img.shields.io/badge/👑%20GitHub%20Pro-Premium%20Member-purple?style=for-the-badge&logo=github" alt="GitHub Pro"/>
-</div>
+</table>
 
 ---
-
-## 📂 Featured Projects & Portfolio
 
 ### 🌟 Pinned Projects - My Best Work
 
