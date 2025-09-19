@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=40&duration=2000&pause=500&color=F7971E&center=true&vCenter=true&width=1000&lines=%F0%9F%91%8B+Hey+there!+I'm+Eoin+Fitzsimons;he%2Fhim+%7C+Level+8+Computing+Student;IT+Support+Intern+%7C+Aspiring+Dev;Welcome+to+my+animated+GitHub+profile!" alt="Typing SVG"/>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=40&duration=2000&pause=500&color=F7971E&center=true&vCenter=true&width=1000&lines=%F0%9F%91%8B+Hey+there!+I'm+Eoin+Fitzsimons;he%2Fhim+%7C+Level+8+Computing+Student;Final+Year+Student+%7C+Aspiring+Developer;Welcome+to+my+animated+GitHub+profile!" alt="Typing SVG"/>
 </p>
 
 <p align="center">
@@ -8,9 +8,9 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Year-Preparing%20for%204th%20Year-blue?style=for-the-badge&logo=calendar&logoColor=white" alt="Academic Year"/>
+  <img src="https://img.shields.io/badge/Year-Final%20Year%20(4th)-blue?style=for-the-badge&logo=calendar&logoColor=white" alt="Academic Year"/>
   <img src="https://img.shields.io/badge/Institution-NCI-green?style=for-the-badge&logo=google-scholar&logoColor=white" alt="NCI"/>
-  <img src="https://img.shields.io/badge/Status-IT%20Support%20Intern-orange?style=for-the-badge&logo=windows&logoColor=white" alt="Current Role"/>
+  <img src="https://img.shields.io/badge/Status-Computing%20Student-orange?style=for-the-badge&logo=graduationcap&logoColor=white" alt="Current Role"/>
 </p>
 
 ## 📊 GitHub Analytics Dashboard
@@ -19,7 +19,7 @@
   
   <!-- Main Stats Row -->
   <img src="https://github-readme-stats.vercel.app/api?username=EoinFitzsimons&show_icons=true&theme=tokyonight&count_private=true&hide_border=true&bg_color=0D1117&title_color=F7971E&icon_color=79FF97&text_color=FFF&border_radius=10" alt="GitHub Stats" height="200"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=EoinFitzsimons&theme=tokyonight&hide_border=true&background=0D1117&stroke=F7971E&ring=F7971E&fire=79FF97&currStreakLabel=FFF&sideNums=FFF&currStreakNum=F7971E&dates=8B949E&sideLabels=8B949E" alt="GitHub Streak" height="200"/>
+  <img src="https://streak-stats.demolab.com/?user=EoinFitzsimons&theme=tokyonight&hide_border=true&background=0D1117&stroke=F7971E&ring=F7971E&fire=79FF97&currStreakLabel=FFF&sideNums=FFF&currStreakNum=F7971E&dates=8B949E&sideLabels=8B949E" alt="GitHub Streak" height="200"/>
   
 </div>
 
@@ -27,7 +27,7 @@
   
   <!-- Languages & Activity Row -->
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=EoinFitzsimons&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=F7971E&text_color=FFF&border_radius=10" alt="Top Languages" height="180"/>
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=EoinFitzsimons&theme=tokyo-night&bg_color=0D1117&color=F7971E&line=79FF97&point=F7971E&area=true&hide_border=true&border_radius=10" alt="Activity Graph" height="180"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=EoinFitzsimons&bg_color=0d1117&color=f7971e&line=79ff97&point=f7971e&area=true&hide_border=true" alt="Activity Graph" height="180"/>
   
 </div>
 
@@ -185,46 +185,46 @@
 ### 🔥 GitHub Contribution Activity
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=EoinFitzsimons&theme=tokyo-night&bg_color=1a1b27&color=70a5fd&line=bf91f3&point=38bdae&area=true&hide_border=true" alt="Contribution Graph"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=EoinFitzsimons&bg_color=0d1117&color=f7971e&line=79ff97&point=f7971e&area=true&hide_border=true" alt="Contribution Graph"/>
 </div>
 
 ### 🐍 Contribution Snake
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/EoinFitzsimons/EoinFitzsimons/output/github-contribution-grid-snake.svg" alt="Snake animation" />
+  <img src="https://raw.githubusercontent.com/EoinFitzsimons/EoinFitzsimons/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
 </div>
 
 ---
 
 ## 🎯 Current Journey
 
-I'm currently taking a practical break from coding while working as an **IT Support Intern**, gaining valuable real-world experience in:
+I've recently completed my **IT Support Internship** and am now in my **final year of Computing at NCI**! The internship gave me valuable real-world experience in:
 - 🛠️ Technical troubleshooting and problem-solving
 - 👥 Customer service and communication
 - 🔧 Hardware and software support
 - 📋 IT infrastructure understanding
 
-This hands-on experience is preparing me for my **fourth year of Computing at NCI** where I'll be diving back into development with renewed perspective and practical IT knowledge.
+This hands-on experience has prepared me well for my **fourth year of Computing** where I'm now applying both theoretical knowledge and practical IT experience to advanced development projects.
 
 ---
 
-## 🎓 Education & Preparation
+## 🎓 Education & Current Status
 
 **National College of Ireland (NCI)** - Level 8 Computing Degree
-- Studying Java, Python, Web App Development
-- 📚 Preparing for fourth year (2025-2026)
-- 🧠 Building on foundations in programming, algorithms, and software engineering
-- 🎯 Planning to specialize in areas that combine my IT support experience with development skills
+- Currently in my **final year (2024-2025)**
+- 📚 Studying advanced topics in Java, Python, Web App Development
+- 🧠 Building on strong foundations in programming, algorithms, and software engineering
+- 🎯 Combining theoretical knowledge with real-world IT support experience
 
 ---
 
-## 🔄 Getting Back Into Code
+## � Back to Active Development
 
-After focusing on IT support, I'm gradually returning to coding and planning to:
-- 🔄 Refresh my programming skills
-- 🚀 Work on projects that bridge IT support and development
-- 📈 Build a portfolio that showcases both technical and practical skills
-- 🤝 Connect with the developer community again
+Having completed my IT support internship, I'm now fully immersed in my final year studies and actively coding again:
+- 🔄 Applying both academic learning and practical IT experience
+- 🚀 Working on advanced projects that bridge theory and real-world applications
+- 📈 Building a comprehensive portfolio showcasing both technical and practical skills
+- 🤝 Actively engaging with the developer community and contributing to projects
 
 ## 🛠️ Tech Stack & Tools
 
@@ -249,13 +249,14 @@ After focusing on IT support, I'm gradually returning to coding and planning to:
 
 **Real-world IT Experience**: My internship in IT support gives me a unique perspective on how technology actually works in business environments, not just in development theory.
 
-## 🎯 2025 Goals
+## 🎯 Final Year Goals (2024-2025)
 
-- [ ] Successfully complete fourth year at NCI
-- [ ] Build projects that solve real IT problems I've encountered
+- [ ] Successfully complete my final year at NCI with distinction
+- [ ] Complete capstone project combining development and IT operations knowledge
+- [ ] Build portfolio projects that demonstrate full-stack capabilities
 - [ ] Contribute to open-source projects
-- [ ] Transition from IT support to software development role
-- [ ] Share knowledge gained from both coding and support perspectives
+- [ ] Secure a graduate software development role
+- [ ] Share knowledge gained from both academic and practical IT experience
 
 
 ## 🌐 Portfolio Website
@@ -281,7 +282,7 @@ After focusing on IT support, I'm gradually returning to coding and planning to:
 ### 🏆 GitHub Metrics Dashboard
 
 <div align="center">
-  <img src="https://metrics.lecoq.io/EoinFitzsimons?template=classic&config.timezone=Europe%2FDublin" alt="GitHub Metrics"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=EoinFitzsimons&theme=github_dark" alt="GitHub Profile Summary"/>
 </div>
 
 ---
@@ -294,8 +295,8 @@ After focusing on IT support, I'm gradually returning to coding and planning to:
 
 ```text
 📍 Location:      Dublin 12, Ireland
-🎓 Study Status:  BSc Computing (Final Year 2025-2026)
-💼 Current Role:  IT Support Intern
+🎓 Study Status:  BSc Computing (Final Year 2024-2025)
+💼 Recent Role:   IT Support Intern (Completed)
 🎮 Projects:      25+ repositories and counting
 🏸 Sport:        Badminton (Tournament Runner-up 2018)
 🏎️ Passion:      Formula One (Belgium GP 2016 attendee)
