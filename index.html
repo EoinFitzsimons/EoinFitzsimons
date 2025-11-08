@@ -2,13 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="dark light" />
-    <title>Eoin Fitzsimons — CV & Games</title>
+    <meta name="theme-color" content="#8b7dff" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#6e56cf" media="(prefers-color-scheme: light)" />
+    <title>Eoin Fitzsimons — CV & Games | Computing Student & Developer</title>
     <meta
       name="description"
-      content="The CV, projects, and playable browser game demos by Eoin Fitzsimons (Dublin 12)."
+      content="Portfolio of Eoin Fitzsimons: Computing student, full-stack developer & game creator. View playable browser games, projects & CV. Dublin, Ireland."
     />
+    <meta name="keywords" content="Eoin Fitzsimons, portfolio, web developer, game developer, JavaScript, Python, full-stack, Dublin, computing student" />
 
     <!-- Open Graph / Twitter -->
     <meta property="og:title" content="Eoin Fitzsimons — CV & Games" />
@@ -25,12 +28,19 @@
     <!-- Optional: add a generated preview image -->
     <meta name="twitter:card" content="summary_large_image" />
 
+    <!-- Performance optimizations -->
+    <link rel="dns-prefetch" href="https://github.com" />
+    <link rel="dns-prefetch" href="https://eoinfitzsimons.github.io" />
+    <link rel="preconnect" href="https://github.com" crossorigin />
+    <link rel="canonical" href="https://eoinfitzsimons.github.io/EoinFitzsimons/" />
+
     <link
       rel="icon"
       href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E🎮%3C/text%3E%3C/svg%3E"
     />
     <link rel="preload" href="site.css" as="style" />
     <link rel="stylesheet" href="site.css" />
+    <link rel="preload" href="site.js" as="script" />
 
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -38,15 +48,51 @@
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Eoin Fitzsimons",
-        "jobTitle": "Intern",
-        "homeLocation": "Dublin 12, Ireland",
-        "url": "https://example.com",
-        "email": "mailto:Eoin00Fitzsimons@gmail.com",
-        "image": "assets/og-image.png",
+        "jobTitle": "Computing Student & Intern",
+        "homeLocation": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Dublin 12",
+            "addressCountry": "Ireland"
+          }
+        },
+        "url": "https://eoinfitzsimons.github.io/EoinFitzsimons/",
+        "email": "Eoin00Fitzsimons@gmail.com",
+        "telephone": "+353-89-460-1090",
+        "image": "https://eoinfitzsimons.github.io/EoinFitzsimons/assets/og-image.png",
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "National College of Ireland"
+        },
+        "knowsAbout": [
+          "JavaScript",
+          "TypeScript",
+          "Python",
+          "HTML",
+          "CSS",
+          "SQL",
+          "Full-Stack Development",
+          "Game Development"
+        ],
         "sameAs": [
           "https://www.linkedin.com/in/eoinfitzsimons-/",
           "https://github.com/EoinFitzsimons"
         ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Eoin Fitzsimons Portfolio",
+        "description": "Portfolio website showcasing projects, games, and professional experience",
+        "url": "https://eoinfitzsimons.github.io/EoinFitzsimons/",
+        "author": {
+          "@type": "Person",
+          "name": "Eoin Fitzsimons"
+        },
+        "inLanguage": "en-IE"
       }
     </script>
   </head>
@@ -163,6 +209,9 @@
             class="avatar-photo"
             src="assets/avatar.jpg"
             alt="Eoin Fitzsimons"
+            loading="eager"
+            width="350"
+            height="350"
           />
         </div>
       </section>
@@ -410,6 +459,9 @@
               class="thumb"
               src="assets/project-cover.png"
               alt="Project cover background"
+              loading="lazy"
+              width="540"
+              height="180"
             />
             <div class="content">
               <h3 class="project-title">Map‑Based Event Discovery</h3>

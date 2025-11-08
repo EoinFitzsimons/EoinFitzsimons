@@ -32,7 +32,7 @@ function trapFocus(container) {
   const els = tabbables(container);
   if (!els.length) return () => {};
   const first = els[0],
-    last = els[els.length - 1];
+    last = els.at(-1);
   function onKey(e) {
     if (e.key !== "Tab") return;
     if (e.shiftKey && document.activeElement === first) {
@@ -62,7 +62,7 @@ function trapFocus(container) {
 
 // ===== Header actions =====
 (function () {
-  $("#printBtn")?.addEventListener("click", () => window.print());
+  $("#printBtn")?.addEventListener("click", () => globalThis.print());
 })();
 
 // ===== Mobile menu =====
@@ -137,30 +137,32 @@ function trapFocus(container) {
   const mapList = allNavs.map((nav) => {
     const m = {};
     if (!nav) return m;
-    $$('a[href^="#"]', nav).forEach((a) => {
+    for (const a of $$('a[href^="#"]', nav)) {
       m[a.getAttribute("href").slice(1)] = a;
-    });
+    }
     return m;
   });
   function mark(id) {
-    mapList.forEach((m) => {
-      if (!m) return;
-      Object.values(m).forEach((a) => a?.removeAttribute("aria-current"));
+    for (const m of mapList) {
+      if (!m) continue;
+      for (const a of Object.values(m)) {
+        a?.removeAttribute("aria-current");
+      }
       const a = m[id];
       if (a) a.setAttribute("aria-current", "page");
-    });
+    }
   }
-  if ("IntersectionObserver" in window) {
+  if ("IntersectionObserver" in globalThis) {
     const io = new IntersectionObserver(
       (entries) => {
         let mostVisible = null;
         let maxRatio = 0;
-        entries.forEach((e) => {
+        for (const e of entries) {
           if (e.intersectionRatio > maxRatio) {
             maxRatio = e.intersectionRatio;
             mostVisible = e;
           }
-        });
+        }
         if (mostVisible?.isIntersecting) mark(mostVisible.target.id);
       },
       {
@@ -168,10 +170,10 @@ function trapFocus(container) {
         threshold: Array.from({ length: 21 }, (_, i) => i / 20),
       }
     );
-    sectionIds.forEach((id) => {
+    for (const id of sectionIds) {
       const el = document.getElementById(id);
-      el && io.observe(el);
-    });
+      if (el) io.observe(el);
+    }
   }
 })();
 
@@ -188,6 +190,86 @@ function trapFocus(container) {
     copy("Eoin00Fitzsimons@gmail.com")
   );
   $("#year").textContent = new Date().getFullYear();
+})();
+
+// ===== Animate skill bars on scroll =====
+(function () {
+  if ("IntersectionObserver" in globalThis) {
+    const skillsSection = $("#skills");
+    if (!skillsSection) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            const skills = $$(".skill", skillsSection);
+            for (const skill of skills) {
+              skill.classList.add("animated");
+            }
+            observer.disconnect();
+          }
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    observer.observe(skillsSection);
+  }
+})();
+
+// ===== Scroll to top button =====
+(function () {
+  const scrollBtn = document.createElement("button");
+  scrollBtn.className = "scroll-to-top";
+  scrollBtn.setAttribute("aria-label", "Scroll to top");
+  scrollBtn.innerHTML = "↑";
+  scrollBtn.style.cssText = `
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    color: #0b0b12;
+    border: none;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.2s ease;
+    z-index: 999;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  `;
+
+  document.body.appendChild(scrollBtn);
+
+  function toggleScrollBtn() {
+    const scrollY = globalThis.scrollY || globalThis.pageYOffset || 0;
+    if (scrollY > 400) {
+      scrollBtn.style.opacity = "1";
+      scrollBtn.style.visibility = "visible";
+    } else {
+      scrollBtn.style.opacity = "0";
+      scrollBtn.style.visibility = "hidden";
+    }
+  }
+
+  scrollBtn.addEventListener("click", () => {
+    globalThis.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  scrollBtn.addEventListener("mouseenter", () => {
+    scrollBtn.style.transform = "translateY(-4px)";
+  });
+
+  scrollBtn.addEventListener("mouseleave", () => {
+    scrollBtn.style.transform = "translateY(0)";
+  });
+
+  globalThis.addEventListener("scroll", toggleScrollBtn, { passive: true });
+  toggleScrollBtn();
 })();
 
 // ===== Games: data + cards + modal =====
@@ -250,14 +332,14 @@ function trapFocus(container) {
     return span;
   }
 
-  games.forEach((g) => {
+  for (const g of games) {
     const card = document.createElement("article");
     card.className = "game";
     card.innerHTML = `
       <div class="stage" role="img" aria-label="Game preview background">
         <img class="game-thumb" src="${pagesUrl(g.repo)}thumbnail.png" alt="${
       g.title
-    } thumbnail" onerror="this.style.display='none'">
+    } thumbnail" loading="lazy" onerror="this.style.display='none'">
       </div>
       <div class="content">
         <h3 style="margin:0">${g.title}</h3>
@@ -279,10 +361,12 @@ function trapFocus(container) {
     const techRow = document.createElement("div");
     techRow.className = "meta";
     techRow.style.marginTop = ".4rem";
-    g.tech.forEach((t) => techRow.appendChild(chip(t)));
+    for (const t of g.tech) {
+      techRow.appendChild(chip(t));
+    }
     card.querySelector(".content").appendChild(techRow);
     gamesGrid.appendChild(card);
-  });
+  }
 
   // Modal controls with focus trap & inert background
   const modal = $("#playModal");
@@ -297,8 +381,8 @@ function trapFocus(container) {
     lastFocus = null;
 
   function setBackgroundInert(on) {
-    [main, header, footer].forEach((el) => {
-      if (!el) return;
+    for (const el of [main, header, footer]) {
+      if (!el) continue;
       if (on) {
         el.setAttribute("aria-hidden", "true");
         el.inert = true;
@@ -310,12 +394,12 @@ function trapFocus(container) {
           console.error("Failed to set inert property:", e);
         }
       }
-    });
+    }
   }
 
   function openModal(title, url, fallback) {
     lastFocus = document.activeElement;
-    modalTitle.textContent = title;
+    modalTitle.textContent = `${title} - Loading...`;
     frame.setAttribute("loading", "lazy");
     frame.removeAttribute("sandbox");
     frame.setAttribute("referrerpolicy", "no-referrer");
@@ -328,11 +412,39 @@ function trapFocus(container) {
     releaseTrap = trapFocus(modal);
     closeModal.focus();
 
+    // Show loading indicator
+    const loadingDiv = document.createElement("div");
+    loadingDiv.className = "game-loading";
+    loadingDiv.textContent = "Loading game...";
+    loadingDiv.style.cssText = `
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: var(--text);
+      font-size: 1.2rem;
+      z-index: 1;
+    `;
+    $("#modalTitle").parentElement.parentElement.appendChild(loadingDiv);
+
+    frame.addEventListener("load", () => {
+      modalTitle.textContent = title;
+      const loader = $(".game-loading");
+      if (loader) loader.remove();
+    }, { once: true });
+
+    frame.addEventListener("error", () => {
+      modalTitle.textContent = `${title} - Error loading, trying fallback...`;
+      frame.src = fallback;
+      openNewTab.href = fallback;
+    }, { once: true });
+
     setTimeout(() => {
       try {
         if (!frame.contentWindow) {
           frame.src = fallback;
           openNewTab.href = fallback;
+          modalTitle.textContent = `${title} - Using fallback`;
         }
       } catch (e) {
         console.warn(
@@ -356,11 +468,9 @@ function trapFocus(container) {
   document.addEventListener("click", (e) => {
     const btn = e.target.closest(".play-btn");
     if (btn) {
-      const title = btn.getAttribute("data-title");
-      const url = btn.getAttribute("data-url");
-      const fallback = btn.getAttribute("data-fallback");
-      if (window.matchMedia("(max-width: 860px)").matches) {
-        window.open(url, "_blank", "noopener");
+      const { title, url, fallback } = btn.dataset;
+      if (globalThis.matchMedia("(max-width: 860px)").matches) {
+        globalThis.open(url, "_blank", "noopener");
       } else {
         openModal(title, url, fallback);
       }
