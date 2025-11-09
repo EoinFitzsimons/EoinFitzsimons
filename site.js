@@ -192,27 +192,11 @@ function trapFocus(container) {
   $("#year").textContent = new Date().getFullYear();
 })();
 
-// ===== Animate skill bars on scroll with percentage counter =====
+// ===== Animate skill bars on scroll =====
 (function () {
   if ("IntersectionObserver" in globalThis) {
     const skillsSection = $("#skills");
     if (!skillsSection) return;
-
-    function animateCounter(element, target, duration = 1500) {
-      const start = 0;
-      const increment = target / (duration / 16);
-      let current = start;
-
-      const timer = setInterval(() => {
-        current += increment;
-        if (current >= target) {
-          element.textContent = `${target}%`;
-          clearInterval(timer);
-        } else {
-          element.textContent = `${Math.floor(current)}%`;
-        }
-      }, 16);
-    }
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -222,15 +206,12 @@ function trapFocus(container) {
             for (const skill of skills) {
               skill.classList.add("animated");
               
-              // Animate percentage counter
-              const percentageEl = skill.querySelector(".skill-percentage");
-              if (percentageEl) {
-                const targetPercent = Number.parseInt(percentageEl.dataset.percent, 10);
-                const delay = Number.parseFloat(globalThis.getComputedStyle(percentageEl).animationDelay) || 0;
-                
-                setTimeout(() => {
-                  animateCounter(percentageEl, targetPercent);
-                }, delay * 1000);
+              // Animate the skill bar fill
+              const targetPercent = Number.parseInt(skill.dataset.percent, 10);
+              const fillEl = skill.querySelector(".fill");
+              
+              if (fillEl && targetPercent) {
+                fillEl.style.width = targetPercent + "%";
               }
             }
             observer.disconnect();

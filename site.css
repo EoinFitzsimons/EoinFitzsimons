@@ -19,15 +19,11 @@
   }
 }
 .card {
-  background: linear-gradient(
-    180deg,
-    var(--surface-2),
-    rgba(255, 255, 255, 0.02)
-  );
+  background: linear-gradient(180deg, var(--surface-2), var(--surface-1));
   border: 1px solid var(--border-1);
   border-radius: 14px;
   padding: 1.2rem 1.5rem;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+  box-shadow: var(--shadow-sm);
   box-sizing: border-box;
   width: 100%;
   min-width: 0;
@@ -38,7 +34,7 @@
 
 .card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.18);
+  box-shadow: var(--shadow-md);
 }
 
 .games {
@@ -60,27 +56,23 @@
   display: flex;
   flex-direction: column;
   min-width: 0;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+  box-shadow: var(--shadow-sm);
   margin: 0;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .game:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow-md);
 }
 .game .stage {
-  background: linear-gradient(
-    135deg,
-    rgba(110, 86, 207, 0.18),
-    rgba(14, 165, 233, 0.12)
-  );
+  background: linear-gradient(135deg, rgba(110, 86, 207, 0.18), rgba(14, 165, 233, 0.12));
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 180px;
-  color: #0b0b12;
+  color: var(--black);
   font-weight: 800;
   overflow: hidden;
 }
@@ -185,34 +177,28 @@
 }
 
 /* Staggered animation delays for each skill */
-.skill:nth-child(1) .fill,
-.skill:nth-child(1) .skill-percentage {
-  animation-delay: 0.1s;
+.skill:nth-child(1) .fill {
+  transition-delay: 0.1s;
 }
 
-.skill:nth-child(2) .fill,
-.skill:nth-child(2) .skill-percentage {
-  animation-delay: 0.25s;
+.skill:nth-child(2) .fill {
+  transition-delay: 0.25s;
 }
 
-.skill:nth-child(3) .fill,
-.skill:nth-child(3) .skill-percentage {
-  animation-delay: 0.4s;
+.skill:nth-child(3) .fill {
+  transition-delay: 0.4s;
 }
 
-.skill:nth-child(4) .fill,
-.skill:nth-child(4) .skill-percentage {
-  animation-delay: 0.55s;
+.skill:nth-child(4) .fill {
+  transition-delay: 0.55s;
 }
 
-.skill:nth-child(5) .fill,
-.skill:nth-child(5) .skill-percentage {
-  animation-delay: 0.7s;
+.skill:nth-child(5) .fill {
+  transition-delay: 0.7s;
 }
 
-.skill:nth-child(6) .fill,
-.skill:nth-child(6) .skill-percentage {
-  animation-delay: 0.85s;
+.skill:nth-child(6) .fill {
+  transition-delay: 0.85s;
 }
 /* Skill bar fill colors */
 /* Project section title and description spacing */
@@ -279,22 +265,48 @@
 
 /* ===== Design Tokens ===== */
 :root {
+  /* Base colors */
   --bg: #0b1020;
   --text: #e7e8ee;
+  --text-muted: #b7b9c8;
   --muted: #b7b9c8;
+  
+  /* Accent colors */
   --accent: #8b7dff;
   --accent-2: #61dafb;
+  
+  /* Surface colors */
   --surface-1: rgba(255, 255, 255, 0.06);
   --surface-2: rgba(255, 255, 255, 0.08);
+  --surface-3: rgba(255, 255, 255, 0.1);
+  
+  /* Border colors */
   --border-weak: rgba(255, 255, 255, 0.1);
   --border-1: rgba(255, 255, 255, 0.12);
   --border-2: rgba(255, 255, 255, 0.14);
-  --ring: 0 0 0 2px rgba(139, 125, 255, 0.45),
-    0 10px 30px -10px rgba(97, 218, 251, 0.35);
+  
+  /* Skill bar colors */
+  --skill-js: #f0db4f;
+  --skill-html: #e34c26;
+  --skill-python: #4584b6;
+  --skill-java: #0091bd;
+  --skill-sql: #00758f;
+  --skill-git: #f05032;
+  
+  /* Shadow and effects */
+  --ring: 0 0 0 2px rgba(139, 125, 255, 0.45), 0 10px 30px -10px rgba(97, 218, 251, 0.35);
+  --shadow-sm: 0 2px 12px rgba(0, 0, 0, 0.12);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.18);
+  --shadow-lg: 0 20px 60px -20px rgba(0, 0, 0, 0.65), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  --shadow-inset: inset 0 2px 8px rgba(0, 0, 0, 0.3);
+  
+  /* Spacing */
   --radius: 16px;
-  --shadow-lg: 0 20px 60px -20px rgba(0, 0, 0, 0.65),
-    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  --radius-sm: 10px;
+  --radius-lg: 18px;
   --grid-gap: 1rem;
+  
+  /* Component colors */
   --badge-bg: rgba(139, 125, 255, 0.12);
   --badge-border: rgba(139, 125, 255, 0.35);
   --badge-text: #d9d5ff;
@@ -307,20 +319,29 @@
   --pill-bg: var(--surface-1);
   --pill-border: var(--border-1);
   --pill-text: var(--text);
+  
+  /* Utility colors */
+  --black: #0b0b12;
+  --white: #ffffff;
+  --overlay: rgba(0, 0, 0, 0.6);
 }
 .theme-light {
   --bg: #f7f7fb;
   --text: #1a1b22;
+  --text-muted: #535667;
   --muted: #535667;
   --accent: #6e56cf;
   --accent-2: #0ea5e9;
   --surface-1: rgba(0, 0, 0, 0.04);
   --surface-2: rgba(0, 0, 0, 0.06);
+  --surface-3: rgba(0, 0, 0, 0.08);
   --border-weak: rgba(0, 0, 0, 0.1);
   --border-1: rgba(0, 0, 0, 0.12);
   --border-2: rgba(0, 0, 0, 0.14);
-  --ring: 0 0 0 2px rgba(110, 86, 207, 0.35),
-    0 10px 30px -10px rgba(14, 165, 233, 0.25);
+  --ring: 0 0 0 2px rgba(110, 86, 207, 0.35), 0 10px 30px -10px rgba(14, 165, 233, 0.25);
+  --shadow-sm: 0 2px 12px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.12);
+  --shadow-inset: inset 0 2px 8px rgba(0, 0, 0, 0.15);
   --badge-bg: rgba(110, 86, 207, 0.16);
   --badge-border: rgba(110, 86, 207, 0.4);
   --badge-text: #2b2460;
@@ -329,6 +350,9 @@
   --tag-bg: rgba(0, 0, 0, 0.035);
   --tag-text: #2f3140;
   --pill-bg: rgba(0, 0, 0, 0.045);
+  --black: #000000;
+  --white: #ffffff;
+  --overlay: rgba(0, 0, 0, 0.4);
 }
 
 /* ===== Base ===== */
@@ -783,27 +807,8 @@ section {
 }
 
 .skill strong {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   font-size: 0.95rem;
-}
-
-.skill-percentage {
-  font-size: 1.1rem;
-  font-weight: 700;
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  opacity: 0;
-  transform: scale(0.8);
-  transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-.skill.animated .skill-percentage {
-  opacity: 1;
-  transform: scale(1);
+  display: block;
 }
 
 .skill .bar {
@@ -813,7 +818,7 @@ section {
   overflow: visible;
   position: relative;
   border: 1px solid var(--border-weak);
-  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--shadow-inset);
 }
 
 .skill .fill {
@@ -825,7 +830,7 @@ section {
   transition: width 1.5s cubic-bezier(0.2, 0.65, 0.25, 1);
   box-shadow: 
     0 0 20px -5px currentColor,
-    0 4px 12px -4px rgba(0, 0, 0, 0.4),
+    var(--shadow-sm),
     inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
@@ -839,7 +844,7 @@ section {
   border-radius: 999px;
   background: linear-gradient(90deg, 
     transparent 0%, 
-    rgba(255, 255, 255, 0.4) 50%, 
+    var(--surface-3) 50%, 
     transparent 100%);
   opacity: 0;
   animation: shimmer 2.5s infinite;
@@ -852,7 +857,7 @@ section {
   right: -6px;
   width: 12px;
   height: 12px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.9), transparent);
+  background: radial-gradient(circle, var(--white) 0%, transparent 70%);
   border-radius: 50%;
   transform: translateY(-50%);
   opacity: 0;
@@ -860,19 +865,9 @@ section {
   box-shadow: 0 0 10px 2px currentColor;
 }
 
-.skill.animated .fill {
-  animation: fillBar 1.5s cubic-bezier(0.2, 0.65, 0.25, 1) forwards;
-}
-
 .skill.animated .fill::after {
   opacity: 1;
   animation: pulse 2s ease-in-out infinite;
-}
-
-@keyframes fillBar {
-  from {
-    width: 0%;
-  }
 }
 
 @keyframes shimmer {
@@ -1002,7 +997,7 @@ section {
 .modal {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: var(--overlay);
   display: none;
   align-items: center;
   justify-content: center;
@@ -1065,11 +1060,7 @@ section {
 }
 
 .contact-card {
-  background: linear-gradient(
-    180deg,
-    var(--surface-2),
-    rgba(255, 255, 255, 0.02)
-  );
+  background: linear-gradient(180deg, var(--surface-2), var(--surface-1));
   border: 1px solid var(--border-1);
   border-radius: 16px;
   padding: 2rem 1.5rem;
@@ -1093,7 +1084,7 @@ section {
 
 .contact-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow-md);
   border-color: var(--accent);
 }
 
