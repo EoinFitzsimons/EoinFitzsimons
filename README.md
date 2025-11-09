@@ -1,4 +1,3 @@
-
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=40&duration=2000&pause=500&color=F7971E&center=true&vCenter=true&width=1000&lines=%F0%9F%91%8B+Hey+there!+I'm+Eoin+Fitzsimons;he%2Fhim+%7C+Level+8+Computing+Student;Final+Year+Student+%7C+Aspiring+Developer;Welcome+to+my+animated+GitHub+profile!" alt="Typing SVG"/>
 </p>
@@ -16,26 +15,29 @@
 ## 📊 GitHub Analytics Dashboard
 
 <div align="center">
-  
-  <!-- Main Stats Row -->
-  <img src="https://github-readme-stats.vercel.app/api?username=EoinFitzsimons&show_icons=true&theme=tokyonight&count_private=true&hide_border=true&bg_color=0D1117&title_color=F7971E&icon_color=79FF97&text_color=FFF&border_radius=10" alt="GitHub Stats" height="200"/>
+
+<!-- Main Stats Row -->
+
+<img src="https://github-readme-stats.vercel.app/api?username=EoinFitzsimons&show_icons=true&theme=tokyonight&count_private=true&hide_border=true&bg_color=0D1117&title_color=F7971E&icon_color=79FF97&text_color=FFF&border_radius=10" alt="GitHub Stats" height="200"/>
   <img src="https://streak-stats.demolab.com/?user=EoinFitzsimons&theme=tokyonight&hide_border=true&background=0D1117&stroke=F7971E&ring=F7971E&fire=79FF97&currStreakLabel=FFF&sideNums=FFF&currStreakNum=F7971E&dates=8B949E&sideLabels=8B949E" alt="GitHub Streak" height="200"/>
-  
+
 </div>
 
 <div align="center">
-  
-  <!-- Languages & Activity Row -->
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=EoinFitzsimons&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=F7971E&text_color=FFF&border_radius=10" alt="Top Languages" height="180"/>
+
+<!-- Languages & Activity Row -->
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=EoinFitzsimons&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=F7971E&text_color=FFF&border_radius=10" alt="Top Languages" height="180"/>
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=EoinFitzsimons&bg_color=0d1117&color=f7971e&line=79ff97&point=f7971e&area=true&hide_border=true" alt="Activity Graph" height="180"/>
-  
+
 </div>
 
 <div align="center">
-  
-  <!-- Achievements & Trophies -->
-  <img src="https://github-profile-trophy.vercel.app/?username=EoinFitzsimons&theme=dark_lover&no-frame=true&column=4&margin-w=15&margin-h=15&title=Commits,Repositories,Stars,Followers" alt="GitHub Trophies"/>
-  
+
+<!-- Achievements & Trophies -->
+
+<img src="https://github-profile-trophy.vercel.app/?username=EoinFitzsimons&theme=dark_lover&no-frame=true&column=4&margin-w=15&margin-h=15&title=Commits,Repositories,Stars,Followers" alt="GitHub Trophies"/>
+
 </div>
 
 ## � Special Achievements
@@ -55,106 +57,55 @@
 <tr>
 <td width="50%">
 
-#### 🎮 Event Discovery Platform
-**Full-Stack Web Application**
-- Map-based event discovery with geolocation
-- Secure user authentication & session management
-- Node.js, Express, SQL integration
-- RESTful API architecture
-
-[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=EoinFitzsimons&repo=Team-Project-WhatsOn&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/EoinFitzsimons/Team-Project-WhatsOn)
-
-</td>
-<td width="50%">
-
-#### 🐿️ Rith Dearg Game
-**Browser Platformer Game**
-- Irish red squirrel adventure game
-- Custom physics engine implementation
-- HTML5 Canvas & JavaScript
-- Interactive gameplay mechanics
-
-[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=EoinFitzsimons&repo=Rith-Dearg&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/EoinFitzsimons/Rith-Dearg)
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-#### 📊 EPL Data Analytics
-**Sports Data Science Project**
-- Premier League player statistics analysis
-- Pandas, NumPy, Matplotlib
-- Statistical modeling & visualization
-- Jupyter Notebook documentation
-
-[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=EoinFitzsimons&repo=EPL-Players-24-25&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/EoinFitzsimons/EPL-Players-24-25)
-
-</td>
-<td width="50%">
-
-#### ⚽ Football Game Collection
-**Interactive Browser Games**
-- Multiple game variations (Football, Racing, Building)
-- JavaScript game engine development
-- DOM manipulation & event handling
-- Progressive web app principles
-
-[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=EoinFitzsimons&repo=Eoin-s-Football-Game&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/EoinFitzsimons/Eoin-s-Football-Game)
-
-</td>
-</tr>
-</table>
-
 ---
 
 ### 🌟 Pinned Projects - My Best Work
 
 <div align="center">
 
-| 🎮 **Event Discovery Platform** | �️ **Rith Dearg Game** | 📊 **Data Analytics** |
-|:---:|:---:|:---:|
-| ![WhatsOn](https://img.shields.io/badge/Full--Stack-Web%20App-blue?style=for-the-badge) | ![Game](https://img.shields.io/badge/Browser-Game-green?style=for-the-badge) | ![Analytics](https://img.shields.io/badge/Data-Science-orange?style=for-the-badge) |
-| Map-based event discovery with authentication | Irish red squirrel platformer game | Premier League player statistics |
+|                         🎮**Event Discovery Platform**                         |                       �️**Rith Dearg Game**                       |                               📊**Data Analytics**                               |
+| :-----------------------------------------------------------------------------------: | :------------------------------------------------------------------------: | :------------------------------------------------------------------------------------: |
+| ![WhatsOn](https://img.shields.io/badge/Full--Stack-Web%20App-blue?style=for-the-badge) | ![Game](https://img.shields.io/badge/Browser-Game-green?style=for-the-badge) |    ![Analytics](https://img.shields.io/badge/Data-Science-orange?style=for-the-badge)    |
+|                     Map-based event discovery with authentication                     |                     Irish red squirrel platformer game                     |                            Premier League player statistics                            |
 | [🔗 View Code](https://github.com/EoinFitzsimons/Team-Project-WhatsOn) \| [🚀 Live Demo](#) | [🔗 View Code](https://github.com/EoinFitzsimons/Rith-Dearg) \| [🎮 Play Now](#) | [🔗 View Code](https://github.com/EoinFitzsimons/EPL-Players-24-25) \| [📈 View Analysis](#) |
 
 </div>
 
 ### 🚀 Complete Project Portfolio
 
-| ⭐ Project | 📝 Description | 🛠️ Language | ⏰ Updated |
-|-----------|---------------|-------------|------------|
-| [Eoin-s-Football-Game](https://github.com/EoinFitzsimons/Eoin-s-Football-Game) <br> ![JS](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black) | ⚽ Playable football game in the browser | JavaScript | Aug 25, 2025 |
-| [Rith-Dearg](https://github.com/EoinFitzsimons/Rith-Dearg) <br> ![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white) | 🐿️ Platformer: a red squirrel in Ireland | HTML | Aug 21, 2025 |
-| [EoinFitzsimons](https://github.com/EoinFitzsimons/EoinFitzsimons) <br> ![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white) | 🌐 My personal portfolio & landing page | HTML | Aug 20, 2025 |
-| [Eoin-s-Building-Game](https://github.com/EoinFitzsimons/Eoin-s-Building-Game) <br> ![JS](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black) | 🏗️ Build and manage structures | JavaScript | Aug 20, 2025 |
-| [Eoin-s-Racing-Game](https://github.com/EoinFitzsimons/Eoin-s-Racing-Game) <br> ![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white) | 🏎️ Fast-paced browser racing | HTML | Aug 20, 2025 |
-| [Skyworks-Concourse](https://github.com/EoinFitzsimons/Skyworks-Concourse) <br> ![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white) | ☁️ Isometric retro-futuristic game | HTML | Aug 20, 2025 |
-| [Eoin-s-Text-Game](https://github.com/EoinFitzsimons/Eoin-s-Text-Game) <br> ![JS](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black) | 📜 Text adventure in JS | JavaScript | Aug 20, 2025 |
-| [nfm-lit](https://github.com/EoinFitzsimons/nfm-lit) (fork) <br> ![Java](https://img.shields.io/badge/Java-007396?logo=java&logoColor=white) | 🚗 Fork of a Java racing engine | Java | Aug 11, 2025 |
-| [Eoin-s-Game](https://github.com/EoinFitzsimons/Eoin-s-Game) <br> ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) | 🕹️ Python arcade game | Python | Aug 11, 2025 |
-| NFM-Clean | ![Java](https://img.shields.io/badge/Java-007396?logo=java&logoColor=white) | 🧹 Cleaned-up Java racing codebase | Java | Aug 10, 2025 |
-| NFM | ![Java](https://img.shields.io/badge/Java-007396?logo=java&logoColor=white) | 🏁 Java racing project | Java | Aug 7, 2025 |
-| A_New_Madness | | 🌀 Experimental game mods |  | Aug 4, 2025 |
-| Madness_Enhanced | ![Java](https://img.shields.io/badge/Java-007396?logo=java&logoColor=white) | ⚡ Enhanced Java racing mods | Java | Aug 4, 2025 |
-| Need-For-Madness | | 🚙 Racing game experiments |  | Jul 31, 2025 |
-| EPL-Players-24-25 | ![Jupyter](https://img.shields.io/badge/Jupyter-FA0F00?logo=jupyter&logoColor=white) | 📊 EPL player stats notebook | Jupyter Notebook | Jul 30, 2025 |
-| Premier-League-Data | ![Jupyter](https://img.shields.io/badge/Jupyter-FA0F00?logo=jupyter&logoColor=white) | 📈 Premier League data analysis | Jupyter Notebook | Jul 24, 2025 |
-| Python | ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) | 🐍 Python scripts & experiments | Python | Jul 23, 2025 |
-| Discord-Bot | ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) | 🤖 Discord automation bot | Python | Jul 23, 2025 |
-| Juiced | ![Batchfile](https://img.shields.io/badge/Batchfile-4B4B4B?logo=windows&logoColor=white) | 🧃 Data analysis tools | Batchfile | Jul 20, 2025 |
-| Juiced-Analysis | | 📊 Data analysis for Juiced |  | Jul 19, 2025 |
-| Juiced-Modding | ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) | 🛠️ Python modding tools | Python | Jul 16, 2025 |
-| Eoin-NCI | ![Jupyter](https://img.shields.io/badge/Jupyter-FA0F00?logo=jupyter&logoColor=white) | 🎓 All my NCI work | Jupyter Notebook | Dec 5, 2024 |
-| Group-E-Security-Fundementals-Project | ![JS](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black) | 🔐 Security fundamentals project | JavaScript | Oct 20, 2024 |
-| Team-Project-WhatsOn | ![EJS](https://img.shields.io/badge/EJS-8CBBF1?logo=ejs&logoColor=black) | 📅 NCI Team Project App | EJS | May 16, 2024 |
-| Team-Project-Testing | ![EJS](https://img.shields.io/badge/EJS-8CBBF1?logo=ejs&logoColor=black) | 🧪 Team project testing | EJS | Mar 28, 2024 |
-| MusicManager2 | ![Java](https://img.shields.io/badge/Java-007396?logo=java&logoColor=white) | 🎵 Music manager for NCI DSA | Java | Mar 15, 2024 |
-| GithubTestUpload | ![Java](https://img.shields.io/badge/Java-007396?logo=java&logoColor=white) | 📦 Test upload repo | Java | Feb 29, 2024 |
-| LabStack-Wagons | ![Java](https://img.shields.io/badge/Java-007396?logo=java&logoColor=white) | 🚂 Data Structures & Algorithms | Java | Feb 1, 2024 |
-| Wagon-Lab-Stack | | 🚋 Stack lab for DSA |  | Feb 1, 2024 |
+| ⭐ Project                                                                                                                                                               | 📝 Description                                                                         | 🛠️ Language                      | ⏰ Updated       |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- | ---------------------------------- | ---------------- |
+| [Eoin-s-Football-Game](https://github.com/EoinFitzsimons/Eoin-s-Football-Game) `<br>` ![JS](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black) | ⚽ Playable football game in the browser                                               | JavaScript                         | Aug 25, 2025     |
+| [Rith-Dearg](https://github.com/EoinFitzsimons/Rith-Dearg) `<br>` ![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)                             | 🐿️ Platformer: a red squirrel in Ireland                                             | HTML                               | Aug 21, 2025     |
+| [EoinFitzsimons](https://github.com/EoinFitzsimons/EoinFitzsimons) `<br>` ![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)                     | 🌐 My personal portfolio & landing page                                                | HTML                               | Aug 20, 2025     |
+| [Eoin-s-Building-Game](https://github.com/EoinFitzsimons/Eoin-s-Building-Game) `<br>` ![JS](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black) | 🏗️ Build and manage structures                                                       | JavaScript                         | Aug 20, 2025     |
+| [Eoin-s-Racing-Game](https://github.com/EoinFitzsimons/Eoin-s-Racing-Game) `<br>` ![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)             | 🏎️ Fast-paced browser racing                                                         | HTML                               | Aug 20, 2025     |
+| [Skyworks-Concourse](https://github.com/EoinFitzsimons/Skyworks-Concourse) `<br>` ![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)             | ☁️ Isometric retro-futuristic game                                                   | HTML                               | Aug 20, 2025     |
+| [Eoin-s-Text-Game](https://github.com/EoinFitzsimons/Eoin-s-Text-Game) `<br>` ![JS](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)         | 📜 Text adventure in JS                                                                | JavaScript                         | Aug 20, 2025     |
+| [nfm-lit](https://github.com/EoinFitzsimons/nfm-lit) (fork) `<br>` ![Java](https://img.shields.io/badge/Java-007396?logo=java&logoColor=white)                              | 🚗 Fork of a Java racing engine                                                        | Java                               | Aug 11, 2025     |
+| [Eoin-s-Game](https://github.com/EoinFitzsimons/Eoin-s-Game) `<br>` ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)                       | 🕹️ Python arcade game                                                                | Python                             | Aug 11, 2025     |
+| NFM-Clean                                                                                                                                                                | ![Java](https://img.shields.io/badge/Java-007396?logo=java&logoColor=white)              | 🧹 Cleaned-up Java racing codebase | Java             |
+| NFM                                                                                                                                                                      | ![Java](https://img.shields.io/badge/Java-007396?logo=java&logoColor=white)              | 🏁 Java racing project             | Java             |
+| A_New_Madness                                                                                                                                                            |                                                                                        | 🌀 Experimental game mods          |                  |
+| Madness_Enhanced                                                                                                                                                         | ![Java](https://img.shields.io/badge/Java-007396?logo=java&logoColor=white)              | ⚡ Enhanced Java racing mods       | Java             |
+| Need-For-Madness                                                                                                                                                         |                                                                                        | 🚙 Racing game experiments         |                  |
+| EPL-Players-24-25                                                                                                                                                        | ![Jupyter](https://img.shields.io/badge/Jupyter-FA0F00?logo=jupyter&logoColor=white)     | 📊 EPL player stats notebook       | Jupyter Notebook |
+| Premier-League-Data                                                                                                                                                      | ![Jupyter](https://img.shields.io/badge/Jupyter-FA0F00?logo=jupyter&logoColor=white)     | 📈 Premier League data analysis    | Jupyter Notebook |
+| Python                                                                                                                                                                   | ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)        | 🐍 Python scripts & experiments    | Python           |
+| Discord-Bot                                                                                                                                                              | ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)        | 🤖 Discord automation bot          | Python           |
+| Juiced                                                                                                                                                                   | ![Batchfile](https://img.shields.io/badge/Batchfile-4B4B4B?logo=windows&logoColor=white) | 🧃 Data analysis tools             | Batchfile        |
+| Juiced-Analysis                                                                                                                                                          |                                                                                        | 📊 Data analysis for Juiced        |                  |
+| Juiced-Modding                                                                                                                                                           | ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)        | 🛠️ Python modding tools          | Python           |
+| Eoin-NCI                                                                                                                                                                 | ![Jupyter](https://img.shields.io/badge/Jupyter-FA0F00?logo=jupyter&logoColor=white)     | 🎓 All my NCI work                 | Jupyter Notebook |
+| Group-E-Security-Fundementals-Project                                                                                                                                    | ![JS](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)    | 🔐 Security fundamentals project   | JavaScript       |
+| Team-Project-WhatsOn                                                                                                                                                     | ![EJS](https://img.shields.io/badge/EJS-8CBBF1?logo=ejs&logoColor=black)                 | 📅 NCI Team Project App            | EJS              |
+| Team-Project-Testing                                                                                                                                                     | ![EJS](https://img.shields.io/badge/EJS-8CBBF1?logo=ejs&logoColor=black)                 | 🧪 Team project testing            | EJS              |
+| MusicManager2                                                                                                                                                            | ![Java](https://img.shields.io/badge/Java-007396?logo=java&logoColor=white)              | 🎵 Music manager for NCI DSA       | Java             |
+| GithubTestUpload                                                                                                                                                         | ![Java](https://img.shields.io/badge/Java-007396?logo=java&logoColor=white)              | 📦 Test upload repo                | Java             |
+| LabStack-Wagons                                                                                                                                                          | ![Java](https://img.shields.io/badge/Java-007396?logo=java&logoColor=white)              | 🚂 Data Structures & Algorithms    | Java             |
+| Wagon-Lab-Stack                                                                                                                                                          |                                                                                        | 🚋 Stack lab for DSA               |                  |
 
-<sub>Some repositories are private or forks. See my <a href="https://github.com/EoinFitzsimons?tab=repositories">GitHub</a> for the full list.</sub>
+`<sub>`Some repositories are private or forks. See my `<a href="https://github.com/EoinFitzsimons?tab=repositories">`GitHub`</a>` for the full list.`</sub>`
 
 ---
 
@@ -203,6 +154,7 @@
 ## 🎯 Current Journey
 
 I've recently completed my **IT Support Internship** and am now in my **final year of Computing at NCI**! The internship gave me valuable real-world experience in:
+
 - 🛠️ Technical troubleshooting and problem-solving
 - 👥 Customer service and communication
 - 🔧 Hardware and software support
@@ -215,6 +167,7 @@ This hands-on experience has prepared me well for my **fourth year of Computing*
 ## 🎓 Education & Current Status
 
 **National College of Ireland (NCI)** - Level 8 Computing Degree
+
 - Currently in my **final year (2024-2025)**
 - 📚 Studying advanced topics in Java, Python, Web App Development
 - 🧠 Building on strong foundations in programming, algorithms, and software engineering
@@ -225,6 +178,7 @@ This hands-on experience has prepared me well for my **fourth year of Computing*
 ## � Back to Active Development
 
 Having completed my IT support internship, I'm now fully immersed in my final year studies and actively coding again:
+
 - 🔄 Applying both academic learning and practical IT experience
 - 🚀 Working on advanced projects that bridge theory and real-world applications
 - 📈 Building a comprehensive portfolio showcasing both technical and practical skills
@@ -233,16 +187,19 @@ Having completed my IT support internship, I'm now fully immersed in my final ye
 ## 🛠️ Tech Stack & Tools
 
 <div align="center">
-  
-  <!-- Frontend Technologies -->
-  <img src="https://skillicons.dev/icons?i=html,css,js,react,nodejs" alt="Frontend"/>
-  
-  <!-- Backend & Databases -->
-  <img src="https://skillicons.dev/icons?i=python,java,express,mysql,mongodb" alt="Backend"/>
-  
-  <!-- Tools & Platforms -->
-  <img src="https://skillicons.dev/icons?i=git,github,vscode,windows,linux" alt="Tools"/>
-  
+
+<!-- Frontend Technologies -->
+
+<img src="https://skillicons.dev/icons?i=html,css,js,react,nodejs" alt="Frontend"/>
+
+<!-- Backend & Databases -->
+
+<img src="https://skillicons.dev/icons?i=python,java,express,mysql,mongodb" alt="Backend"/>
+
+<!-- Tools & Platforms -->
+
+<img src="https://skillicons.dev/icons?i=git,github,vscode,windows,linux" alt="Tools"/>
+
 </div>
 
 <div align="center">
@@ -253,7 +210,7 @@ Having completed my IT support internship, I'm now fully immersed in my final ye
 
 **Real-world IT Experience**: My internship in IT support gives me a unique perspective on how technology actually works in business environments, not just in development theory.
 
-## 🎯 Final Year Goals (2024-2025)
+## 🎯 Final Year Goals (2025-2026)
 
 - [ ] Successfully complete my final year at NCI with distinction
 - [ ] Complete capstone project combining development and IT operations knowledge
@@ -261,7 +218,6 @@ Having completed my IT support internship, I'm now fully immersed in my final ye
 - [ ] Contribute to open-source projects
 - [ ] Secure a graduate software development role
 - [ ] Share knowledge gained from both academic and practical IT experience
-
 
 ## 🌐 Portfolio Website
 
@@ -276,11 +232,15 @@ Having completed my IT support internship, I'm now fully immersed in my final ye
 ## 📈 Live Activity & Recent Updates
 
 ### 🔄 Recent GitHub Activity
+
 <!--START_SECTION:activity-->
+
 <!--END_SECTION:activity-->
 
 ### 📝 Latest Blog Posts & Tutorials
+
 <!-- BLOG-POST-LIST:START -->
+
 <!-- BLOG-POST-LIST:END -->
 
 ### 🏆 GitHub Metrics Dashboard

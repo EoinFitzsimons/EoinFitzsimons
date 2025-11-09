@@ -159,16 +159,20 @@
   background: linear-gradient(90deg, #e44d26, #f16529);
 }
 .fill-python {
-  width: 75%;
+  width: 80%;
   background: linear-gradient(90deg, #3572a5, #4b8bbe);
+}
+.fill-java {
+  width: 75%;
+  background: linear-gradient(90deg, #007396, #5382a1);
 }
 .fill-sql {
   width: 72%;
   background: linear-gradient(90deg, #336791, #00758f);
 }
-.fill-ux {
-  width: 68%;
-  background: linear-gradient(90deg, #8e44ad, #6c3483);
+.fill-git {
+  width: 78%;
+  background: linear-gradient(90deg, #f05032, #e84e31);
 }
 /* Skill bar fill colors */
 /* Project section title and description spacing */
@@ -570,9 +574,15 @@ section {
 
 .kpi {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--grid-gap);
   margin-top: 0.6rem;
+}
+
+@media (max-width: 700px) {
+  .kpi {
+    grid-template-columns: 1fr;
+  }
 }
 .pill {
   background: var(--pill-bg);
@@ -673,6 +683,18 @@ section {
   display: grid;
   place-items: center;
   margin-bottom: 0.5rem;
+}
+
+.project-stage-analytics {
+  background: linear-gradient(135deg, rgba(53, 114, 165, 0.35), rgba(75, 139, 190, 0.3));
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 3rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
 }
 
 .stage span {
