@@ -9,8 +9,19 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Year-Final%20Year%20(2025--26)-blue?style=for-the-badge&logo=calendar&logoColor=white" alt="Academic Year"/>
   <img src="https://img.shields.io/badge/Institution-NCI-green?style=for-the-badge&logo=google-scholar&logoColor=white" alt="NCI"/>
-  <img src="https://img.shields.io/badge/Status-Computing%20Student-orange?style=for-the-badge&logo=graduationcap&logoColor=white" alt="Current Role"/>
+  <img src="https://img.shields.io/badge/🔓%20Open%20to%20Work-Available%20for%20Grad%20Roles-success?style=for-the-badge" alt="Open to Work"/>
+  <img src="https://img.shields.io/badge/Location-Dublin%2C%20Ireland-orange?style=for-the-badge&logo=googlemaps&logoColor=white" alt="Location"/>
 </p>
+
+---
+
+## 👨‍💻 About Me
+
+**Final Year Computing Student** at NCI with hands-on IT industry experience. Recently completed a **7-month IT Support Internship** at the HSE (Feb-Sep 2025) where I deployed **40+ laptops**, achieved **100% ticket closure rate**, and supported critical healthcare infrastructure.
+
+Now combining real-world IT operations experience with advanced software development skills. Building full-stack applications, browser game engines, and data-driven projects. **Seeking graduate software developer opportunities** to leverage both technical and practical expertise.
+
+**Core Competencies:** Full-Stack Development · Game Engineering · Web Security · Data Structures · IT Operations
 
 ## 📊 GitHub Analytics Dashboard
 
@@ -54,24 +65,28 @@
 <tr>
 <td width="50%">
 
-#### 🌐 Event Discovery Platform
-**Full-Stack Web Application**
+#### 🌐 WhatsOn - Event Discovery Platform
+**Full-Stack Web Application · Team Project**
 - Map-based event discovery with geolocation
 - Secure user authentication & session management
-- Node.js, Express, SQL integration
-- RESTful API architecture
+- RESTful API with Node.js, Express, SQL
+- Real-time event filtering and search
+
+**Tech Stack:** ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white) ![Express](https://img.shields.io/badge/-Express-000000?style=flat-square&logo=express&logoColor=white) ![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white) ![EJS](https://img.shields.io/badge/-EJS-8B4513?style=flat-square)
 
 [![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=EoinFitzsimons&repo=Team-Project-WhatsOn&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/EoinFitzsimons/Team-Project-WhatsOn)
 
 </td>
 <td width="50%">
 
-#### 🐿️ Rith Dearg Game
-**Browser Platformer Game**
-- Irish red squirrel adventure game
-- Custom physics engine implementation
-- HTML5 Canvas & JavaScript
-- Interactive gameplay mechanics
+#### 🐿️ Rith Dearg - Browser Game Engine
+**Platformer Game · Custom Engine**
+- Irish red squirrel adventure platformer
+- Custom-built physics and collision engine
+- HTML5 Canvas rendering pipeline
+- Level progression and game state management
+
+**Tech Stack:** ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) ![Canvas](https://img.shields.io/badge/-Canvas%20API-FF6B6B?style=flat-square)
 
 [![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=EoinFitzsimons&repo=Rith-Dearg&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/EoinFitzsimons/Rith-Dearg)
 
@@ -80,26 +95,30 @@
 <tr>
 <td width="50%">
 
-#### 🔐 Web Security Dashboard
-**Security Analysis Project**
-- Vulnerability detection and threat assessment
-- Secure authentication & authorization
-- Security best practices implementation
-- Real-world security scenarios
+#### 🔐 Security Fundamentals Project
+**Web Security Analysis · Team Project**
+- Comprehensive web application security assessment
+- Threat modeling and vulnerability analysis
+- Authentication, authorization, and encryption
+- OWASP security best practices implementation
 
-[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=EoinFitzsimons&repo=Security-Project&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/EoinFitzsimons/Security-Project)
+**Tech Stack:** ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white) ![Security](https://img.shields.io/badge/-Security-FF0000?style=flat-square&logo=security&logoColor=white)
+
+[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=EoinFitzsimons&repo=Group-E-Security-Fundementals-Project&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/EoinFitzsimons/Group-E-Security-Fundementals-Project)
 
 </td>
 <td width="50%">
 
-#### ⚽ Football Game Collection
-**Interactive Browser Games**
-- Multiple game variations (Football, Racing, Building)
-- JavaScript game engine development
-- DOM manipulation & event handling
-- Progressive web app principles
+#### 🎵 MusicManager2
+**Data Structures & Algorithms · Java**
+- Music library management system
+- Advanced data structure implementation
+- Search, sort, and filtering algorithms
+- Object-oriented design patterns
 
-[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=EoinFitzsimons&repo=Eoin-s-Football-Game&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/EoinFitzsimons/Eoin-s-Football-Game)
+**Tech Stack:** ![Java](https://img.shields.io/badge/-Java-007396?style=flat-square&logo=java&logoColor=white) ![OOP](https://img.shields.io/badge/-OOP-5382A1?style=flat-square) ![Algorithms](https://img.shields.io/badge/-Algorithms-00ADD8?style=flat-square)
+
+[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=EoinFitzsimons&repo=MusicManager2&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/EoinFitzsimons/MusicManager2)
 
 </td>
 </tr>
@@ -149,38 +168,24 @@
 
 ---
 
-## 🎯 Current Journey
+## 🎯 My Journey: From IT Support to Software Development
 
-I've recently completed my **IT Support Internship** and am now in my **final year of Computing at NCI**! The internship gave me valuable real-world experience in:
+**Feb-Sep 2025:** IT Support Internship at HSE (Ireland's Health Service)
+- Deployed and configured **40+ laptops** for healthcare staff
+- Maintained **100% ticket closure rate** across all support requests  
+- Managed hardware inventory and IT infrastructure
+- Provided critical support for healthcare technology systems
 
-- 🛠️ Technical troubleshooting and problem-solving
-- 👥 Customer service and communication
-- 🔧 Hardware and software support
-- 📋 IT infrastructure understanding
+**2021-2026:** BSc Computing - National College of Ireland
+- **Final Year (2025-2026)** - Advanced Java, Python, Web Development
+- Focus areas: Full-Stack Development, Data Structures, Software Engineering, Security
+- Team projects: WhatsOn Platform, Security Fundamentals
+- Solo projects: Game engines, data analytics, automation tools
 
-This hands-on experience has prepared me well for my **fourth year of Computing** where I'm now applying both theoretical knowledge and practical IT experience to advanced development projects.
-
----
-
-## 🎓 Education & Current Status
-
-**National College of Ireland (NCI)** - Level 8 Computing Degree
-
-- Currently in my **final year (2025-2026)**
-- 📚 Studying advanced topics in Java, Python, Web App Development
-- 🧠 Building on strong foundations in programming, algorithms, and software engineering
-- 🎯 Combining theoretical knowledge with real-world IT support experience
-
----
-
-## 💻 Back to Active Development
-
-Having completed my IT support internship, I'm now fully immersed in my final year studies and actively coding again:
-
-- 🔄 Applying both academic learning and practical IT experience
-- 🚀 Working on advanced projects that bridge theory and real-world applications
-- 📈 Building a comprehensive portfolio showcasing both technical and practical skills
-- 🤝 Actively engaging with the developer community and contributing to projects
+**Now:** Seeking graduate software developer roles where I can apply my unique combination of:
+- ✅ Software development skills (Full-Stack, Game Dev, Data Structures)
+- ✅ Real-world IT operations experience (Hardware, Support, Infrastructure)
+- ✅ Problem-solving mindset (100% ticket resolution, customer-facing experience)
 
 ## 🛠️ Tech Stack & Tools
 
@@ -224,17 +229,59 @@ Having completed my IT support internship, I'm now fully immersed in my final ye
 
 ---
 
-## 📈 Live Activity & Recent Updates
+## 🎮 More Projects & Experiments
 
-### 🔄 Recent GitHub Activity
+### 🕹️ Game Development Portfolio
+I've built **10+ browser-based games** showcasing different game mechanics and engines:
 
-<!--START_SECTION:activity-->
-<!--END_SECTION:activity-->
+<table>
+<tr>
+<td width="50%">
 
-### 📝 Latest Blog Posts & Tutorials
+**⚽ [Football Game](https://github.com/EoinFitzsimons/Eoin-s-Football-Game)**
+- Interactive football simulation
+- Real-time player controls
+- Score tracking & game states
+- ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 
-<!-- BLOG-POST-LIST:START -->
-<!-- BLOG-POST-LIST:END -->
+</td>
+<td width="50%">
+
+**🏎️ [Racing Game](https://github.com/EoinFitzsimons/Eoin-s-Racing-Game)**
+- Fast-paced racing mechanics
+- Collision detection system
+- Track generation
+- ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+**🏗️ [Building Game](https://github.com/EoinFitzsimons/Eoin-s-Building-Game)**
+- Creative building mechanics
+- Resource management
+- Grid-based placement
+- ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+
+</td>
+<td width="50%">
+
+**🌆 [Skyworks Concourse](https://github.com/EoinFitzsimons/Skyworks-Concourse)**
+- Isometric retro-futuristic style
+- Custom rendering engine
+- Tile-based world
+- ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+
+</td>
+</tr>
+</table>
+
+### 💻 Academic & Automation Projects
+
+- **[Discord Bot](https://github.com/EoinFitzsimons/Discord-Bot)** - Python automation bot with custom commands and event handling
+- **[LabStack Wagons](https://github.com/EoinFitzsimons/LabStack-Wagons)** - Data structures & algorithms lab work (Stacks, Queues, Lists)
+- **[Python Experiments](https://github.com/EoinFitzsimons/Python)** - Various Python scripts exploring different libraries and concepts
 
 ### 🏆 GitHub Metrics Dashboard
 
