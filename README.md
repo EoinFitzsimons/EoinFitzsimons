@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Year-Final%20Year%20(4th)-blue?style=for-the-badge&logo=calendar&logoColor=white" alt="Academic Year"/>
+  <img src="https://img.shields.io/badge/Year-Final%20Year%20(2025--26)-blue?style=for-the-badge&logo=calendar&logoColor=white" alt="Academic Year"/>
   <img src="https://img.shields.io/badge/Institution-NCI-green?style=for-the-badge&logo=google-scholar&logoColor=white" alt="NCI"/>
   <img src="https://img.shields.io/badge/Status-Computing%20Student-orange?style=for-the-badge&logo=graduationcap&logoColor=white" alt="Current Role"/>
 </p>
@@ -17,30 +17,27 @@
 <div align="center">
 
 <!-- Main Stats Row -->
-
 <img src="https://github-readme-stats.vercel.app/api?username=EoinFitzsimons&show_icons=true&theme=tokyonight&count_private=true&hide_border=true&bg_color=0D1117&title_color=F7971E&icon_color=79FF97&text_color=FFF&border_radius=10" alt="GitHub Stats" height="200"/>
-  <img src="https://streak-stats.demolab.com/?user=EoinFitzsimons&theme=tokyonight&hide_border=true&background=0D1117&stroke=F7971E&ring=F7971E&fire=79FF97&currStreakLabel=FFF&sideNums=FFF&currStreakNum=F7971E&dates=8B949E&sideLabels=8B949E" alt="GitHub Streak" height="200"/>
+<img src="https://streak-stats.demolab.com/?user=EoinFitzsimons&theme=tokyonight&hide_border=true&background=0D1117&stroke=F7971E&ring=F7971E&fire=79FF97&currStreakLabel=FFF&sideNums=FFF&currStreakNum=F7971E&dates=8B949E&sideLabels=8B949E" alt="GitHub Streak" height="200"/>
 
 </div>
 
 <div align="center">
 
 <!-- Languages & Activity Row -->
-
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=EoinFitzsimons&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=F7971E&text_color=FFF&border_radius=10" alt="Top Languages" height="180"/>
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=EoinFitzsimons&bg_color=0d1117&color=f7971e&line=79ff97&point=f7971e&area=true&hide_border=true" alt="Activity Graph" height="180"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=EoinFitzsimons&bg_color=0d1117&color=f7971e&line=79ff97&point=f7971e&area=true&hide_border=true" alt="Activity Graph" height="180"/>
 
 </div>
 
 <div align="center">
 
 <!-- Achievements & Trophies -->
-
 <img src="https://github-profile-trophy.vercel.app/?username=EoinFitzsimons&theme=dark_lover&no-frame=true&column=4&margin-w=15&margin-h=15&title=Commits,Repositories,Stars,Followers" alt="GitHub Trophies"/>
 
 </div>
 
-## � Special Achievements
+## 🏆 Special Achievements
 
 <div align="center">
   <img src="https://img.shields.io/badge/🦈%20Pull%20Shark-GitHub%20Achievement-blueviolet?style=for-the-badge&logo=github" alt="Pull Shark"/>
@@ -57,74 +54,56 @@
 <tr>
 <td width="50%">
 
----
+#### 🌐 Event Discovery Platform
+**Full-Stack Web Application**
+- Map-based event discovery with geolocation
+- Secure user authentication & session management
+- Node.js, Express, SQL integration
+- RESTful API architecture
 
-### 🌟 Highlighted Projects
+[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=EoinFitzsimons&repo=Team-Project-WhatsOn&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/EoinFitzsimons/Team-Project-WhatsOn)
 
-<div align="center">
+</td>
+<td width="50%">
 
-<table>
+#### 🐿️ Rith Dearg Game
+**Browser Platformer Game**
+- Irish red squirrel adventure game
+- Custom physics engine implementation
+- HTML5 Canvas & JavaScript
+- Interactive gameplay mechanics
+
+[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=EoinFitzsimons&repo=Rith-Dearg&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/EoinFitzsimons/Rith-Dearg)
+
+</td>
+</tr>
 <tr>
-<td width="33%" align="center">
+<td width="50%">
 
-**🌐 Event Discovery Platform**
+#### 🔐 Web Security Dashboard
+**Security Analysis Project**
+- Vulnerability detection and threat assessment
+- Secure authentication & authorization
+- Security best practices implementation
+- Real-world security scenarios
 
-![WhatsOn](https://img.shields.io/badge/Full--Stack-Web%20App-blue?style=for-the-badge)
-
-Map-based event discovery with authentication and RESTful API
-
-[View Code](https://github.com/EoinFitzsimons/Team-Project-WhatsOn)
-
-</td>
-<td width="33%" align="center">
-
-**🐿️ Rith Dearg Game**
-
-![Game](https://img.shields.io/badge/Browser-Game-green?style=for-the-badge)
-
-Irish red squirrel platformer game built with HTML5 Canvas
-
-[View Code](https://github.com/EoinFitzsimons/Rith-Dearg)
+[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=EoinFitzsimons&repo=Security-Project&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/EoinFitzsimons/Security-Project)
 
 </td>
-<td width="33%" align="center">
+<td width="50%">
 
-**📊 EPL Data Analytics**
+#### ⚽ Football Game Collection
+**Interactive Browser Games**
+- Multiple game variations (Football, Racing, Building)
+- JavaScript game engine development
+- DOM manipulation & event handling
+- Progressive web app principles
 
-![Analytics](https://img.shields.io/badge/Data-Science-orange?style=for-the-badge)
-
-Premier League player statistics analysis with Python
-
-[View Code](https://github.com/EoinFitzsimons/EPL-Players-24-25)
+[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=EoinFitzsimons&repo=Eoin-s-Football-Game&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/EoinFitzsimons/Eoin-s-Football-Game)
 
 </td>
 </tr>
 </table>
-
-</div>
-
-### � More Projects
-
-<div align="center">
-
-#### 🎮 Game Development
-- **[Football Game](https://github.com/EoinFitzsimons/Eoin-s-Football-Game)** - Interactive browser-based football game
-- **[Rith Dearg](https://github.com/EoinFitzsimons/Rith-Dearg)** - Irish red squirrel platformer
-- **[Racing Game](https://github.com/EoinFitzsimons/Eoin-s-Racing-Game)** - Fast-paced browser racing
-- **[Skyworks Concourse](https://github.com/EoinFitzsimons/Skyworks-Concourse)** - Isometric retro-futuristic game
-
-#### 💼 Academic & Team Projects
-- **[WhatsOn Platform](https://github.com/EoinFitzsimons/Team-Project-WhatsOn)** - Full-stack event discovery web app (Team Project)
-- **[Security Fundamentals](https://github.com/EoinFitzsimons/Group-E-Security-Fundementals-Project)** - Group security project
-- **[Music Manager](https://github.com/EoinFitzsimons/MusicManager2)** - Data structures coursework
-
-#### 📊 Data & Analysis
-- **[EPL Player Stats](https://github.com/EoinFitzsimons/EPL-Players-24-25)** - Premier League analytics with Python
-- **[Discord Bot](https://github.com/EoinFitzsimons/Discord-Bot)** - Python automation bot
-
-<sub>View all repositories on my [GitHub profile](https://github.com/EoinFitzsimons?tab=repositories)</sub>
-
-</div>
 
 ---
 
@@ -134,7 +113,7 @@ Premier League player statistics analysis with Python
   <a href="/CV_Professional_Template.txt">
     <img src="https://img.shields.io/badge/📋%20Download%20CV-Professional%20Template-blue?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Download CV"/>
   </a>
-  <a href="https://eoinFitzsimons.github.io">
+  <a href="https://eoinfitzsimons.github.io/EoinFitzsimons/">
     <img src="https://img.shields.io/badge/🌐%20Portfolio%20Website-Live%20Demo-green?style=for-the-badge&logo=internetexplorer&logoColor=white" alt="Portfolio Website"/>
   </a>
   <a href="mailto:Eoin00Fitzsimons@gmail.com">
@@ -187,14 +166,14 @@ This hands-on experience has prepared me well for my **fourth year of Computing*
 
 **National College of Ireland (NCI)** - Level 8 Computing Degree
 
-- Currently in my **final year (2024-2025)**
+- Currently in my **final year (2025-2026)**
 - 📚 Studying advanced topics in Java, Python, Web App Development
 - 🧠 Building on strong foundations in programming, algorithms, and software engineering
 - 🎯 Combining theoretical knowledge with real-world IT support experience
 
 ---
 
-## � Back to Active Development
+## 💻 Back to Active Development
 
 Having completed my IT support internship, I'm now fully immersed in my final year studies and actively coding again:
 
@@ -208,15 +187,12 @@ Having completed my IT support internship, I'm now fully immersed in my final ye
 <div align="center">
 
 <!-- Frontend Technologies -->
-
 <img src="https://skillicons.dev/icons?i=html,css,js,react,nodejs" alt="Frontend"/>
 
 <!-- Backend & Databases -->
-
 <img src="https://skillicons.dev/icons?i=python,java,express,mysql,mongodb" alt="Backend"/>
 
 <!-- Tools & Platforms -->
-
 <img src="https://skillicons.dev/icons?i=git,github,vscode,windows,linux" alt="Tools"/>
 
 </div>
@@ -253,13 +229,11 @@ Having completed my IT support internship, I'm now fully immersed in my final ye
 ### 🔄 Recent GitHub Activity
 
 <!--START_SECTION:activity-->
-
 <!--END_SECTION:activity-->
 
 ### 📝 Latest Blog Posts & Tutorials
 
 <!-- BLOG-POST-LIST:START -->
-
 <!-- BLOG-POST-LIST:END -->
 
 ### 🏆 GitHub Metrics Dashboard
@@ -278,7 +252,7 @@ Having completed my IT support internship, I'm now fully immersed in my final ye
 
 ```text
 📍 Location:      Dublin 12, Ireland
-🎓 Study Status:  BSc Computing (Final Year 2024-2025)
+🎓 Study Status:  BSc Computing (Final Year 2025-2026)
 💼 Recent Role:   IT Support Intern (Completed)
 🎮 Projects:      25+ repositories and counting
 🏸 Sport:        Badminton (Tournament Runner-up 2018)
