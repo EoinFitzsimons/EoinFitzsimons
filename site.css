@@ -92,6 +92,9 @@
 .exp-desc {
   margin: 0.4rem 0 0;
 }
+.exp-desc p {
+  margin: 0.45rem 0;
+}
 /* Certificates section title */
 .cert-title {
   margin: 0 0 0.4rem;
