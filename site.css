@@ -143,37 +143,31 @@
 .fill-js {
   width: 85%;
   background: linear-gradient(90deg, #f0db4f 0%, #ffd700 50%, #ffed4e 100%);
-  color: #f0db4f;
 }
 
 .fill-html {
   width: 90%;
   background: linear-gradient(90deg, #e34c26 0%, #f06529 50%, #ff7043 100%);
-  color: #e34c26;
 }
 
 .fill-python {
   width: 80%;
   background: linear-gradient(90deg, #306998 0%, #4584b6 50%, #64b5f6 100%);
-  color: #4584b6;
 }
 
 .fill-java {
   width: 75%;
   background: linear-gradient(90deg, #007396 0%, #0091bd 50%, #4fc3f7 100%);
-  color: #0091bd;
 }
 
 .fill-sql {
   width: 72%;
   background: linear-gradient(90deg, #336791 0%, #00758f 50%, #26a69a 100%);
-  color: #00758f;
 }
 
 .fill-git {
   width: 78%;
   background: linear-gradient(90deg, #f05032 0%, #e84e31 50%, #ff5252 100%);
-  color: #f05032;
 }
 
 /* Staggered animation delays for each skill */
@@ -634,6 +628,103 @@ section {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: var(--grid-gap);
+}
+
+.snapshot-grid,
+.repo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.record-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.snapshot-card,
+.repo-card {
+  background: var(--surface-1);
+  border: 1px solid var(--border-1);
+  border-radius: 14px;
+  padding: 1rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.record-card {
+  background: var(--surface-1);
+  border: 1px solid var(--border-1);
+  border-radius: 14px;
+  padding: 1rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.record-card h3 {
+  margin: 0 0 0.5rem;
+}
+
+.record-card h4 {
+  margin: 0.85rem 0 0.45rem;
+  font-size: 0.95rem;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+.record-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 620px;
+}
+
+.record-table th,
+.record-table td {
+  text-align: left;
+  padding: 0.55rem 0.6rem;
+  border-bottom: 1px solid var(--border-1);
+  vertical-align: top;
+}
+
+.record-table th {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.record-note {
+  margin: 0.75rem 0 0;
+}
+
+.snapshot-card:hover,
+.repo-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.snapshot-card h3,
+.repo-card h3 {
+  margin: 0 0 0.35rem;
+}
+
+.snapshot-card p,
+.repo-card p {
+  margin: 0.2rem 0 0.5rem;
+}
+
+@media (max-width: 900px) {
+  .snapshot-grid,
+  .repo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .record-table {
+    min-width: 540px;
+  }
 }
 
 .kpi {
