@@ -57,31 +57,6 @@ A full-stack event discovery platform developed as a team project.
 
 **Technologies:** JavaScript · HTML · CSS · Node.js · Express · SQL
 
-### Rith Dearg — Browser Game
-
-[Repository](https://github.com/EoinFitzsimons/Rith-Dearg)
-
-A browser-based platform game featuring an Irish red squirrel.
-
-* Developed custom game physics and collision handling
-* Implemented HTML5 Canvas rendering
-* Built game state and level progression systems
-
-**Technologies:** JavaScript · HTML5 · Canvas API
-
-### MusicManager2
-
-[Repository](https://github.com/EoinFitzsimons/MusicManager2)
-
-A Java application developed to explore data structures, algorithms and object-oriented programming.
-
-* Implemented music library management functionality
-* Applied data structures to storing and manipulating information
-* Developed search, sorting and filtering functionality
-* Applied object-oriented programming principles
-
-**Technologies:** Java · Data Structures · Algorithms · OOP
-
 ## Professional Experience
 
 ### Health Service Executive — Executive Support Intern, Technical Support
