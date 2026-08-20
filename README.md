@@ -114,16 +114,6 @@ Outside of development, I have been involved in student representation and socie
 
 I also enjoy badminton, board games, Dungeons & Dragons and analysing data from competitions and other personal projects.
 
-## GitHub Statistics
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=EoinFitzsimons&show_icons=true&hide_border=true&theme=github_dark" alt="GitHub Statistics" height="170"/>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=EoinFitzsimons&layout=compact&hide_border=true&theme=github_dark" alt="Most Used Languages" height="170"/>
-
-</div>
-
 ## Contact
 
 * **Portfolio:** https://eoinfitzsimons.github.io/EoinFitzsimons/
