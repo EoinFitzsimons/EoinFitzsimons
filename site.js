@@ -287,39 +287,44 @@ function trapFocus(container) {
     {
       title: "Eoin's Building Game",
       repo: "Eoin-s-Building-Game",
-      tech: ["JavaScript"],
-      blurb: "A browser-based building game made with JavaScript.",
+      tech: ["JavaScript", "Three.js", "Web Audio"],
+      blurb:
+        "Voxel sandbox with procedural hills and forests, eighteen block types, a day/night cycle, blueprint building and save/load.",
     },
     {
       title: "Eoin's Football Game",
       repo: "Eoin-s-Football-Game",
-      tech: ["HTML"],
-      blurb: "Pick-up & play football mini‑game in the browser.",
+      tech: ["JavaScript", "Canvas", "Web Audio"],
+      blurb:
+        "Football management game with a playable top-down canvas match: run the club, then step onto the pitch for the big games.",
     },
     {
-      title: "Eoin's Text Game",
+      title: "Eoin's Text Game — Verge City",
       repo: "Eoin-s-Text-Game",
-      tech: ["JavaScript"],
-      blurb: "Interactive text adventure built with JS.",
+      tech: ["JavaScript", "Canvas", "Web Audio"],
+      blurb:
+        "One-night cyberpunk text adventure: twelve districts, stat and item-gated choices, a canvas map and eight endings.",
     },
     {
       title: "Eoin's Racing Game",
       repo: "Eoin-s-Racing-Game",
-      tech: ["HTML"],
-      blurb: "Arcade‑style racing game, runs entirely in the browser.",
-    },
-    {
-      title: "Skyworks-Concourse",
-      repo: "Skyworks-Concourse",
-      tech: ["HTML"],
+      tech: ["JavaScript", "Canvas"],
       blurb:
-        "A browser‑playable, single‑file isometric game set in a retro‑futuristic cargo concourse suspended above the clouds. Explore modular buildings and corridors, complete multi‑type quests, dodge and discover.",
+        "Top-down Formula 1 style racing: 16 teams, a 15-car field, weather, time trials and recorded engine audio.",
     },
     {
-      title: "Rith-Dearg",
+      title: "Skyworks Concourse",
+      repo: "Skyworks-Concourse",
+      tech: ["JavaScript", "Canvas", "Web Audio"],
+      blurb:
+        "Isometric courier adventure across three sky decks: quests, drones, upgrades and a beacon to relight, drawn and scored in code.",
+    },
+    {
+      title: "Rith Dearg",
       repo: "Rith-Dearg",
-      tech: ["HTML"],
-      blurb: "A platforming game of a red squirrel in Ireland.",
+      tech: ["JavaScript", "Canvas", "Web Audio"],
+      blurb:
+        "Run, leap and tail-swipe a red squirrel across 25 Irish landscapes in a hand-coded canvas platformer with synthesised sound.",
     },
   ];
 
