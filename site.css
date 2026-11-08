@@ -791,6 +791,10 @@ section {
   box-shadow: none;
 }
 
+.chip[hidden] {
+  display: none;
+}
+
 .chip:hover {
   background: var(--chip-bg);
 }
