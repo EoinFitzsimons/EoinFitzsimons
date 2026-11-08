@@ -507,3 +507,22 @@ function trapFocus(container) {
     // ...existing code for other keydown events if needed...
   });
 })();
+
+// ===== Live GitHub stats =====
+(function () {
+  const targets = $$("[data-gh]");
+  if (!targets.length) return;
+  const user = "EoinFitzsimons";
+  fetch(`https://api.github.com/users/${user}`, {
+    headers: { Accept: "application/vnd.github+json" },
+  })
+    .then((res) => (res.ok ? res.json() : null))
+    .then((data) => {
+      if (!data) return;
+      for (const el of targets) {
+        const value = data[el.dataset.gh];
+        if (typeof value === "number") el.textContent = value.toLocaleString();
+      }
+    })
+    .catch(() => {});
+})();
