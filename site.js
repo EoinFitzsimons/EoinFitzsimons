@@ -526,3 +526,28 @@ function trapFocus(container) {
     })
     .catch(() => {});
 })();
+
+// ===== Live repository metadata for the GitHub snapshot =====
+(function () {
+  const cards = $$(".repo-card[data-repo]");
+  if (!cards.length) return;
+  fetch("https://api.github.com/users/EoinFitzsimons/repos?per_page=100&sort=pushed", {
+    headers: { Accept: "application/vnd.github+json" },
+  })
+    .then((res) => (res.ok ? res.json() : null))
+    .then((repos) => {
+      if (!Array.isArray(repos)) return;
+      const byName = new Map(repos.map((r) => [r.name, r]));
+      const fmt = new Intl.DateTimeFormat("en-IE", { month: "short", year: "numeric" });
+      for (const card of cards) {
+        const repo = byName.get(card.dataset.repo);
+        const chip = card.querySelector(".repo-updated");
+        if (!repo || !chip) continue;
+        const parts = [`Updated ${fmt.format(new Date(repo.pushed_at))}`];
+        if (repo.stargazers_count > 0) parts.push(`${repo.stargazers_count} ★`);
+        chip.textContent = parts.join(" · ");
+        chip.hidden = false;
+      }
+    })
+    .catch(() => {});
+})();
