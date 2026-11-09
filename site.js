@@ -313,13 +313,6 @@ function trapFocus(container) {
         "Top-down Formula 1 style racing: 16 teams, a 15-car field, weather, time trials and recorded engine audio.",
     },
     {
-      title: "Skyworks Concourse",
-      repo: "Skyworks-Concourse",
-      tech: ["JavaScript", "Canvas", "Web Audio"],
-      blurb:
-        "Isometric courier adventure across three sky decks: quests, drones, upgrades and a beacon to relight, drawn and scored in code.",
-    },
-    {
       title: "Rith Dearg",
       repo: "Rith-Dearg",
       tech: ["JavaScript", "Canvas", "Web Audio"],

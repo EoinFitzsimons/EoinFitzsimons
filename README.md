@@ -88,7 +88,7 @@ IoT Fundamentals and Developments project (85.4%)
 * **Road Casualty Classification** — Logistic Regression and K-Nearest Neighbours applied to a dataset of over 100,000 records
 * **Food Inventory Data Mart** — star-schema data mart for a restaurant inventory scenario; owned the profitability analysis in SQL
 * **Music League Data Analysis** — Excel workbook consolidating eleven competitions with LET, FILTER, VSTACK, UNIQUE, SLOPE and array formulas across roughly 1,800 formula cells
-* **Browser games** — [Eoin's Racing Game](https://eoinfitzsimons.github.io/Eoin-s-Racing-Game/), [Skyworks-Concourse](https://eoinfitzsimons.github.io/Skyworks-Concourse/), [Rith-Dearg](https://eoinfitzsimons.github.io/Rith-Dearg/), [Eoin's Building Game](https://eoinfitzsimons.github.io/Eoin-s-Building-Game/), [Eoin's Football Game](https://eoinfitzsimons.github.io/Eoin-s-Football-Game/) and [Eoin's Text Game](https://eoinfitzsimons.github.io/Eoin-s-Text-Game/), all playable on GitHub Pages
+* **Browser games** — [Eoin's Racing Game](https://eoinfitzsimons.github.io/Eoin-s-Racing-Game/), [Rith-Dearg](https://eoinfitzsimons.github.io/Rith-Dearg/), [Eoin's Building Game](https://eoinfitzsimons.github.io/Eoin-s-Building-Game/), [Eoin's Football Game](https://eoinfitzsimons.github.io/Eoin-s-Football-Game/) and [Eoin's Text Game](https://eoinfitzsimons.github.io/Eoin-s-Text-Game/), all playable on GitHub Pages
 
 ## Professional Experience
 
