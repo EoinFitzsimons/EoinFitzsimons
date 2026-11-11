@@ -129,6 +129,13 @@ function trapFocus(container) {
     if (focus && main) main.focus({ preventScroll: true });
   }
   globalThis.addEventListener("hashchange", () => show(resolve(location.hash), { focus: true }));
+  for (const a of links) {
+    a.addEventListener("click", (e) => {
+      if (resolve(a.getAttribute("href")) !== current) return;
+      e.preventDefault(); // already active: hashchange will not fire, so scroll back to the top
+      show(current, { focus: true });
+    });
+  }
   show(resolve(location.hash));
 })();
 
