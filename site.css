@@ -899,6 +899,33 @@ details.collapse > :not(summary) {
   gap: 1.5rem;
   counter-reset: plate;
 }
+.games {
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+}
+.games .game .content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas: "title actions" "blurb actions" "chips actions";
+  align-items: center;
+  gap: 0.2rem 2rem;
+}
+.games .game .content h3 {
+  grid-area: title;
+  margin: 0;
+}
+.games .game .content p {
+  grid-area: blurb;
+  margin: 0.2rem 0 0.5rem;
+}
+.games .game .content .links:first-of-type {
+  grid-area: actions;
+  flex-wrap: nowrap;
+}
+.games .game .content .meta {
+  grid-area: chips;
+  margin: 0;
+}
 .project,
 .game {
   display: flex;
@@ -1162,11 +1189,8 @@ details.collapse > :not(summary) {
 /* ---------- Footer: chequered ---------- */
 footer {
   position: relative;
-  padding: 1.75rem 0 2rem;
+  padding: 2rem 0 2.25rem;
   text-align: center;
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  letter-spacing: 0.04em;
   color: var(--muted);
   border-top: 1px solid var(--border);
 }
@@ -1179,6 +1203,21 @@ footer::before {
   background:
     repeating-conic-gradient(var(--heading) 0 25%, transparent 0 50%) 0 0 / 10px 10px;
   opacity: 0.12;
+}
+.footer-line {
+  margin: 0 0 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+}
+.footer-note {
+  max-width: 62ch;
+  margin: 0 auto;
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+.footer-note a {
+  font-weight: 600;
 }
 
 /* ---------- Game modal ---------- */
@@ -1322,6 +1361,15 @@ footer::before {
   .skill-groups,
   .record-grid.two {
     grid-template-columns: 1fr;
+  }
+  .games .game .content {
+    grid-template-columns: 1fr;
+    grid-template-areas: "title" "blurb" "actions" "chips";
+    align-items: start;
+  }
+  .games .game .content .links:first-of-type {
+    flex-wrap: wrap;
+    margin-bottom: 0.6rem;
   }
 }
 @media (max-width: 600px) {
