@@ -210,7 +210,7 @@ function trapFocus(container) {
       repo: "Rith-Dearg",
       tech: ["JavaScript", "Canvas", "Web Audio"],
       blurb:
-        "Run, leap and tail-swipe a red squirrel across 25 Irish landscapes in a hand-coded canvas platformer with synthesised sound.",
+        "Run, leap and tail-swipe a red squirrel across 25 Irish landscapes in a canvas platformer with synthesised sound.",
     },
   ];
 
