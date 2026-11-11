@@ -28,19 +28,19 @@ I am interested in roles where technology, systems, data and practical problem-s
 
 ## Selected Projects
 
-### Momentum — Motorsport Management System
+### Momentum — Motorsport Management Game
 
-[Repository](https://github.com/EoinFitzsimons/Final-Project) · Final Year Individual Project
+[Repository](https://github.com/EoinFitzsimons/Momentum) · Personal project, grown from my Final Year Individual Project
 
-A motorsport management system supporting driver archetypes, race simulation and standings progression, built with Python and PyQt6.
+A single-player motorsport management game across six disciplines (single seater, touring, street, drag, rallycross and endurance), built with Python, PyQt6 and SQLite.
 
-* Translated user requirements into system features and workflows, including the race progression logic
-* Designed a modular architecture separating the GUI, application and data layers
-* Wrote 11 unit tests, 7 class tests and 1 integration test with pytest and pytest-qt (19/19 passing), alongside manual system testing mapped to every functional requirement
-* Authored an 88-page technical report covering requirements, architecture and key algorithms with pseudocode and complexity analysis
-* Completed a separate ethical and sustainability evaluation of the design against the ACM Code of Ethics
+* Career mode with a three-tier league world, promotion and relegation, budgets, sponsorship and car development
+* Real-time race engine with driver attributes, tyre wear, slipstream, dirty air and pit strategy, deterministic for a given seed
+* Layered architecture separating the PyQt6 GUI, race logic, services and the SQLite data layer, with a FastAPI interface
+* 131 automated tests with pytest, run in GitHub Actions alongside flake8 linting
+* The final-year version was supported by an 88-page technical report and a separate ethical and sustainability evaluation against the ACM Code of Ethics
 
-**Technologies:** Python · PyQt6 · JSON · pytest
+**Technologies:** Python · PyQt6 · SQLite · FastAPI · pytest · GitHub Actions
 
 ### Daytona 400 — Give(a)Go Hackathon Project
 
