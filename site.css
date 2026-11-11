@@ -1379,6 +1379,27 @@ footer::before {
   }
 }
 @media print {
+  :root {
+    --bg: #ffffff;
+    --bg-2: #f4f4f4;
+    --surface: #ffffff;
+    --surface-2: #f4f4f4;
+    --border: #bbbbbb;
+    --border-strong: #888888;
+    --text: #000000;
+    --heading: #000000;
+    --muted: #444444;
+    --accent: #b83a00;
+    --accent-2: #8a5a00;
+    --accent-ink: #ffffff;
+    --link: #000000;
+    --purple: #5a1fb0;
+    --green: #0f6b33;
+    --yellow: #7a5a00;
+    --hatch: transparent;
+    --shadow: none;
+    --shadow-sm: none;
+  }
   header,
   footer,
   .hero-cta,
@@ -1394,5 +1415,8 @@ footer::before {
   body {
     background: #fff;
     color: #000;
+  }
+  .gauge-value {
+    animation: none;
   }
 }
