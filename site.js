@@ -128,7 +128,11 @@ function trapFocus(container) {
     globalThis.scrollTo({ top: 0, behavior: "auto" });
     if (focus && main) main.focus({ preventScroll: true });
   }
-  globalThis.addEventListener("hashchange", () => show(resolve(location.hash), { focus: true }));
+  globalThis.addEventListener("hashchange", () => {
+    const name = resolve(location.hash);
+    show(name, { focus: true });
+    if (location.hash !== `#${name}`) history.replaceState(null, "", `#${name}`); // e.g. skip link's #main
+  });
   for (const a of links) {
     a.addEventListener("click", (e) => {
       if (resolve(a.getAttribute("href")) !== current) return;
