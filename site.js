@@ -150,6 +150,15 @@ function trapFocus(container) {
   show(resolve(location.hash));
 })();
 
+// ===== Timing-screen colours for the transcript =====
+(function () {
+  for (const td of $$(".record-table td:last-child")) {
+    const v = parseFloat(td.textContent);
+    if (Number.isNaN(v)) continue;
+    td.classList.add(v >= 80 ? "s-purple" : v >= 70 ? "s-green" : "s-yellow");
+  }
+})();
+
 // ===== Copy helpers =====
 (function () {
   function copy(val) {
