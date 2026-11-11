@@ -95,21 +95,17 @@
     </script>
   </head>
   <body>
-    <div id="top"></div>
     <a href="#main" class="skip-link">Skip to content</a>
 
     <header>
       <div class="container nav">
-        <a class="brand" href="#top">Eoin Fitzsimons</a>
+        <a class="brand" href="#home">Eoin Fitzsimons</a>
         <nav class="nav-links" id="navLinks" aria-label="Primary">
-          <a href="#about">About</a>
+          <a href="#home">Home</a>
           <a href="#experience">Experience</a>
-          <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
-          <a href="#github">GitHub</a>
           <a href="#games">Games</a>
           <a href="#education">Education</a>
-          <a href="#academic">Academic</a>
           <a href="#contact">Contact</a>
         </nav>
         <div class="actions">
@@ -142,70 +138,119 @@
       </div>
     </header>
 
-    <!-- sentinel kept for semantics (not used by JS) -->
-    <div id="scroll-sentinel" aria-hidden="true"></div>
-
     <main id="main" class="container" tabindex="-1">
-      <!-- HERO -->
-      <section class="hero" aria-labelledby="name">
-        <div class="intro card">
-          <span class="badge">BSc (Hons) Computing Graduate · First Class Honours (79.1%)</span>
-          <h1 id="name">Eoin Fitzsimons</h1>
-          <div class="subtitle">National College of Ireland, 2026 | Software, Data and Systems | Dublin, Ireland</div>
-          <p class="muted">
-            Computing graduate from the National College of Ireland with a technical foundation across databases,
-            programming, cloud application development, machine learning, IoT, secure development, software testing,
-            CI/CD and DevSecOps. I bring practical experience in requirements analysis, structured data, system design
-            and project delivery, alongside nine months in a Health Service Executive technology team and two years
-            as a Peer Mentor supporting international students.
-          </p>
+      <!-- HOME -->
+      <section class="view" id="view-home" data-view="home" aria-labelledby="name">
+        <div class="hero">
+          <div class="intro card">
+            <span class="badge">BSc (Hons) Computing Graduate · First Class Honours (79.1%)</span>
+            <h1 id="name">Eoin Fitzsimons</h1>
+            <div class="subtitle">National College of Ireland, 2026 · Software, Data and Systems · Dublin, Ireland</div>
+            <p class="muted">
+              Computing graduate with a grounding in programming, databases, cloud, IoT, secure development,
+              testing and CI/CD, plus nine months in a Health Service Executive technology team and two years
+              as a Peer Mentor supporting international students.
+            </p>
 
-          <div class="kpi">
-            <div class="pill">
-              <small>Degree</small>
-              <strong>First Class Honours | 79.1%</strong>
+            <div class="kpi">
+              <div class="pill">
+                <small>Degree</small>
+                <strong>First Class Honours · 79.1%</strong>
+              </div>
+              <div class="pill">
+                <small>GitHub</small>
+                <strong><span data-gh="public_repos">30</span> public repos · <span data-gh="followers">11</span> followers</strong>
+              </div>
+              <div class="pill">
+                <small>Core stack</small>
+                <strong>Python · JavaScript · Java · SQL</strong>
+              </div>
+              <div class="pill">
+                <small>Recognition</small>
+                <strong>Class Rep of the Year 2026 · Society Person of the Year 2024</strong>
+              </div>
             </div>
-            <div class="pill">
-              <small>GitHub</small>
-              <strong><span data-gh="public_repos">30</span> Public Repos | <span data-gh="followers">11</span> Followers</strong>
-            </div>
-            <div class="pill">
-              <small>Core Stack</small>
-              <strong>Python | JavaScript | Java | SQL</strong>
-            </div>
-            <div class="pill">
-              <small>Recognition</small>
-              <strong>Class Rep of the Year 2026 | Society Person of the Year 2024</strong>
+
+            <div class="hero-cta">
+              <a class="btn btn-accent" href="#projects">View Projects</a>
+              <a class="btn" href="#games">Play My Games</a>
+              <a class="btn" href="https://www.linkedin.com/in/eoinfitzsimons-/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a class="btn" href="https://github.com/EoinFitzsimons" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
           </div>
 
-          <div class="hero-cta">
-            <a class="btn btn-accent" href="#contact">Contact Me</a>
-            <a class="btn" href="#games">Play My Games</a>
-            <a class="btn" href="https://www.linkedin.com/in/eoinfitzsimons-/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a class="btn" href="https://github.com/EoinFitzsimons" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a class="btn" href="mailto:Eoin00Fitzsimons@gmail.com">Email</a>
+          <div class="avatar-wrap card" aria-hidden="true">
+            <img
+              class="avatar-photo"
+              src="assets/avatar.jpg"
+              alt="Eoin Fitzsimons"
+              loading="eager"
+              width="350"
+              height="350"
+            />
           </div>
         </div>
 
-        <div class="avatar-wrap card" aria-hidden="true">
-          <img
-            class="avatar-photo"
-            src="assets/avatar.jpg"
-            alt="Eoin Fitzsimons"
-            loading="eager"
-            width="350"
-            height="350"
-          />
+        <div class="home-links" aria-label="Explore">
+          <a class="home-link" href="#experience">
+            <h3>Experience</h3>
+            <p>HSE Executive Support Intern, NCI Peer Mentor and WhizzKids Teaching Assistant.</p>
+            <span class="more">Experience →</span>
+          </a>
+          <a class="home-link" href="#projects">
+            <h3>Projects</h3>
+            <p>Momentum motorsport simulator, WhatsOn, Daytona 400, IoT telemetry and a CI/CD pipeline.</p>
+            <span class="more">Projects →</span>
+          </a>
+          <a class="home-link" href="#games">
+            <h3>Games</h3>
+            <p>Five browser games drawn and scored in code, playable on GitHub Pages.</p>
+            <span class="more">Play →</span>
+          </a>
+          <a class="home-link" href="#education">
+            <h3>Education</h3>
+            <p>First Class Honours BSc (Hons) Computing and a QQI Level 6 Full Distinction.</p>
+            <span class="more">Education →</span>
+          </a>
+        </div>
+
+        <div class="card skills-card" id="skills">
+          <h2 class="card-title">Technical Skills</h2>
+          <div class="skill-groups">
+            <div class="skill-group">
+              <strong>Languages</strong>
+              <div class="chips">
+                <span class="chip">Python</span><span class="chip">JavaScript (ES6+)</span><span class="chip">Java</span><span class="chip">SQL</span><span class="chip">HTML5 / CSS3</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <strong>Web and backend</strong>
+              <div class="chips">
+                <span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">FastAPI</span><span class="chip">PyQt6</span><span class="chip">REST APIs</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <strong>Data, cloud and IoT</strong>
+              <div class="chips">
+                <span class="chip">SQLite</span><span class="chip">MySQL</span><span class="chip">AWS EC2</span><span class="chip">MQTT</span><span class="chip">Raspberry Pi</span><span class="chip">Matplotlib</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <strong>Practices</strong>
+              <div class="chips">
+                <span class="chip">Git</span><span class="chip">CI/CD (CircleCI)</span><span class="chip">pytest / Mocha</span><span class="chip">Agile</span><span class="chip">Secure development</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- EXPERIENCE -->
-      <section class="section" id="about">
+      <section class="view" id="view-experience" data-view="experience" hidden>
         <h2>Experience</h2>
         <div class="grid">
           <div class="timeline" aria-label="Professional Experience">
-            <article class="timeline-item" id="experience">
+            <article class="timeline-item">
               <div class="dotline">
                 <div class="dot"></div>
                 <div class="line full-height"></div>
@@ -213,48 +258,23 @@
               <div>
                 <div class="meta">
                   <strong>Executive Support Intern</strong> ·
-                  <span class="muted">Health Service Executive · Internship</span> ·
-                  <span class="tag">Feb 2025 - Sep 2025</span> ·
-                  <span class="tag">Dublin, County Dublin, Ireland</span> ·
-                  <span class="tag">On-site</span>
+                  <span class="muted">Health Service Executive</span> ·
+                  <span class="tag">Feb 2025 – Sep 2025</span> ·
+                  <span class="tag">Dublin</span>
                 </div>
-                <ul class="timeline-list">
-                  <li>
-                    Provided technical support within a large public-sector healthcare
-                    organisation as part of a seven-person team, assisting staff including
-                    the CEO, CTO, Chief Doctor and board members with hardware, software
-                    and system troubleshooting.
-                  </li>
-                  <li>
-                    Reimaged and deployed 40+ enterprise laptops, performing
-                    operating system installation, configuration, and security updates.
-                  </li>
-                  <li>
-                    Resolved IT support requests submitted through the organisation's
-                    service system (Ivanti), achieving full completion of assigned tickets.
-                  </li>
-                  <li>
-                    Performed hardware upgrades and maintenance including RAM and SSD
-                    installation, improving workstation performance and device
-                    longevity.
-                  </li>
-                  <li>
-                    Assisted staff in diagnosing and resolving technical issues
-                    affecting productivity and system access.
-                  </li>
-                  <li>
-                    Maintained equipment and stock records, including temporary-laptop
-                    and New Starters tracking, using SharePoint and Planner.
-                  </li>
-                  <li>
-                    Supported meeting-room technology including ClickShare and Meeting
-                    Owl systems for conference room setups.
-                  </li>
-                  <li>
-                    Communicated technical solutions clearly to non-technical users,
-                    ensuring issues were resolved efficiently.
-                  </li>
+                <ul class="exp-list">
+                  <li>Technical support in a seven-person team for a large public-sector healthcare organisation, assisting staff up to CEO, CTO, Chief Doctor and board level.</li>
+                  <li>Reimaged and deployed 40+ enterprise laptops: OS installation, configuration and security updates.</li>
+                  <li>Resolved Ivanti service-desk tickets with full completion of assigned requests.</li>
+                  <li>Hardware upgrades (RAM, SSD) and meeting-room technology (ClickShare, Meeting Owl).</li>
                 </ul>
+                <details class="collapse">
+                  <summary>More</summary>
+                  <ul class="exp-list">
+                    <li>Maintained equipment and stock records, including temporary-laptop and New Starter tracking, in SharePoint and Planner.</li>
+                    <li>Diagnosed issues affecting productivity and system access, explaining solutions clearly to non-technical users.</li>
+                  </ul>
+                </details>
               </div>
             </article>
 
@@ -267,52 +287,22 @@
                 <div class="meta">
                   <strong>Peer Mentor</strong> ·
                   <span class="muted">National College of Ireland · Part-time</span> ·
-                  <span class="tag">Aug 2024 - Jun 2026</span> ·
-                  <span class="tag">Dublin, County Dublin, Ireland</span> ·
-                  <span class="tag">On-site</span>
+                  <span class="tag">Aug 2024 – Jun 2026</span> ·
+                  <span class="tag">Dublin</span>
                 </div>
                 <ul class="exp-list">
-                  <li>
-                    Delivered orientation presentations and campus tours for 200+
-                    international students, explaining academic systems, campus
-                    services, and student resources.
-                  </li>
-                  <li>
-                    Led general open-day campus tours for prospective students and
-                    their families, answering questions from parents comparing NCI to
-                    other colleges.
-                  </li>
-                  <li>
-                    Acted as a primary peer contact for incoming international
-                    students, assisting with integration, problem-solving, and
-                    adaptation to Irish academic life.
-                  </li>
-                  <li>
-                    Designed and hosted a Halloween cultural quiz event introducing
-                    Irish traditions, achieving high participation and positive
-                    feedback from students and programme staff.
-                  </li>
-                  <li>
-                    Organised and facilitated cultural outings to major Irish
-                    landmarks including Glendalough and the National Botanic
-                    Gardens, strengthening student engagement and community building.
-                  </li>
-                  <li>
-                    Collaborated with NCI staff to support orientation programmes
-                    and improve the onboarding experience for new international
-                    cohorts.
-                  </li>
-                  <li>
-                    Selected to appear in promotional and documentary media content
-                    highlighting student programmes and international support
-                    initiatives.
-                  </li>
-                  <li>
-                    Demonstrated strong public speaking and facilitation skills
-                    through regular group presentations and student engagement
-                    activities.
-                  </li>
+                  <li>Delivered orientation presentations and campus tours for 200+ international students.</li>
+                  <li>Primary peer contact for incoming students, supporting integration and adaptation to Irish academic life.</li>
+                  <li>Designed and hosted cultural events: a Halloween quiz and outings to Glendalough and the National Botanic Gardens.</li>
+                  <li>Led open-day tours for prospective students and their families.</li>
                 </ul>
+                <details class="collapse">
+                  <summary>More</summary>
+                  <ul class="exp-list">
+                    <li>Worked with NCI staff to improve orientation and onboarding for new international cohorts.</li>
+                    <li>Selected for promotional and documentary media on student programmes and international support.</li>
+                  </ul>
+                </details>
               </div>
             </article>
 
@@ -324,132 +314,56 @@
               <div>
                 <div class="meta">
                   <strong>Teaching Assistant</strong> ·
-                  <span class="muted">WhizzKids Discover IT Summer Camp · Seasonal</span> ·
-                  <span class="tag">Summers 2017 - 2019</span> ·
-                  <span class="tag">Greater Dublin</span> ·
-                  <span class="tag">On-site</span>
+                  <span class="muted">WhizzKids Discover IT Summer Camp</span> ·
+                  <span class="tag">Summers 2017 – 2019</span> ·
+                  <span class="tag">Greater Dublin</span>
                 </div>
                 <ul class="exp-list">
-                  <li>
-                    Assisted instructors in delivering introductory programming
-                    lessons in Python to groups of school students.
-                  </li>
-                  <li>
-                    Delivered structured programming instruction to 180+ students
-                    across six classes, guiding them through exercises and projects.
-                  </li>
-                  <li>
-                    Designed and implemented three Python-based learning projects for
-                    students to build on.
-                  </li>
-                  <li>
-                    Managed classroom environments during coding workshops, ensuring
-                    structured and productive learning sessions.
-                  </li>
-                  <li>
-                    Adapted explanations to suit students with different levels of
-                    technical ability and learning styles.
-                  </li>
-                  <li>
-                    Encouraged student engagement and confidence in programming
-                    through interactive teaching methods.
-                  </li>
-                  <li>
-                    Selected for multiple summer programmes due to strong teaching
-                    performance and student engagement.
-                  </li>
+                  <li>Delivered introductory Python instruction to 180+ students across six classes.</li>
+                  <li>Designed three Python learning projects for students to build on.</li>
+                  <li>Managed classroom sessions and adapted explanations to different ability levels.</li>
                 </ul>
+                <details class="collapse">
+                  <summary>More</summary>
+                  <ul class="exp-list">
+                    <li>Selected for multiple summer programmes on the strength of teaching performance and student engagement.</li>
+                  </ul>
+                </details>
               </div>
             </article>
           </div>
 
-          <!-- Right column -->
-          <aside class="side" aria-label="Skills and Highlights">
+          <aside class="side" aria-label="Highlights">
             <div class="card">
               <h3 class="highlights-title">Key Highlights</h3>
               <ul class="muted highlights-list">
                 <li>First Class Honours, BSc (Hons) Computing (79.1%)</li>
-                <li>Class Representative of the Year (NCI, 2026)</li>
-                <li>Society Person of the Year (NCI Students' Union, 2024)</li>
-                <li>Enterprise IT support with 100% ticket closure rate at HSE</li>
-                <li>Reimaged and deployed 40+ enterprise laptops</li>
-                <li>Peer Mentor supporting 200+ international students</li>
+                <li>Class Representative of the Year, NCI 2026</li>
+                <li>Society Person of the Year, NCI Students' Union 2024</li>
+                <li>Full ticket closure on assigned HSE service requests</li>
+                <li>40+ enterprise laptops reimaged and deployed</li>
+                <li>200+ international students supported as Peer Mentor</li>
               </ul>
-            </div>
-
-            <div class="card" id="skills">
-              <h3 class="skills-title">Technical Skills</h3>
-              <div class="skill" data-percent="85">
-                <strong>JavaScript (ES6+) & Node.js</strong>
-                <div class="bar">
-                  <div class="fill fill-js"></div>
-                </div>
-              </div>
-              <div class="skill" data-percent="80">
-                <strong>Python & Data Analysis</strong>
-                <div class="bar">
-                  <div class="fill fill-python"></div>
-                </div>
-              </div>
-              <div class="skill" data-percent="75">
-                <strong>Java & OOP</strong>
-                <div class="bar">
-                  <div class="fill fill-java"></div>
-                </div>
-              </div>
-              <div class="skill" data-percent="90">
-                <strong>HTML5/CSS3 & Responsive Design</strong>
-                <div class="bar">
-                  <div class="fill fill-html"></div>
-                </div>
-              </div>
-              <div class="skill" data-percent="72">
-                <strong>SQL & Database Management</strong>
-                <div class="bar">
-                  <div class="fill fill-sql"></div>
-                </div>
-              </div>
-              <div class="skill" data-percent="78">
-                <strong>Git Version Control & Agile</strong>
-                <div class="bar">
-                  <div class="fill fill-git"></div>
-                </div>
-              </div>
             </div>
           </aside>
         </div>
       </section>
 
       <!-- PROJECTS -->
-      <section class="section" id="projects">
-        <h2>Featured Projects</h2>
+      <section class="view" id="view-projects" data-view="projects" hidden>
+        <h2>Projects</h2>
         <div class="projects">
           <article class="project">
-            <img
-              class="thumb"
-              src="assets/covers/momentum.png"
-              alt="Momentum motorsport management system"
-              loading="lazy"
-              width="540"
-              height="180"
-            />
+            <img class="thumb" src="assets/covers/momentum.png" alt="Momentum motorsport management system" loading="lazy" width="540" height="180" />
             <div class="content">
-              <h3 class="project-title">Momentum - Motorsport Management Game</h3>
+              <h3 class="project-title">Momentum — Motorsport Management Game</h3>
               <p class="muted project-desc">
-                Single-player management game across six racing disciplines, from single
-                seaters to drag and endurance. Teams, drivers, staff, money and car
-                development feed a real-time race engine with tyre wear, slipstream and
-                pit strategy. Python, PyQt6 and SQLite with 131 automated tests in CI.
-                Grew out of my final year project and is now developed independently.
+                Single-player management game across six racing disciplines. Teams, drivers, staff, money and
+                car development feed a real-time race engine with tyre wear, slipstream and pit strategy.
+                Python, PyQt6 and SQLite with 131 automated tests in CI; grew out of my final-year project.
               </p>
               <div class="links">
-                <a
-                  class="btn btn-accent"
-                  href="https://github.com/EoinFitzsimons/Momentum"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >View on GitHub</a
-                >
+                <a class="btn btn-accent" href="https://github.com/EoinFitzsimons/Momentum" target="_blank" rel="noopener noreferrer">View on GitHub</a>
                 <span class="chip">Python</span>
                 <span class="chip">PyQt6</span>
                 <span class="chip">SQLite</span>
@@ -459,29 +373,15 @@
           </article>
 
           <article class="project">
-            <img
-              class="thumb"
-              src="assets/covers/whatson.png"
-              alt="WhatsOn map-based event discovery"
-              loading="lazy"
-              width="540"
-              height="180"
-            />
+            <img class="thumb" src="assets/covers/whatson.png" alt="WhatsOn map-based event discovery" loading="lazy" width="540" height="180" />
             <div class="content">
               <h3 class="project-title">WhatsOn — Event Discovery Platform</h3>
               <p class="muted project-desc">
-                Full-stack event discovery platform built as a second-year team project:
-                map-based search with location filtering, authentication with persistent
-                sessions, and external APIs integrated with secure key handling.
+                Full-stack team project: map-based event search with location filtering, authentication with
+                persistent sessions, and external APIs integrated with secure key handling.
               </p>
               <div class="links">
-                <a
-                  class="btn btn-accent"
-                  href="https://github.com/EoinFitzsimons/Team-Project-WhatsOn"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >View on GitHub</a
-                >
+                <a class="btn btn-accent" href="https://github.com/EoinFitzsimons/Team-Project-WhatsOn" target="_blank" rel="noopener noreferrer">View on GitHub</a>
                 <span class="chip">JavaScript</span>
                 <span class="chip">Node.js</span>
                 <span class="chip">Express</span>
@@ -491,30 +391,15 @@
           </article>
 
           <article class="project">
-            <img
-              class="thumb"
-              src="assets/covers/daytona.png"
-              alt="Daytona 400 hackathon project"
-              loading="lazy"
-              width="540"
-              height="180"
-            />
+            <img class="thumb" src="assets/covers/daytona.png" alt="Daytona 400 hackathon project" loading="lazy" width="540" height="180" />
             <div class="content">
-              <h3 class="project-title">Daytona 400 - Hackathon</h3>
+              <h3 class="project-title">Daytona 400 — Hackathon</h3>
               <p class="muted project-desc">
-                AI-agent-driven generation and evaluation pipeline: an agent chose
-                design parameters, Daytona executed and validated each output in an
-                isolated sandbox, and 400 circuit evaluations were scored and reviewed
-                through a PyQt6 monitoring interface.
+                AI-agent-driven generation and evaluation pipeline: an agent chose design parameters, Daytona ran
+                each output in an isolated sandbox, and 400 circuit evaluations were scored through a PyQt6 monitor.
               </p>
               <div class="links">
-                <a
-                  class="btn btn-accent"
-                  href="https://github.com/EoinFitzsimons/GiveaGoDaytona"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >View on GitHub</a
-                >
+                <a class="btn btn-accent" href="https://github.com/EoinFitzsimons/GiveaGoDaytona" target="_blank" rel="noopener noreferrer">View on GitHub</a>
                 <span class="chip">Python</span>
                 <span class="chip">Groq</span>
                 <span class="chip">Daytona</span>
@@ -524,22 +409,13 @@
           </article>
 
           <article class="project">
-            <img
-              class="thumb"
-              src="assets/covers/iot.png"
-              alt="IoT sensor collection project"
-              loading="lazy"
-              width="540"
-              height="180"
-            />
+            <img class="thumb" src="assets/covers/iot.png" alt="IoT sensor collection project" loading="lazy" width="540" height="180" />
             <div class="content">
               <h3 class="project-title">IoT Sensor Collection and Analysis</h3>
               <p class="muted project-desc">
-                End-to-end producer-consumer system: a Raspberry Pi Sense HAT
-                publishes compensated temperature, humidity and pressure readings over
-                MQTT with SQLite buffering, while a consumer validates payloads,
-                persists the last 100 readings and produces Matplotlib charts and
-                statistical summaries.
+                Producer-consumer system: a Raspberry Pi Sense HAT publishes compensated temperature, humidity and
+                pressure readings over MQTT with SQLite buffering; a consumer validates payloads and produces
+                Matplotlib charts and statistics.
               </p>
               <div class="links">
                 <span class="chip">Python</span>
@@ -552,30 +428,15 @@
           </article>
 
           <article class="project">
-            <img
-              class="thumb"
-              src="assets/covers/cicd.png"
-              alt="CI/CD pipeline project"
-              loading="lazy"
-              width="540"
-              height="180"
-            />
+            <img class="thumb" src="assets/covers/cicd.png" alt="CI/CD pipeline project" loading="lazy" width="540" height="180" />
             <div class="content">
               <h3 class="project-title">CI/CD Pipeline Deployment</h3>
               <p class="muted project-desc">
-                Node.js application built and deployed through a CircleCI pipeline
-                with automated Mocha tests, SSH and rsync deployment to Ubuntu AWS
-                EC2 under PM2, a VPC with Security Groups restricting access, and
-                TLS for HTTPS traffic.
+                Node.js application deployed through a CircleCI pipeline with Mocha tests, SSH and rsync deployment
+                to Ubuntu AWS EC2 under PM2, VPC Security Groups and TLS.
               </p>
               <div class="links">
-                <a
-                  class="btn btn-accent"
-                  href="https://github.com/EoinFitzsimons/NCIDevOpsCA"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >View on GitHub</a
-                >
+                <a class="btn btn-accent" href="https://github.com/EoinFitzsimons/NCIDevOpsCA" target="_blank" rel="noopener noreferrer">View on GitHub</a>
                 <span class="chip">Node.js</span>
                 <span class="chip">CircleCI</span>
                 <span class="chip">AWS EC2</span>
@@ -584,145 +445,52 @@
             </div>
           </article>
         </div>
-      </section>
 
-      <!-- GITHUB -->
-      <section class="section" id="github">
-        <h2>GitHub Snapshot</h2>
-        <p class="muted section-intro">
-          My GitHub profile has <span data-gh="public_repos">30</span> public repositories
-          across Python, JavaScript, Java, HTML, CSS, Shell and Ruby, spanning games,
-          web apps, coursework and DevOps labs.
-        </p>
-
-        <div class="snapshot-grid">
-          <article class="snapshot-card">
-            <h3>Profile Overview</h3>
-            <p class="muted">EoinFitzsimons · he/him</p>
-            <p class="muted">BSc (Hons) Computing graduate, National College of Ireland, Dublin.</p>
-          </article>
-          <article class="snapshot-card">
-            <h3>Community</h3>
-            <p><strong><span data-gh="followers">11</span> followers</strong> · <strong><span data-gh="following">24</span> following</strong></p>
-            <p class="muted">Building consistently while sharing coursework and projects.</p>
-          </article>
-          <article class="snapshot-card">
-            <h3>Achievements</h3>
-            <p><strong>Pull Shark x2</strong> · <strong>YOLO</strong> · <strong>Quickdraw</strong></p>
-            <p class="muted">Active contribution history across personal and coursework projects.</p>
-          </article>
-          <article class="snapshot-card">
-            <h3>Repository Mix</h3>
-            <p class="muted">Public repositories span apps, game projects, DevOps labs, and coursework.</p>
+        <h3 class="subheading">Also on GitHub</h3>
+        <div class="repo-list">
+          <article class="repo-row repo-card" data-repo="personal-assistant-agent">
+            <div>
+              <h3>personal-assistant-agent</h3>
+              <p>AI day planner that pulls Slack, Outlook, Teams and wearable data to build tomorrow's plan of tasks, workouts and meals.</p>
+            </div>
             <div class="links">
-              <span class="chip">Java</span>
-              <span class="chip">Python</span>
-              <span class="chip">JavaScript</span>
-              <span class="chip">Ruby</span>
-              <span class="chip">Shell</span>
+              <span class="chip repo-updated" hidden></span>
+              <a class="btn" href="https://github.com/EoinFitzsimons/personal-assistant-agent" target="_blank" rel="noopener noreferrer">Repository</a>
             </div>
           </article>
-        </div>
-
-        <div class="repo-grid" aria-label="Featured public repositories">
-          <article class="repo-card" data-repo="Momentum">
-            <h3>Momentum</h3>
-            <p class="muted">Motorsport management game in Python and PyQt6: six disciplines, a three-tier league world, career mode and a real-time race engine, with 131 automated tests in CI.</p>
+          <article class="repo-row repo-card" data-repo="Eoin-s-Racing-Game">
+            <div>
+              <h3>Eoin-s-Racing-Game</h3>
+              <p>Top-down Formula 1 style racing game with a 13-attribute team model, six circuits and recorded engine audio.</p>
+            </div>
             <div class="links">
-              <a class="btn btn-accent" href="https://github.com/EoinFitzsimons/Momentum" target="_blank" rel="noopener noreferrer">Repository</a>
-              <span class="chip">Python</span>
-              <span class="chip">PyQt6</span>
               <span class="chip repo-updated" hidden></span>
+              <a class="btn" href="https://github.com/EoinFitzsimons/Eoin-s-Racing-Game" target="_blank" rel="noopener noreferrer">Repository</a>
             </div>
           </article>
-          <article class="repo-card" data-repo="GiveaGoDaytona">
-            <h3>GiveaGoDaytona</h3>
-            <p class="muted">Daytona 400 hackathon project: an AI agent selects design parameters, Daytona executes them in a sandbox and 400 circuit evaluations are scored and reviewed.</p>
-            <div class="links">
-              <a class="btn btn-accent" href="https://github.com/EoinFitzsimons/GiveaGoDaytona" target="_blank" rel="noopener noreferrer">Repository</a>
-              <span class="chip">Python</span>
-              <span class="chip">Groq</span>
-              <span class="chip">Daytona</span>
-              <span class="chip repo-updated" hidden></span>
+          <article class="repo-row">
+            <div>
+              <h3>All repositories</h3>
+              <p><span data-gh="public_repos">30</span> public repositories across Python, JavaScript, Java and more.</p>
             </div>
-          </article>
-          <article class="repo-card" data-repo="Eoin-s-Racing-Game">
-            <h3>Eoin-s-Racing-Game</h3>
-            <p class="muted">Browser racing game with HUD telemetry rails, standings, time trials and recorded engine audio; playable on GitHub Pages.</p>
             <div class="links">
-              <a class="btn btn-accent" href="https://github.com/EoinFitzsimons/Eoin-s-Racing-Game" target="_blank" rel="noopener noreferrer">Repository</a>
-              <span class="chip">JavaScript</span>
-              <span class="chip">Canvas</span>
-              <span class="chip repo-updated" hidden></span>
-            </div>
-          </article>
-          <article class="repo-card" data-repo="personal-assistant-agent">
-            <h3>personal-assistant-agent</h3>
-            <p class="muted">AI day planner that pulls Slack, Outlook, Teams and wearable data and builds tomorrow's plan with tasks, workouts and meals.</p>
-            <div class="links">
-              <a class="btn btn-accent" href="https://github.com/EoinFitzsimons/personal-assistant-agent" target="_blank" rel="noopener noreferrer">Repository</a>
-              <span class="chip">Python</span>
-              <span class="chip">AI agent</span>
-              <span class="chip repo-updated" hidden></span>
-            </div>
-          </article>
-          <article class="repo-card" data-repo="NCIDevOpsCA">
-            <h3>NCIDevOpsCA</h3>
-            <p class="muted">Node.js application deployed through a CircleCI pipeline to Ubuntu AWS EC2 with Mocha tests, PM2, Security Groups and TLS.</p>
-            <div class="links">
-              <a class="btn btn-accent" href="https://github.com/EoinFitzsimons/NCIDevOpsCA" target="_blank" rel="noopener noreferrer">Repository</a>
-              <span class="chip">Node.js</span>
-              <span class="chip">CircleCI</span>
-              <span class="chip">AWS</span>
-              <span class="chip repo-updated" hidden></span>
-            </div>
-          </article>
-          <article class="repo-card" data-repo="Team-Project-WhatsOn">
-            <h3>Team-Project-WhatsOn</h3>
-            <p class="muted">Full-stack event discovery platform with map-based search, authentication, persistent sessions and external API integration.</p>
-            <div class="links">
-              <a class="btn btn-accent" href="https://github.com/EoinFitzsimons/Team-Project-WhatsOn" target="_blank" rel="noopener noreferrer">Repository</a>
-              <span class="chip">EJS</span>
-              <span class="chip">Node.js</span>
-              <span class="chip">SQL</span>
-              <span class="chip repo-updated" hidden></span>
-            </div>
-          </article>
-          <article class="repo-card" data-repo="Eoin-s-Building-Game">
-            <h3>Eoin-s-Building-Game</h3>
-            <p class="muted">First-person voxel sandbox with procedural terrain, a day/night cycle, blueprints and a Survival mode with tools, hunger and night creatures.</p>
-            <div class="links">
-              <a class="btn btn-accent" href="https://github.com/EoinFitzsimons/Eoin-s-Building-Game" target="_blank" rel="noopener noreferrer">Repository</a>
-              <span class="chip">JavaScript</span>
-              <span class="chip">Three.js</span>
-              <span class="chip repo-updated" hidden></span>
-            </div>
-          </article>
-          <article class="repo-card" data-repo="Rith-Dearg">
-            <h3>Rith-Dearg</h3>
-            <p class="muted">Platforming game following a red squirrel across Ireland, built in a single HTML file.</p>
-            <div class="links">
-              <a class="btn btn-accent" href="https://github.com/EoinFitzsimons/Rith-Dearg" target="_blank" rel="noopener noreferrer">Repository</a>
-              <span class="chip">HTML</span>
-              <span class="chip">Game</span>
-              <span class="chip repo-updated" hidden></span>
+              <a class="btn" href="https://github.com/EoinFitzsimons?tab=repositories" target="_blank" rel="noopener noreferrer">Browse GitHub</a>
             </div>
           </article>
         </div>
       </section>
 
       <!-- GAMES -->
-      <section class="section" id="games">
-        <h2>Games — Playable Demos</h2>
+      <section class="view" id="view-games" data-view="games" hidden>
+        <h2>Games</h2>
         <p class="muted">
-          Click Play Demo to launch an embedded view. If it doesn’t load, use
-          Open Demo (requires GitHub Pages enabled).
+          Five browser games, each drawn and scored in code. Play Demo opens an embedded view; Open Demo launches the game in a new tab.
         </p>
         <div class="games" id="gamesGrid"></div>
       </section>
 
       <!-- EDUCATION -->
-      <section class="section" id="education">
+      <section class="view" id="view-education" data-view="education" hidden>
         <h2>Education</h2>
         <div class="grid">
           <div class="timeline">
@@ -737,12 +505,15 @@
                   <span class="muted">National College of Ireland</span> ·
                   <span class="tag">2023 – 2026</span>
                 </div>
-                <div class="muted exp-desc">
-                  <p><strong>Advanced Entry</strong>: Entered NCI in Year 2 through advanced entry from Rathmines College.</p>
-                  <p><strong>Year 4</strong>: Secure Application Programming, Cloud Application Development, Governance, Ethics, Security and Sustainability, DevOpsSec, Blockchain, IoT Fundamentals and Developments, Final Year Project.</p>
-                  <p><strong>Year 3</strong>: Advanced Computer Networks, Advanced Programming, Introduction to Artificial Intelligence and Machine Learning, Security Fundamentals and Development, Work Placement.</p>
-                  <p><strong>Year 2</strong>: Advanced Databases, Data Structures and Algorithms, Innovation and Business Entrepreneurship, Object Oriented Programming, Software Quality and Testing, Team Project, Web Application Development, Operating Systems, The Computing Industry.</p>
-                </div>
+                <p class="muted exp-desc">Advanced entry to Year 2 from Rathmines College. Final year covered secure application programming, cloud application development, DevOpsSec, blockchain, IoT and a final-year project.</p>
+                <details class="collapse">
+                  <summary>Modules by year</summary>
+                  <div class="muted exp-desc">
+                    <p><strong>Year 4</strong>: Secure Application Programming, Cloud Application Development, Governance, Ethics, Security and Sustainability, DevOpsSec, Blockchain, IoT Fundamentals and Developments, Final Year Project.</p>
+                    <p><strong>Year 3</strong>: Advanced Computer Networks, Advanced Programming, Introduction to Artificial Intelligence and Machine Learning, Security Fundamentals and Development, Work Placement.</p>
+                    <p><strong>Year 2</strong>: Advanced Databases, Data Structures and Algorithms, Innovation and Business Entrepreneurship, Object Oriented Programming, Software Quality and Testing, Team Project, Web Application Development, Operating Systems, The Computing Industry.</p>
+                  </div>
+                </details>
               </div>
             </article>
             <article class="timeline-item">
@@ -752,200 +523,130 @@
               </div>
               <div>
                 <div class="meta">
-                  <strong>QQI Level 6 Advanced Certificate in Software Development</strong>
-                  · <span class="muted">Rathmines College, Dublin 6</span> ·
+                  <strong>QQI Level 6 Advanced Certificate in Software Development — Full Distinction</strong> ·
+                  <span class="muted">Rathmines College, Dublin</span> ·
                   <span class="tag">2022 – 2023</span>
                 </div>
-                <p class="muted exp-desc">Grade: Full Distinction</p>
-                <p class="muted exp-desc"><strong>Modules completed:</strong></p>
-                <ul class="muted exp-list">
-                  <li>Object Oriented Programming</li>
-                  <li>Software Architecture</li>
-                  <li>GUI Programming</li>
-                  <li>Project Management</li>
-                  <li>Relational Database</li>
-                  <li>Networking Infrastructure</li>
-                  <li>Personal and Professional Development</li>
-                  <li>Communications</li>
-                  <li>Mathematics</li>
-                </ul>
+                <details class="collapse">
+                  <summary>Modules</summary>
+                  <p class="muted exp-desc">Object Oriented Programming, Software Architecture, GUI Programming, Project Management, Relational Database, Networking Infrastructure, Personal and Professional Development, Communications, Mathematics.</p>
+                </details>
               </div>
+            </article>
+
+            <article class="record-card">
+              <h3>Academic Record</h3>
+              <ul class="muted highlights-list">
+                <li><strong>Final classification:</strong> First Class Honours (79.1%)</li>
+                <li><strong>Highest module:</strong> Software Quality and Testing, 92.7%</li>
+                <li><strong>Year 4:</strong> 79.1% average, six of seven modules above 76%</li>
+                <li><strong>Work placement:</strong> 74.0% (Health Service Executive)</li>
+                <li><strong>Trend:</strong> year averages rose from 68.8% to 73.4% to 79.1%</li>
+              </ul>
+              <details class="collapse">
+                <summary>Full transcript</summary>
+                <div class="record-grid two">
+                  <div>
+                    <h4>Year 4 — 79.1%</h4>
+                    <div class="table-wrap">
+                      <table class="record-table">
+                        <thead><tr><th>Module</th><th>Result (%)</th></tr></thead>
+                        <tbody>
+                          <tr><td>Blockchain</td><td>89.1</td></tr>
+                          <tr><td>IoT Fundamentals and Developments</td><td>85.4</td></tr>
+                          <tr><td>Secure Application Programming</td><td>82.3</td></tr>
+                          <tr><td>Governance, Ethics, Security and Sustainability</td><td>82.0</td></tr>
+                          <tr><td>DevOpsSec</td><td>81.6</td></tr>
+                          <tr><td>Final Year Project</td><td>76.6</td></tr>
+                          <tr><td>Cloud Application Development</td><td>70.0</td></tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div>
+                    <h4>Year 3 — 73.4%</h4>
+                    <div class="table-wrap">
+                      <table class="record-table">
+                        <thead><tr><th>Module</th><th>Result (%)</th></tr></thead>
+                        <tbody>
+                          <tr><td>Advanced Computer Networks</td><td>83.3</td></tr>
+                          <tr><td>Introduction to Artificial Intelligence and Machine Learning</td><td>82.0</td></tr>
+                          <tr><td>Work Placement</td><td>74.0</td></tr>
+                          <tr><td>Advanced Programming</td><td>73.5</td></tr>
+                          <tr><td>Security Fundamentals and Development</td><td>62.5</td></tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div>
+                    <h4>Year 2 — 68.8%</h4>
+                    <div class="table-wrap">
+                      <table class="record-table">
+                        <thead><tr><th>Module</th><th>Result (%)</th></tr></thead>
+                        <tbody>
+                          <tr><td>Software Quality and Testing</td><td>92.7</td></tr>
+                          <tr><td>Team Project</td><td>85.0</td></tr>
+                          <tr><td>Web Application Development</td><td>80.5</td></tr>
+                          <tr><td>Innovation and Business Entrepreneurship</td><td>80.0</td></tr>
+                          <tr><td>Object Oriented Programming</td><td>60.8</td></tr>
+                          <tr><td>Data Structures and Algorithms</td><td>58.2</td></tr>
+                          <tr><td>Advanced Databases</td><td>46.0</td></tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div>
+                    <h4>Year 1 (advanced entry) — 65.2%</h4>
+                    <div class="table-wrap">
+                      <table class="record-table">
+                        <thead><tr><th>Module</th><th>Result (%)</th></tr></thead>
+                        <tbody>
+                          <tr><td>Operating Systems</td><td>66.3</td></tr>
+                          <tr><td>The Computing Industry</td><td>64.0</td></tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p class="record-note">Remaining first-year modules exempted through advanced entry.</p>
+                  </div>
+                </div>
+              </details>
             </article>
           </div>
 
-          <aside
-            class="side"
-            aria-label="Education, Certificates, Achievements, and Hobbies"
-          >
+          <aside class="side" aria-label="Achievements and Professional Development">
+            <div class="card">
+              <h3 class="ach-title">Achievements</h3>
+              <ul class="muted ach-list">
+                <li>Class Representative of the Year — NCI (2026); runner-up (2025)</li>
+                <li>Society Person of the Year — NCI Students' Union (2024)</li>
+                <li>Deputy Chair — Class Representative Council, NCI</li>
+                <li>President — Esports and Gaming Society, NCI</li>
+                <li>Best Speaker — Debating Society, Rathmines College (2023)</li>
+              </ul>
+            </div>
+
             <div class="card">
               <h3 class="cert-title">Professional Development</h3>
               <ul class="muted cert-list">
                 <li><strong>Cyber Security Awareness</strong> — HSE (2025)</li>
                 <li><strong>Agile Project Management</strong> — Pluralsight (2025)</li>
-                <li>Technology & Transformation Induction — HSE</li>
-                <li>Dignity at Work (Revised 2022)</li>
-                <li>Communicating Effectively through Open Disclosure</li>
-                <li>An Introduction to Children First</li>
+                <li>HSE Technology &amp; Transformation Induction, Dignity at Work, Open Disclosure, Children First</li>
               </ul>
             </div>
 
             <div class="card">
-              <h3 class="ach-title">Achievements</h3>
-              <ul class="muted ach-list">
-                <li>Class Representative of the Year — NCI (2026); runner-up (2025)</li>
-                <li>Society Person of the Year — NCI Students’ Union (2024)</li>
-                <li>Deputy Chair — Class Representative Council, NCI</li>
-                <li>President — Esports and Gaming Society, NCI</li>
-                <li>Best Speaker — Debating Society, Rathmines College (2023)</li>
-                <li>2nd place — Dublin U‑19 Badminton (2018, Captain)</li>
-                <li>Best participant — Coding Camp (2015–2017)</li>
-              </ul>
-            </div>
-
-            <div class="card">
-              <h3 class="hobbies-title">Hobbies & Interests</h3>
-              <ul class="muted hobbies-list">
-                <li>Motorsport — Formula One and other series, race strategy and vehicle performance</li>
-                <li>Sport — football and badminton</li>
-                <li>Film and television — comedy</li>
-                <li>Video games — puzzle, simulation and single-player</li>
-                <li>Board games — social deduction and cooperative</li>
-              </ul>
+              <h3 class="hobbies-title">Interests</h3>
+              <p class="muted exp-desc">Motorsport and race strategy, football and badminton, puzzle and simulation games, board games.</p>
             </div>
           </aside>
         </div>
       </section>
 
-      <section class="section" id="academic" aria-labelledby="academic-title">
-        <h2 id="academic-title">Academic Record</h2>
-        <p class="muted section-intro">
-          BSc (Hons) Computing, National College of Ireland — First Class Honours, 79.1% overall.
-          Entered NCI in Year 2 through advanced entry from Rathmines College, with exemptions for
-          most first-year modules.
-        </p>
-
-        <div class="record-grid">
-          <article class="record-card">
-            <h3>Year 4</h3>
-            <div class="table-wrap">
-              <table class="record-table">
-                <thead>
-                  <tr>
-                    <th>Module</th>
-                    <th>Result (%)</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr><td>Blockchain</td><td>89.1</td></tr>
-                  <tr><td>IoT Fundamentals and Developments</td><td>85.4</td></tr>
-                  <tr><td>Secure Application Programming</td><td>82.3</td></tr>
-                  <tr><td>Governance, Ethics, Security and Sustainability</td><td>82.0</td></tr>
-                  <tr><td>DevOpsSec</td><td>81.6</td></tr>
-                  <tr><td>Final Year Project</td><td>76.6</td></tr>
-                  <tr><td>Cloud Application Development</td><td>70.0</td></tr>
-                </tbody>
-              </table>
-            </div>
-            <p class="record-note"><strong>Overall:</strong> 79.1%</p>
-          </article>
-
-          <article class="record-card">
-            <h3>Year 3</h3>
-            <div class="table-wrap">
-              <table class="record-table">
-                <thead>
-                  <tr>
-                    <th>Module</th>
-                    <th>Result (%)</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr><td>Advanced Computer Networks</td><td>83.3</td></tr>
-                  <tr><td>Introduction to Artificial Intelligence and Machine Learning</td><td>82.0</td></tr>
-                  <tr><td>Work Placement</td><td>74.0</td></tr>
-                  <tr><td>Advanced Programming</td><td>73.5</td></tr>
-                  <tr><td>Security Fundamentals and Development</td><td>62.5</td></tr>
-                </tbody>
-              </table>
-            </div>
-            <p class="record-note"><strong>Overall:</strong> 73.4%</p>
-          </article>
-
-          <article class="record-card">
-            <h3>Year 2</h3>
-            <div class="table-wrap">
-              <table class="record-table">
-                <thead>
-                  <tr>
-                    <th>Module</th>
-                    <th>Result (%)</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr><td>Software Quality and Testing</td><td>92.7</td></tr>
-                  <tr><td>Team Project</td><td>85.0</td></tr>
-                  <tr><td>Web Application Development</td><td>80.5</td></tr>
-                  <tr><td>Innovation and Business Entrepreneurship</td><td>80.0</td></tr>
-                  <tr><td>Object Oriented Programming</td><td>60.8</td></tr>
-                  <tr><td>Data Structures and Algorithms</td><td>58.2</td></tr>
-                  <tr><td>Advanced Databases</td><td>46.0</td></tr>
-                </tbody>
-              </table>
-            </div>
-            <p class="record-note"><strong>Overall:</strong> 68.8%</p>
-          </article>
-
-          <article class="record-card">
-            <h3>Year 1 (advanced entry)</h3>
-            <div class="table-wrap">
-              <table class="record-table">
-                <thead>
-                  <tr>
-                    <th>Module</th>
-                    <th>Result (%)</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr><td>Operating Systems</td><td>66.3</td></tr>
-                  <tr><td>The Computing Industry</td><td>64.0</td></tr>
-                </tbody>
-              </table>
-            </div>
-            <p class="record-note"><strong>Overall:</strong> 65.2% across the two graded modules</p>
-          </article>
-        </div>
-
-        <div class="record-grid">
-          <article class="record-card">
-            <h3>Highlights</h3>
-            <ul class="muted highlights-list">
-              <li><strong>Final classification:</strong> First Class Honours (79.1%)</li>
-              <li><strong>Highest module:</strong> Software Quality and Testing, 92.7%</li>
-              <li><strong>Year 4 average:</strong> 79.1%, with six of seven modules above 76%</li>
-              <li><strong>Work placement:</strong> 74.0% (Health Service Executive)</li>
-              <li><strong>Trend:</strong> year averages rose from 68.8% to 73.4% to 79.1%</li>
-            </ul>
-          </article>
-
-          <article class="record-card">
-            <h3>Applied Coursework</h3>
-            <ul class="muted highlights-list">
-              <li><strong>IoT (85.4%):</strong> Raspberry Pi Sense HAT producer-consumer system over MQTT with SQLite buffering and Matplotlib analysis</li>
-              <li><strong>DevOpsSec (81.6%):</strong> Node.js CI/CD pipeline with CircleCI, Mocha, AWS EC2, PM2 and TLS</li>
-              <li><strong>Software Quality and Testing (92.7%):</strong> test-case design, coverage and shift-left testing applied to Momentum</li>
-              <li><strong>Governance, Ethics, Security and Sustainability (82.0%):</strong> ACM Code of Ethics evaluation of Momentum</li>
-              <li><strong>AI and Machine Learning (82.0%):</strong> Logistic Regression and KNN on 100,000+ road-casualty records</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
       <!-- CONTACT -->
-      <section class="section" id="contact">
-        <h2>Let's Connect</h2>
+      <section class="view" id="view-contact" data-view="contact" hidden>
+        <h2>Contact</h2>
         <p class="muted section-intro">
-          I am interested in roles where technology, systems, data and practical
-          problem-solving overlap. Feel free to connect through any of the channels below.
+          I am interested in roles where technology, systems, data and practical problem-solving overlap.
         </p>
         <div class="contact-grid">
           <div class="contact-card">
@@ -957,55 +658,31 @@
               <button class="btn" id="copyEmail2">Copy</button>
             </div>
           </div>
-          
-          <div class="contact-card">
-            <div class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></div>
-            <h3>Phone</h3>
-            <p class="contact-detail">+353 89 460 1090</p>
-            <div class="contact-actions-inline">
-              <a class="btn btn-accent" href="tel:+353894601090">Call</a>
-              <button class="btn" id="copyPhone">Copy</button>
-            </div>
-          </div>
-          
+
           <div class="contact-card">
             <div class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 11v6M8 7.5v.01M12 17v-3.5a2 2 0 0 1 4 0V17M12 11v6"/></svg></div>
             <h3>LinkedIn</h3>
-            <p class="contact-detail">Connect professionally</p>
+            <p class="contact-detail">linkedin.com/in/eoinfitzsimons-</p>
             <div class="contact-actions-inline">
-              <a
-                class="btn btn-accent"
-                href="https://www.linkedin.com/in/eoinfitzsimons-/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >View Profile</a>
+              <a class="btn btn-accent" href="https://www.linkedin.com/in/eoinfitzsimons-/" target="_blank" rel="noopener noreferrer">View Profile</a>
             </div>
           </div>
-          
+
           <div class="contact-card">
             <div class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg></div>
             <h3>GitHub</h3>
-            <p class="contact-detail">Check out my code</p>
+            <p class="contact-detail">github.com/EoinFitzsimons</p>
             <div class="contact-actions-inline">
-              <a
-                class="btn btn-accent"
-                href="https://github.com/EoinFitzsimons"
-                target="_blank"
-                rel="noopener noreferrer"
-              >View Projects</a>
+              <a class="btn btn-accent" href="https://github.com/EoinFitzsimons" target="_blank" rel="noopener noreferrer">View Profile</a>
             </div>
           </div>
         </div>
-        <output
-          id="liveRegion"
-          class="sr-only"
-          aria-live="polite"
-        ></output>
+        <output id="liveRegion" class="sr-only" aria-live="polite"></output>
       </section>
     </main>
 
     <footer>
-      © <span id="year"></span> Eoin Fitzsimons · Built with HTML, CSS & JS
+      © <span id="year"></span> Eoin Fitzsimons · Built with HTML, CSS &amp; JS
     </footer>
 
     <!-- Game modal -->
@@ -1044,11 +721,6 @@
       </div>
     </dialog>
 
-    <!-- Sidebar nav (left) -->
-    <aside class="side-nav" id="sideNav" aria-label="Section navigation">
-      <a href="#top" class="side-brand">Eoin&nbsp;Fitzsimons</a>
-      <nav class="links" id="sideLinks" aria-label="Secondary"></nav>
-    </aside>
 
     <script src="site.js" defer></script>
   </body>

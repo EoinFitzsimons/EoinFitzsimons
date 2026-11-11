@@ -1,7 +1,4 @@
 // ===== Constants & Utilities =====
-const SHOW_Y = 140; // show sidebar after this scroll
-const HIDE_Y = 40; // hide when back near the top
-
 const $ = (sel, root = document) => root.querySelector(sel);
 const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
 
@@ -97,84 +94,39 @@ function trapFocus(container) {
   });
 })();
 
-// ===== Sidebar visibility (hysteresis) =====
+// ===== Tabbed views (hash-routed) =====
 (function () {
-  let visible = false,
-    ticking = false;
-  function apply(y) {
-    if (!visible && y > SHOW_Y) {
-      visible = true;
-      document.body.classList.add("side-visible");
-    } else if (visible && y < HIDE_Y) {
-      visible = false;
-      document.body.classList.remove("side-visible");
-    }
+  const views = $$(".view[data-view]");
+  const links = $$('#navLinks a[href^="#"]');
+  const main = $("#main");
+  if (!views.length) return;
+  const names = new Set(views.map((v) => v.dataset.view));
+  const aliases = {
+    top: "home",
+    about: "home",
+    skills: "home",
+    github: "projects",
+    academic: "education",
+  };
+  const baseTitle = document.title;
+  function resolve(hash) {
+    const raw = (hash || "").replace(/^#/, "");
+    if (names.has(raw)) return raw;
+    return aliases[raw] || "home";
   }
-  function onScroll() {
-    const y = window.scrollY || window.pageYOffset || 0;
-    if (!ticking) {
-      requestAnimationFrame(() => {
-        apply(y);
-        ticking = false;
-      });
-      ticking = true;
+  function show(name, { focus = false } = {}) {
+    for (const v of views) v.hidden = v.dataset.view !== name;
+    for (const a of links) {
+      if (a.getAttribute("href") === `#${name}`) a.setAttribute("aria-current", "page");
+      else a.removeAttribute("aria-current");
     }
+    const label = $(`#navLinks a[href="#${name}"]`)?.textContent.trim();
+    document.title = name === "home" || !label ? baseTitle : `${label} | Eoin Fitzsimons`;
+    globalThis.scrollTo({ top: 0, behavior: "auto" });
+    if (focus && main) main.focus({ preventScroll: true });
   }
-  window.addEventListener("scroll", onScroll, { passive: true });
-  window.addEventListener("load", onScroll, { passive: true });
-  window.addEventListener("resize", onScroll, { passive: true });
-  onScroll();
-})();
-
-// ===== Clone header links into sidebar + active section highlighting =====
-(function () {
-  const sideLinks = $("#sideLinks");
-  const mainLinks = $("#navLinks");
-  if (mainLinks && sideLinks) sideLinks.innerHTML = mainLinks.innerHTML;
-
-  const sectionIds = $$("#main section[id]").map((s) => s.id);
-  const allNavs = [mainLinks, sideLinks].filter(Boolean);
-  const mapList = allNavs.map((nav) => {
-    const m = {};
-    if (!nav) return m;
-    for (const a of $$('a[href^="#"]', nav)) {
-      m[a.getAttribute("href").slice(1)] = a;
-    }
-    return m;
-  });
-  function mark(id) {
-    for (const m of mapList) {
-      if (!m) continue;
-      for (const a of Object.values(m)) {
-        a?.removeAttribute("aria-current");
-      }
-      const a = m[id];
-      if (a) a.setAttribute("aria-current", "page");
-    }
-  }
-  if ("IntersectionObserver" in globalThis) {
-    const io = new IntersectionObserver(
-      (entries) => {
-        let mostVisible = null;
-        let maxRatio = 0;
-        for (const e of entries) {
-          if (e.intersectionRatio > maxRatio) {
-            maxRatio = e.intersectionRatio;
-            mostVisible = e;
-          }
-        }
-        if (mostVisible?.isIntersecting) mark(mostVisible.target.id);
-      },
-      {
-        rootMargin: "-30% 0px -60% 0px",
-        threshold: Array.from({ length: 21 }, (_, i) => i / 20),
-      }
-    );
-    for (const id of sectionIds) {
-      const el = document.getElementById(id);
-      if (el) io.observe(el);
-    }
-  }
+  globalThis.addEventListener("hashchange", () => show(resolve(location.hash), { focus: true }));
+  show(resolve(location.hash));
 })();
 
 // ===== Copy helpers =====
@@ -182,7 +134,6 @@ function trapFocus(container) {
   function copy(val) {
     navigator.clipboard?.writeText(val).then(() => live("Copied to clipboard"));
   }
-  $("#copyPhone")?.addEventListener("click", () => copy("+353894601090"));
   $("#copyEmail")?.addEventListener("click", () =>
     copy("Eoin00Fitzsimons@gmail.com")
   );
@@ -190,94 +141,6 @@ function trapFocus(container) {
     copy("Eoin00Fitzsimons@gmail.com")
   );
   $("#year").textContent = new Date().getFullYear();
-})();
-
-// ===== Animate skill bars on scroll =====
-(function () {
-  if ("IntersectionObserver" in globalThis) {
-    const skillsSection = $("#skills");
-    if (!skillsSection) return;
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        for (const entry of entries) {
-          if (entry.isIntersecting) {
-            const skills = $$(".skill", skillsSection);
-            for (const skill of skills) {
-              skill.classList.add("animated");
-              
-              // Animate the skill bar fill
-              const targetPercent = Number.parseInt(skill.dataset.percent, 10);
-              const fillEl = skill.querySelector(".fill");
-              
-              if (fillEl && targetPercent) {
-                fillEl.style.width = targetPercent + "%";
-              }
-            }
-            observer.disconnect();
-          }
-        }
-      },
-      { threshold: 0.3 }
-    );
-
-    observer.observe(skillsSection);
-  }
-})();
-
-// ===== Scroll to top button =====
-(function () {
-  const scrollBtn = document.createElement("button");
-  scrollBtn.className = "scroll-to-top";
-  scrollBtn.setAttribute("aria-label", "Scroll to top");
-  scrollBtn.innerHTML = "↑";
-  scrollBtn.style.cssText = `
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, var(--accent), var(--accent-2));
-    color: #0b0b12;
-    border: none;
-    font-size: 24px;
-    font-weight: 700;
-    cursor: pointer;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.2s ease;
-    z-index: 999;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  `;
-
-  document.body.appendChild(scrollBtn);
-
-  function toggleScrollBtn() {
-    const scrollY = globalThis.scrollY || globalThis.pageYOffset || 0;
-    if (scrollY > 400) {
-      scrollBtn.style.opacity = "1";
-      scrollBtn.style.visibility = "visible";
-    } else {
-      scrollBtn.style.opacity = "0";
-      scrollBtn.style.visibility = "hidden";
-    }
-  }
-
-  scrollBtn.addEventListener("click", () => {
-    globalThis.scrollTo({ top: 0, behavior: "smooth" });
-  });
-
-  scrollBtn.addEventListener("mouseenter", () => {
-    scrollBtn.style.transform = "translateY(-4px)";
-  });
-
-  scrollBtn.addEventListener("mouseleave", () => {
-    scrollBtn.style.transform = "translateY(0)";
-  });
-
-  globalThis.addEventListener("scroll", toggleScrollBtn, { passive: true });
-  toggleScrollBtn();
 })();
 
 // ===== Games: data + cards + modal =====

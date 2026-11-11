@@ -396,8 +396,8 @@ a {
   text-decoration: none;
 }
 
-main a:not(.btn):not(.chip):not(.brand):not(.side-brand):hover,
-main a:not(.btn):not(.chip):not(.brand):not(.side-brand):focus-visible,
+main a:not(.btn):not(.chip):not(.brand):hover,
+main a:not(.btn):not(.chip):not(.brand):focus-visible,
 footer a:hover,
 footer a:focus-visible {
   text-decoration: underline;
@@ -538,6 +538,9 @@ header {
   }
   .nav-links.open {
     display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    padding-bottom: 0.3rem;
   }
   .hamburger {
     display: inline-flex;
@@ -757,7 +760,10 @@ section {
 
 @media (max-width: 700px) {
   .kpi {
-    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+  .kpi .pill {
+    padding: 0.6rem 0.75rem;
   }
 }
 .pill {
@@ -1281,8 +1287,7 @@ button:focus-visible {
   .theme-toggle,
   .hamburger,
   .nav-links,
-  .modal,
-  .side-nav {
+  .modal {
     display: none !important;
   }
   .card,
@@ -1331,72 +1336,6 @@ button:focus-visible {
   }
 }
 
-/* Sidebar (left) */
-.side-nav {
-  display: flex;
-  opacity: 0;
-  transform: translateX(-100%);
-  transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1),
-    transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 210px;
-  height: 100vh;
-  background: var(--surface-1);
-  border-right: 2px solid var(--border-1);
-  border-radius: 0;
-  padding: 1.2rem 0.6rem 1.2rem 1.2rem;
-  box-shadow: none;
-  margin: 0;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  min-width: 180px;
-  z-index: 100;
-}
-body.side-visible .side-nav {
-  opacity: 1;
-  transform: none;
-}
-.side-brand {
-  display: block;
-  font-weight: 700;
-  margin-bottom: 0.4rem;
-  letter-spacing: 0.3px;
-}
-.side-nav .links {
-  display: grid;
-  gap: 0.25rem;
-}
-.side-nav .links a {
-  padding: 0.45rem 0.6rem;
-  border-radius: 10px;
-  color: var(--muted);
-}
-.side-nav .links a:hover {
-  color: var(--text);
-  background: var(--surface-2);
-}
-.side-nav .links a[aria-current="page"] {
-  background: var(--surface-2);
-  color: var(--text);
-}
-body.side-visible header {
-  transform: translateY(-110%);
-  opacity: 0;
-}
-
-@media (max-width: 860px) {
-  .side-nav {
-    display: none;
-  }
-  body.side-visible header {
-    transform: none;
-    opacity: 1;
-  }
-}
-
 /* Screen reader only */
 .sr-only {
   position: absolute !important;
@@ -1424,10 +1363,6 @@ body.side-visible header {
   html {
     scroll-behavior: auto;
   }
-  
-  body.side-visible header {
-    opacity: 0;
-  }
 }
 
 /* High contrast mode support */
@@ -1441,4 +1376,200 @@ body.side-visible header {
     --border-1: rgba(0, 0, 0, 0.4);
     --border-2: rgba(0, 0, 0, 0.5);
   }
+}
+
+/* ===== Tabbed views ===== */
+.view {
+  padding: 1rem 0 2.5rem;
+  animation: view-in 0.25s ease;
+}
+.view[hidden] {
+  display: none;
+}
+.view > h2 {
+  font-size: clamp(1.3rem, 2.5vw, 1.6rem);
+  margin: 0.5rem 0 1rem;
+  letter-spacing: 0.3px;
+  display: inline-block;
+  border-bottom: 2px solid #ee7125cc;
+  padding-bottom: 0.15rem;
+}
+@keyframes view-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.view .hero {
+  padding: clamp(1rem, 3vw, 2rem) 0 1.5rem;
+}
+.home-links {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 0.5rem 0 1.5rem;
+}
+.home-link {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--border-1);
+  border-radius: 6px;
+  background: var(--surface-1);
+  color: var(--text);
+  text-decoration: none;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+.home-link:hover,
+.home-link:focus-visible {
+  background: var(--surface-2);
+  border-color: var(--accent);
+}
+.home-link h3 {
+  margin: 0 0 0.3rem;
+  font-size: 1.02rem;
+}
+.home-link p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  flex: 1;
+}
+.home-link .more {
+  display: block;
+  margin-top: 0.7rem;
+  color: var(--accent-2);
+  font-weight: 600;
+  font-size: 0.88rem;
+}
+.skills-card .card-title {
+  font-size: 1.1rem;
+  margin: 0 0 0.9rem;
+}
+.skill-groups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem 1.5rem;
+}
+.skill-group strong {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.skill-group .chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+.skill-group .chip {
+  font-size: 0.82rem;
+  color: var(--text);
+}
+details.collapse {
+  margin-top: 0.5rem;
+}
+details.collapse > summary {
+  cursor: pointer;
+  color: var(--accent-2);
+  font-weight: 600;
+  font-size: 0.92rem;
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.25rem 0;
+}
+details.collapse > summary::-webkit-details-marker {
+  display: none;
+}
+details.collapse > summary::before {
+  content: "▸";
+  transition: transform 0.2s ease;
+}
+details.collapse[open] > summary::before {
+  transform: rotate(90deg);
+}
+details.collapse > :not(summary) {
+  margin-top: 0.4rem;
+}
+.exp-list li + li {
+  margin-top: 0.3rem;
+}
+.subheading {
+  font-size: 1.1rem;
+  margin: 1.5rem 0 0.6rem;
+}
+.repo-list {
+  display: grid;
+  gap: 0.6rem;
+}
+.repo-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.5rem 1rem;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--border-1);
+  border-radius: 6px;
+  background: var(--surface-1);
+}
+.repo-row h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+.repo-row p {
+  margin: 0.15rem 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+.repo-row .links {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.record-grid.two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 0.6rem;
+}
+.timeline .record-card {
+  margin-top: 1rem;
+}
+.view .contact-grid {
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 900px;
+}
+@media (max-width: 900px) {
+  .home-links {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .skill-groups,
+  .record-grid.two {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 700px) {
+  .view .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  .repo-row {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .home-links {
+    grid-template-columns: 1fr;
+  }
+}
+
+#main:focus {
+  outline: none;
+}
+
+#main:focus {
+  outline: none;
 }
