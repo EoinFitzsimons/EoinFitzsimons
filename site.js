@@ -50,10 +50,16 @@ function trapFocus(container) {
   const btn = $("#themeToggle");
   if (!btn) return;
   let light = root.classList.contains("theme-light");
+  btn.title = light ? "Switch to dark" : "Switch to light";
   btn.addEventListener("click", () => {
     light = !light;
     root.classList.toggle("theme-light", light);
     btn.title = light ? "Switch to dark" : "Switch to light";
+    try {
+      localStorage.setItem("theme", light ? "light" : "dark");
+    } catch {
+      /* storage unavailable */
+    }
   });
 })();
 
