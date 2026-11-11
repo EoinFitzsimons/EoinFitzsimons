@@ -109,12 +109,15 @@ function trapFocus(container) {
     academic: "education",
   };
   const baseTitle = document.title;
+  let current = null;
   function resolve(hash) {
     const raw = (hash || "").replace(/^#/, "");
     if (names.has(raw)) return raw;
+    if (raw === "main" && current) return current; // skip link: stay on the current view
     return aliases[raw] || "home";
   }
   function show(name, { focus = false } = {}) {
+    current = name;
     for (const v of views) v.hidden = v.dataset.view !== name;
     for (const a of links) {
       if (a.getAttribute("href") === `#${name}`) a.setAttribute("aria-current", "page");
