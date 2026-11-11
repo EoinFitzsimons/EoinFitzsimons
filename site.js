@@ -135,6 +135,7 @@ function trapFocus(container) {
   });
   for (const a of links) {
     a.addEventListener("click", (e) => {
+      if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
       if (resolve(a.getAttribute("href")) !== current) return;
       e.preventDefault(); // already active: hashchange will not fire, so scroll back to the top
       show(current, { focus: true });
