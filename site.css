@@ -1379,7 +1379,8 @@ footer::before {
   }
 }
 @media print {
-  :root {
+  :root,
+  html.theme-light {
     --bg: #ffffff;
     --bg-2: #f4f4f4;
     --surface: #ffffff;
